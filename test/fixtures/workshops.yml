@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  address: MyString
+  url: MyString
+  date: 2015-07-20
+  active: false
+  invisible: false
+  zone: 1
+  definition: MyText
+
+two:
+  name: MyString
+  description: MyText
+  address: MyString
+  url: MyString
+  date: 2015-07-20
+  active: false
+  invisible: false
+  zone: 1
+  definition: MyText

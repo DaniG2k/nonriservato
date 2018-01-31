@@ -1,0 +1,10 @@
+<% @organizations.each_slice(4) do |row| %>
+   <% row.each do |o| %>
+      <%= link_to (admin_namespace? ? edit_admin_organization_path(o) : organization_path(o)), :class => "organization_element #{"last" if o == row.last}" do %>
+         <%= image_tag o.logo("medium"), :title => "#{o.name}" %>
+         <div class="name"><%= o.name %></div>
+         <div class="definition"><%= o.definition %></div>
+         <div class="see_more"><span>leggi di più...</span></div>
+      <% end %>
+   <% end %>
+<% end %>

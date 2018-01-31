@@ -1,0 +1,14 @@
+<li>
+   <div class="big_featured">
+      <div class="grid_9 img_box alpha">
+         <%= link_to (image_tag post.image(:featured)), post_path(post) %>
+         <div class="title"><%= post.title %></div>
+   
+         <div class="date"><%= l(post.date_published, :format => :long) %></div>
+      </div>
+      <div class="grid_3 info_box omega">
+         <div class="what">Sommario</div>
+         <div class="what_details"><%= post.summary %></div>
+      </div>
+   </div>
+</li>

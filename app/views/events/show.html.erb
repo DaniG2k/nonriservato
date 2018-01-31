@@ -1,0 +1,140 @@
+<% set_meta_tags(
+  title: @event.name,
+  description:  @event.description,
+  og: {
+  image: image_path(@event.image(:big))
+  })
+%>
+
+
+<div class="grid_12 heading clearfix">
+   <h1><%= @event.name %></h1>
+</div>
+
+<div class="grid_6 image_box">
+   <div class="image_group">
+      <%= image_tag @event.image(:big) %>
+      <div class="date_time"><%= l(@event.date_begun, :format => :long) %>  <%= "- #{l(@event.date_ended, :format => :long)}" unless @event.date_ended.nil?  %></div>      
+   </div>
+   
+   <% if @event.project %>
+   <div class="from_project clearfix">
+      <%= link_to image_tag(@event.project.image(:mini)), project_path(@event.project) %>
+      <div class="text">un evento del progetto<br>
+      <%= link_to @event.project.name, project_path(@event.project) %></div>
+   </div>
+   <% end %>
+   
+</div>
+
+<div class="grid_6 where_box">
+   <div class="map">
+      <%= gmaps({
+          "map_options" => {  "zoom" => 12, 
+                              "auto_zoom" => false,
+                              :raw => '{ panControl: false,
+                                       zoomControl: false,
+                                       mapTypeControl: false,
+                                       scaleControl: false,
+                                       streetViewControl: false,
+                                       overviewMapControl: false,
+                                       draggable: false,
+                                       scrollwheel: false}'
+                              },
+          "markers" => { "data" => @markers }
+          }) %>
+          
+          <div class="address"><%= @event.address %></div>
+          <div class="zone"><%= @event.zone.empty? ? "tutta la città" : "municipio #{@event.zone}" %></div>
+   </div>
+   
+   <div class="urls">
+      <% if @event.url %><span>web:</span> <%= link_to @event.url.split("//").last, ensure_url(@event.url), :target => "_blank" %><br><% end %>
+      <% if @event.facebook_event_url %><span>fb:</span> <%= link_to @event.facebook_event_url.split("//").last, ensure_url(@event.facebook_event_url), :target => "_blank" %><% end %>
+   </div>
+</div>
+
+<div class="grid_8 event_description">
+   <%= markdown_d @event.description %>
+</div>
+
+
+<div class="grid_4">
+   <div class="info_box">
+      orari: <%= @event.time %><br>
+      <%= @event.address %><br><br>
+      Per info: <%= link_to @event.email, "mailto:#{@event.email}" %><br>
+      <%= "Tel: #{@event.tel_1}" unless @event.tel_1.blank? %> <%= "// #{@event.tel_2}" unless @event.tel_2.blank? %>
+   </div>
+   
+   <div class="share_box">
+         <div id="fb-root"></div>
+         <script>(function(d, s, id) {
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) return;
+           js = d.createElement(s); js.id = id;
+           js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1&appId=141832835841718";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));</script>
+      	<div class="fb-like" data-send="false" data-layout="box_count" data-width="450" data-show-faces="true"></div>
+			<div class="tw-like">
+			  <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a>
+           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
+			<g:plusone size="tall"></g:plusone>
+			<script type="text/javascript">
+           window.___gcfg = {lang: 'it'};
+
+           (function() {
+             var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+             po.src = 'https://apis.google.com/js/plusone.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+           })();
+         </script>
+   </div>
+   
+   <% if admin? %>
+   <div class="admin_box">
+      <%= link_to "modifica evento", edit_admin_event_path(@event), :class => "edit_object" %>
+      
+      <%= form_for (@event) do |f| %>
+               
+         <%= f.check_box :highlighted, {checked: @event.highlighted?}    %>
+         <%= f.label     :highlighted, "Homepage"    %>
+         
+         <%= f.label       :weight, "ordine:" %>
+	      <%= f.text_field  :weight, :value => @event.highlight.try("weight"), :style => "width:20px" %>
+	      <br>
+
+         <%= f.submit 'aggiorna' %>
+
+      <% end %>
+   </div>
+   <% end %>
+   
+   
+   <%= render "shared/partners" %>
+   
+</div>
+
+
+
+<div class="grid_12">
+   
+<% unless @events.blank? %>
+   <div class="sort_bar">
+      <span>Prossimi eventi:</span> 
+   </div>
+   <%= render "events/event" %>   
+<% end %>
+
+<% unless @projects.blank? %>
+   <div class="sort_bar">
+      <span>Questo evento fa parte di un progetto più grande:</span> 
+   </div>
+   <%= render "projects/project" %>      
+<% end %>
+
+</div>
+
+

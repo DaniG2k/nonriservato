@@ -1,0 +1,30 @@
+<%= form_for @page do |f| %>
+
+  <% if @page.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@page.errors.count, "error") %> prohibited this event from being saved:</h2>
+
+      <ul>
+      <% @page.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <%= f.hidden_field :slug %>
+
+  <p>
+    <%= f.label :title, "title", :class => "required" %>
+    <%= f.text_field :title %>
+  </p>
+  
+  <p>
+    <%= f.label :text, "Text", :class => "required" %>
+    <%= f.text_area :text, :style => "height:400px;width:100%" %>
+  </p>
+  
+  <p>
+    <%= f.submit @page.new_record? ? "Crea" : "Aggiorna" %>
+  </p>
+<% end %>

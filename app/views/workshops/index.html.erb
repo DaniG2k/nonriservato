@@ -1,0 +1,27 @@
+<div class="grid_12">
+   <div class="banner_projects">
+      <%= image_tag "banner_progetti.jpg", :title => "workshop" %>
+      <div>laboratori creativi</div>
+   </div>
+   
+   <% desc = "Grazie alle molte professionalità presenti al suo interno, **Non Riservato** crea, produce, distribuisce contenuti culturali, creativi e ludici all’insegna della socializzazione e del coinvolgimento attivo di un pubblico trasversale.
+   **Commissiona** o **acquista** uno dei prodotti culturali di **Non Riservato**!    
+ Per informazioni: info@nonriservato.net" %>
+   
+   <div class="intro">
+       <%= markdown_d desc %>
+    </div>
+    
+    
+   <div class="sort_bar">
+     <span>Ordina per:</span> 
+     <%= sort_link @search, :date, "Data", default_order: :desc %> //
+     <%= sort_link @search, :name, "Nome" %> //
+      
+   </div>
+   
+   <%= render "workshops/workshop" %>
+</div>
+<div class="grid_12 pagination">
+    <%= paginate @workshops %>
+</div>

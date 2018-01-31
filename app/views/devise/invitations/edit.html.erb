@@ -1,0 +1,16 @@
+<div class="grid_7 admin">
+   <h1 class="o_1">Conferma la tua iscrizione</h1>
+
+<%= semantic_form_for (resource), :as => resource_name, :url => invitation_path(resource_name), :html => {:autocomplete => "off", :method => :put}   do |f| %>
+
+ <%= f.inputs do %>
+      <%= f.input :invitation_token, :as => :hidden  %>
+      <%= f.input :name,         :label =>"Nome dell'organizzazione", :wrapper_html => {:class => ""} %>
+      <%= f.input :password,  :wrapper_html => {:class => "half float first"},  :input_html =>{:autocomplete => "off"} %>
+      <%= f.input :password_confirmation,  :wrapper_html => {:class => "half float"} %>
+      <%= f.input :definition,  :wrapper_html => {:class => "clearform"}, :hint => "La tua organizzazione in 150 caratteri", :placeholder => "es: Siamo uno studio misto.  Come l'insalata, ma più buoni." %>
+   
+ <% end %>
+ <%= f.actions %>
+<% end %>
+</div>

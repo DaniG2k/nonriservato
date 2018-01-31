@@ -1,0 +1,5 @@
+$(document).ready(function() {
+  <% if @hash_projects != {} %>
+      $("#event_project_id").tokenInput("add", {id: <%= @hash_projects["id"] %>, name: "<%= @hash_projects["name"] %>" });
+  <% end %>
+})

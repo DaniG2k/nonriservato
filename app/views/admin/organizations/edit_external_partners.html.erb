@@ -1,0 +1,18 @@
+<div class="grid_7">
+   <h1 class="o_5">I nostri partner istituzionali</h1>
+   
+
+    <%= semantic_form_for ([:admin, @organization]), :html => { :class => "clearfix"}, :url => {:action => "update_external_partners"} do |f| %>
+    <%= f.inputs do %>
+       <%= f.input :external_partner_ids,  :label =>"Partner Istituzionali", :hint => "Scrivi nella barra il nome e scegli il partner", :placeholder => "es: Fondazione Cariplo", :as => :string, :wrapper_html => {:class => 'right_hint '}  %>
+    <% end %>
+     <%= f.action :submit, :button_html => { :value => 'Salva' } %>
+  <% end %>
+  
+  <%= prepopulate_external_partners %>
+  
+  <p class="far_bottom">Non trovi un tuo partner istituzionale?  Forse non è stato ancora inserito da nessuno.<br>
+     <b><%= link_to "Clicca qui per aggiungerlo", new_admin_external_organization_path %></b>
+  </p>
+  
+</div>

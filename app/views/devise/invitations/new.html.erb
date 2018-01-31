@@ -1,0 +1,15 @@
+<div class="grid_7 admin">
+   <h1 class="o_1">Invita una nuova organizzazione</h1>
+
+<%= semantic_form_for (resource), :as => resource_name, :url => invitation_path(resource_name), :html => {:autocomplete => "off", :method => :post}   do |f| %>
+
+ <%= f.inputs do %>
+  
+       <% resource.class.invite_key_fields.each do |field| -%>
+        <%= f.input field, :hint => "Inserisci l'email dell'organizzazione a cui mandare l'invito"  %>
+      <% end -%>
+      
+ <% end %>
+ <%= f.action :submit, :button_html => { :value => 'Invita' } %>
+<% end %>
+</div>

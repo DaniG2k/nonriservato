@@ -1,0 +1,133 @@
+<div class="grid_12 main">
+   <div class="grid_2 alpha">
+      <div class="square_logo"><%= image_tag @organization.logo(:big_thumb) %></div>
+      
+      <div class="organization_name">
+         <%= @organization.name %>
+      </div>
+      <div class="o_element">
+         <%= @organization.address %>
+      </div>
+      <div class="o_element">
+         <%= @organization.telephone %>
+      </div>
+      <div class="o_element">
+         <%= link_to @organization.email, "mailto:#{@organization.email}" %>
+      </div>
+      
+      <% unless @organization.url.blank? %>
+      <div class="o_element">
+         <%= link_to @organization.url, ensure_url(@organization.url) %>
+      </div>
+      <% end %>
+      
+      <% unless @organization.twitter_name.blank? %>
+      <div class="o_element">
+         Twitter: <%= link_to "#{@organization.twitter_name}", "http://#{@organization.twitter_name}" %>
+      </div>
+      <% end %>
+      
+      <% unless @organization.facebook_url.blank? %>    
+      <div class="o_element">
+         <%= link_to "Facebook page", ensure_url(@organization.facebook_url) %>
+      </div>
+      <% end %>
+      
+      <% unless @organization.linkedin_url.blank? %>
+      <div class="o_element">
+         <%= link_to "Linkedin page", ensure_url(@organization.linkedin_url) %>
+      </div>
+      <% end %>    
+      
+      <%= link_to "modifica organizzazione", edit_admin_organization_path(@organization), :class => "edit_object" if admin? %>
+      
+   </div>
+
+   
+   <div class="grid_10 omega prefix_1">
+      <div class="summary">
+         <%= pluralize(@projects_count, 'progetto', 'progetti') %> <!-- // --> <%# pluralize(@events_count, 'evento', 'eventi') %>
+      </div>
+      
+      <h1><%= @organization.definition %></h1>
+
+      <div class="slider-container">
+         <ul id="slider">
+         	<% @organization.images.each do |i| %>
+         	<li><%= image_tag(i.data(:big)) %></li>
+         	<% end %>
+         </ul>
+      </div>
+
+      
+      <div class="shared_description no_line">
+         <%= markdown_d @organization.description %>
+      </div>
+      
+      <div class="tags">
+         <%= @organization.keywords %>
+      </div>
+      
+
+      
+      
+      
+      
+      
+      
+      
+      <%= gmaps({
+          "map_options" => {  "zoom" => 14, 
+                              "auto_zoom" => false,
+                              :raw => '{ panControl: true,
+                                       zoomControl: true,
+                                       mapTypeControl: true,
+                                       scaleControl: true,
+                                       streetViewControl: false,
+                                       overviewMapControl: true,
+                                       draggable: true,
+                                       scrollwheel: true}'
+                              },
+          "markers" => { "data" => @markers }
+          }) %>
+   </div>
+</div>   
+<div class="grid_12">   
+
+   <% if false %>
+   <%# unless @partners.blank? %>
+   <div class="sort_bar red">
+      <span>Partner - Non Riservato</span> 
+   </div>
+   <%= render :partial => "organizations/organization_thumb", :collection => @partners %>   
+   <% end %>
+
+   <% if false %>
+   <%# unless @external_partners.blank? %>
+   <div class="sort_bar red">
+      <span>Partner Istituzionali</span> 
+   </div>
+   <%= render :partial => "external_organizations/external_organization_thumb", :collection => @external_partners %>   
+   <% end %>
+
+   <% unless @projects.blank? %>
+   <div class="sort_bar red">
+      <span>Progetti</span> 
+   </div>
+   <%= render "projects/project" %>      
+   <% end %>
+
+   <% if false %>
+   <%# unless @events.blank? %>
+   <div class="sort_bar">
+      <span>Prossimi eventi</span> 
+   </div>
+   <%= render "events/event" %>   
+   <% end %>
+   
+
+
+
+
+</div>
+

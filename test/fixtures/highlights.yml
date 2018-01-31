@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  weight: 1
+  highlightable_id: 1
+  highlightable_type: MyString
+
+two:
+  weight: 1
+  highlightable_id: 1
+  highlightable_type: MyString

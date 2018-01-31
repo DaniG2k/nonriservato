@@ -1,0 +1,17 @@
+<div class="grid_12 contacts page">
+   <div class="banner_projects">
+       <%= image_tag "banner_organizzazioni.jpg", :title => "organizzazioni" %>
+   </div>
+</div>
+
+<div class="grid_12">
+   <h1><%= @page.title %></h1>
+   
+   <div class="page_main">
+      <%= markdown_d @page.text %>
+   </div>
+   
+   <div class="admin_box">
+     <%= link_to("modifica questa pagina", edit_page_path(@page), class: "edit_object") if admin? %>
+   </div>
+</div>

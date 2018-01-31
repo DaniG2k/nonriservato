@@ -1,0 +1,16 @@
+  <%= semantic_form_for ([:admin, @external_organization])   do |f| %>
+    <%= f.inputs do %>
+    
+      <% unless @external_organization.new_record? %>
+         <div class="square_logo">
+            <%= image_tag @external_organization.logo(:mini) %>
+         </div>
+      <% end %>
+      <%= f.input :logo,             :label =>"Carica logo", :wrapper_html => {:class => "float half #{"first" if @external_organization.new_record?}"} %>
+      <%= f.input :name,             :label =>"Nome dell'organizzazione", :wrapper_html => {:class => "clearform"} %>
+      <%= f.input :url,              :label =>"Sito web",     :placeholder => "es: www.fondazionecariplo.it", :wrapper_html => {:class => ''} %>
+      
+    <% end %>
+     <%= f.action :submit, :button_html => { :value => 'Salva' } %>
+  <% end %>
+          

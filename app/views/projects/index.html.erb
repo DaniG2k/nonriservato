@@ -1,0 +1,20 @@
+<div class="grid_12">
+   <div class="banner_projects">
+      <%= image_tag "banner_progetti.jpg", :title => "progetti" %>
+      <div>progetti non riservati</div>
+   </div>
+   
+   <div class="sort_bar">
+      <span>Filtra per tipologia:</span> 
+      <% @project_categories.each do |pc| %>
+        <%= link_to "#{pc.name}", projects_path(q: {project_category_id_eq: pc.id}) %>
+      <% end %>
+      <%= link_to "tutti", projects_path(q: {project_category_id_neq: 1}) %>
+   </div>
+
+   
+   <%= render "projects/project" %>
+</div>
+<div class="grid_12 pagination">
+    <%= paginate @projects %>
+</div>

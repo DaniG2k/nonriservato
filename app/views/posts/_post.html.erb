@@ -1,0 +1,13 @@
+<% @posts.each_slice(2) do |row| %>
+  <div class="grid_12 alpha">
+  <% row.each_with_index do |p, i| %>
+     <!-- <div class="post_element clearfix big #{"first" if i ==0 }"> -->
+     <div class="post_element clearfix big grid_6 <%= i == 0 ? "alpha" : "omega" %>">
+        <div class="date"><%= l(p.date_published, :format => :long) if p.date_published %></div>
+        <div class="title"><%= link_to p.title, (admin_namespace? ? edit_admin_post_path(p) : post_path(p)) %><%=  %></div>
+        <%= link_to (image_tag p.image("medium"), :title => "#{p.title}"), (admin_namespace? ? edit_admin_post_path(p) : post_path(p)) %>
+        <div class="summary"><%= p.summary %> <%= link_to "Continua...", (admin_namespace? ? edit_admin_post_path(p) : post_path(p)), :class => "continue" %></div>
+     </div>
+  <% end %>
+  </div>  
+<% end %>

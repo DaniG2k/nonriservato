@@ -1,0 +1,20 @@
+<% array_of_colors = ["color_1", "color_2", "color_3", "color_4", "color_5", "color_6"] %>
+<% @projects.each_slice(2) do |row| %>
+   <% row.each_with_index do |p, i| %>
+      <% color = p.project_category_id == 1 ? "color_1" : "color_2" %>
+      <div class="grid_6 <%= i == 0 ? "alpha" : "omega" %>">
+      <%= link_to (admin_namespace? ? edit_admin_project_path(p) : project_path(p)), :class => "project_element #{"last" if i == 1} #{color}" do %>
+         <%= image_tag p.image("medium"), :title => "#{p.name}" %>
+         <!-- <div class="year"><%= p.date_begun.year %></div> -->
+         <div class="title"><%= p.name unless p.nil? %></div>
+         <!-- <div class="zone">zona <%= p.zone unless p.nil? %></div> -->
+         <!-- <div class="active"><%= p.active ? "attivo" : "archiviato"  %></div> -->
+   
+         <p class="description"><%= p.definition unless p.nil? %></p>
+   
+         <!-- <div class="who">chi lo fa?</div>
+         <div class="who_details"><%= p.organization.name unless p.organization.nil? %></div> -->
+      <% end %>
+      </div>
+   <% end %>
+<% end %>

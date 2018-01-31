@@ -1,0 +1,13 @@
+<% unless @partners.blank? %>
+<div class="partner_list">
+   <h4>Un progetto di</h4>
+   <%= render :partial => "organizations/organization_small", :collection => @partners %>
+</div>
+<% end %>
+
+<% unless @external_partners.blank? %>
+<div class="partner_list">
+   <h4>Partner Istituzionali</h4>
+   <%= render :partial => "external_organizations/external_organization_small", :collection => @external_partners %>
+<% end %>
+</div>

@@ -1,0 +1,45 @@
+<% set_meta_tags(
+  title: @post.title,
+  description:  @post.summary,
+  og: {
+  image: image_path(@post.image(:featured))
+  })
+%>
+
+<div class="grid_9">
+   
+   <div class="post_element clearfix big single">
+      <div class="title"><%= @post.title %></div>
+      <div class="date"><%= l(@post.date_published, :format => :long) %></div>
+
+      <%= image_tag @post.image("show"), :title => "#{@post.title}" %>
+      <div class="body"><%= markdown_d @post.body %> </div>
+   </div>
+
+   <%= link_to "<--- Torna al blog...", posts_path, :class => "back" %>
+
+</div>
+
+<div class="grid_3">
+   
+   
+   <% if admin? %>
+   <div class="admin_box">
+      <%= link_to "modifica post", edit_admin_post_path(@post), :class => "edit_object" %>
+      
+      <%= form_for (@post) do |f| %>
+               
+         <%= f.check_box :highlighted, {checked: @post.highlighted?}    %>
+         <%= f.label     :highlighted, "Homepage"    %>
+         
+         <%= f.label       :weight, "ordine:" %>
+	      <%= f.text_field  :weight, :value => @post.highlight.try("weight"), :style => "width:20px" %>
+	      <br>
+
+         <%= f.submit 'aggiorna' %>
+
+      <% end %>
+   </div>
+   <% end %>
+   
+</div>

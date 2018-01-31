@@ -1,0 +1,71 @@
+<!-- <div class="grid_12">
+   <div class="banner_eventi">
+      <%# image_tag "test_cartina_eventi.jpg", :title => "eventi" %>
+      <%# gmaps({
+          "map_options" => {  "zoom" => 12, 
+                              "auto_zoom" => true,
+                              "auto_adjust" => true,
+                              :raw => '{ panControl: true,
+                                       zoomControl: true,
+                                       mapTypeControl: true,
+                                       scaleControl: true,
+                                       streetViewControl: false,
+                                       overviewMapControl: true,
+                                       draggable: true,
+                                       scrollwheel: true}'
+                              },
+          "markers" => { "data" => @markers, "options" => { "do_clustering" => true, "clusterer_maxZoom" => 12 } }
+          }) %>
+          
+      <script type="text/javascript">
+      </script>    
+
+      <div class="events">eventi non riservati</div>
+      <div class="where">dove?</div>
+   </div> -->
+
+ <!-- <div id="slider" class="grid_12">
+    <ul class="bxslider">
+    <% @highlights.each do |h| %>
+       <%= render :partial => "events/featured_event", :locals => { :event => h.get_parent, :h => h, :hos => @highlights} if (h.highlightable_type == "Event" && !h.get_parent.nil?) %>
+    <% end %>
+    </ul>
+ </div> -->
+
+<div class="grid_12">
+   <div class="banner_projects">
+      <%= image_tag "banner_calendario.jpg", :title => "calendario" %>
+      <div>calendario</div>
+   </div>
+
+
+
+
+
+   <!-- <div class="sort_bar">
+      <span>Cerca:</span> 
+      <%# sort_link @search, :date_begun, "Data", default_order: :desc %> //
+      <%# sort_link @search, :name, "Nome" %> //
+      <%# sort_link @search, :zone, "Zona" %> //
+   </div> -->
+   
+   <div class="sort_bar">
+      <span>Cerca:</span>
+      
+      <%= search_form_for @search do |f| %>
+         <%= f.search_field :name_cont %>
+      <% end %>
+      
+      
+   </div>
+   
+   
+   
+   
+   <%= render "events/event" %>
+   
+  
+</div>
+<div class="grid_12 pagination">
+    <%= paginate @events %>
+</div>

@@ -1,0 +1,67 @@
+	<div class="container_12" id="footer">
+	   <div class="grid_12 dotted_line"></div>
+	   
+     <div class="grid_4 about">
+        <h4>info</h4>
+        <p>Associazione Promozione Sociale<br>
+        <strong>Non Riservato</strong><br>
+        Via Marsala 8, 20121 Milano<br>
+        C.F. 97707020158<br>
+        <a href="mailto:info@nonriservato.net">info@nonriservato.net</a></p>
+        
+     </div>
+	 
+     <div class="grid_4 map">
+        <h4>sostienici!</h4>
+        <p> <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+	 <input type="hidden" name="cmd" value="_s-xclick">
+	 <input type="hidden" name="hosted_button_id" value="KWK5DQHAA83UQ">
+	 <input type="image" src="https://www.paypalobjects.com/it_IT/IT/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal è il metodo rapido e sicuro per pagare e farsi pagare online.">
+	 <img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+	 </form>
+	 oppure inviaci un bonifico con la causale "erogazione liberale" a queste coordinate: 
+	 IBAN: IT 73 E033 5901 6001 0000 0133 194 BIC: BCITITMX C/O: Banca Prossima intestato a: APS NON RISERVATO
+        </p>
+     </div>
+	 
+	 
+	   	   
+      <!-- <div class="grid_4 map">
+         <div class="clearfix">
+            <h4>mappa del sito</h4>
+         </div>
+         <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="/events">eventi</a></li>
+            <li><a href="/projects">progetti</a></li>
+            <li><a href="/organizations">organizzazioni</a></li>
+            <li><a href="/posts">blog</a></li>
+         </ul>
+      </div> -->
+
+
+      <!-- <div class="grid_4 social omega">
+         <h4>social</h4>
+         <ul>
+            <li><a href="http://eepurl.com/zXnZ5">newsletter</a></li>
+            <li><a href="http://www.facebook.com/pages/NON-Riservato/438274402925876" target="_blank">facebook</a></li>
+         </ul>
+      </div> -->
+      
+      <div class="grid_4 donations">
+         <!-- <div class="clearfix">
+            <h4>Con il contributo di:</h4>
+         </div> -->
+         
+         <%= link_to (image_tag "logo_cariplo.gif", :class => "cariplo"), "http://www.fondazionecariplo.it" %>
+         <%= link_to (image_tag "logo_comune_milano2.jpg", :class => "comune"), "https://www.comune.milano.it" %>
+      </div>      
+
+      
+      <div class="grid_12 bottom">
+         <%= image_tag "logo_icon.png", :title => "logo" %>
+         <span>NON RISERVATO - UNA PIATTAFORMA CONDIVISA DI ORGANIZZAZIONI CHE DECIDONO DI CAMBIARE L’AMBIENTE URBANO IN CUI VIVONO</span><br>
+         <span class="credits">credits: brand identity by <%= link_to "Edizioni Perpetua", "http://www.edizioniperpetua.it" %>, web-design and development by <%= link_to "Focus Innovazione Sociale", "http://www.focuscoop.it" %></span>
+      </div>
+	</div>
+	<%= yield :scripts %>

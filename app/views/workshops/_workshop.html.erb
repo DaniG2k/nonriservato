@@ -1,0 +1,18 @@
+<% array_of_colors = ["color_1", "color_2", "color_3", "color_4", "color_5", "color_6"] %>
+<% @workshops.each_slice(2) do |row| %>
+   <% row.each_with_index do |w, i| %>
+      <% color = "color_3" %>
+      <div class="grid_6 <%= i == 0 ? "alpha" : "omega" %>">
+      <%= link_to (admin_namespace? ? edit_admin_workshop_path(w) : workshop_path(w)), :class => "workshop_element #{"last" if i == 1} #{color}" do %>
+         <%= image_tag w.image("medium"), :title => "#{w.name}" %>
+         <div class="year"><%= w.date_begun.year unless w.date_begun.nil? %></div>
+         <div class="title"><%= w.name unless w.nil? %></div>
+         
+      
+   
+         <p class="description"><%= w.definition unless w.nil? %></p>
+   
+      <% end %>
+      </div>
+   <% end %>
+<% end %>

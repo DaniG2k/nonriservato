@@ -1,0 +1,11 @@
+<p>Ciao <%= @resource.email %>!</p>
+
+<p>Qualcuno ti ha invitato su <%= root_url %>, puoi accettare questo invito dal link qua sotto.</p>
+
+<p><%= link_to 'Accetta invito', accept_organization_invitation_url(@resource, :invitation_token => @resource.invitation_token) %></p>
+
+<p>Se non vuoi accettare l'invito, puoi semplicemente ignorare questa email.<br />
+Il tuo account non sarà creato finché non accederai attraverso il link qui sopra e sceglierai una password.
+</p>
+
+Lo staff di NonRiservato

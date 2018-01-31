@@ -1,0 +1,4 @@
+<%= link_to ensure_url(external_organization_small.url), :class => "organization_as_list clearfix", :target => "_blank" do %>
+   <div class="square_logo small"><%= image_tag(external_organization_small.logo(:small_thumb)) %></div>
+   <div class="name"><%= external_organization_small.name %></div>
+<% end %>

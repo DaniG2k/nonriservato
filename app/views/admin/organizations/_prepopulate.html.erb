@@ -1,0 +1,18 @@
+$(document).ready(function() {
+  <% if @hash_partners.size > 0 %>
+    <% @hash_partners.each do |jp| %>
+      if ( $( "#project_partner_ids" ).length ) {
+         $("#project_partner_ids").tokenInput("add", {id: <%= jp["id"] %>, name: "<%= jp["name"] %>" });
+      }
+
+      if ( $( "#event_event_partner_ids" ).length ) {
+         $("#event_event_partner_ids").tokenInput("add", {id: <%= jp["id"] %>, name: "<%= jp["name"] %>" });
+      }
+
+      if ( $( "#workshop_workshop_partner_ids" ).length ) {
+         $("#workshop_workshop_partner_ids").tokenInput("add", {id: <%= jp["id"] %>, name: "<%= jp["name"] %>" });
+      }      
+
+    <% end %>
+  <% end %>
+})

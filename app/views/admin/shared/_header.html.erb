@@ -1,0 +1,8 @@
+<div class="grid_12">
+   <h1>Dashboard</h1>
+   <ol class="nav">
+   	<% admin_nav_order.each_with_index do |nav, i| %>
+       <li class="<%= "right" if (i == (admin_nav_order.count - 1) || i == (admin_nav_order.count - 2) || i == (admin_nav_order.count - 3)) %>"><a href="/admin/<%= nav.first %>" class="<%= "o_#{i+1}" %><%= is_active?(nav.first) %>"><%= nav.last %></a></li>
+   	<% end %>
+   </ol>
+</div>

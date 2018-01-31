@@ -1,0 +1,7 @@
+$(document).ready(function() {
+  <% if @hash_external_partners.size > 0 %>
+    <% @hash_external_partners.each do |jp| %>
+      $("#organization_external_partner_ids").tokenInput("add", {id: <%= jp["id"] %>, name: "<%= jp["name"] %>" });
+    <% end %>
+  <% end %>
+})

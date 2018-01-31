@@ -1,0 +1,47 @@
+<div class="grid_12">
+   <div class="banner_organizzazioni">
+      <%= image_tag "banner_organizzazioni.jpg", :title => "organizzazioni" %>
+      <div>organizzazioni non riservate</div>
+   </div>
+   
+   <% desc = "**Non Riservato** è un network a vocazione produttiva che raccoglie associazioni, cooperative, professionisti e imprese che fanno della creatività uno strumento di trasformazione urbana e sociale. Promuove processi innovativi attraverso la collaborazione e la sinergia tra i propri aderenti e le comunità negli spazi pubblici. 
+   L’APS **Non riservato**, formalmente costituita nel dicembre 2014, è il frutto di un processo partecipato che ha coinvolto attivamente i 16 soci fondatori, curiosi di sperimentare nuovi modelli organizzativi e di produzione muovendo da modalità operative quali lo **sharing, la partecipazione del basso, la sostenibilità ambientale** e **sociale**. 
+
+   Le sue incursioni sono rivolte alla riconquista della città da parte del pubblico, ma la rete **Non Riservato** è anche un laboratorio di sperimentazione per nuovi modelli di cooperazione tra realtà che ne fanno parte, una struttura condivisa stabile, capace al tempo stesso di salvaguardare autonomie progettuali dei partner.  Mira a migliorare il rapporto tra organizzazioni creative, mercato e istituzioni, valorizzando i ruoli professionali, incrementando le capacità presenti all’interno delle organizzazioni sui temi della **sostenibilità** e la **rigenerazione urbana e sociale**, la **progettazione** e la **gestione di **interventi creativi**, **urbanistici** e ** sociali**, attraverso lo scambio di competenze e la realizzazione di cicli formativi ad hoc.
+
+   **Non Riservato** è una **rete aperta all’ingresso di nuovi partner** che, indipendentemente dai linguaggi utilizzati, ne condividano filosofia e gli obiettivi. 
+
+   Essere **soci ordinari** di **Non Riservato** significa partecipare a un esperimento di innovazione sociale e professionale, proporre progetti e adottare quelli degli altri, confrontarsi in un ambiente stimolante con professionalità differenti, intervenire agli appuntamenti formativi, condividere spazi e strumenti di lavoro, come quelli della sua. E perché no? Fare qualcosa di bello per Milano divertendosi!
+
+   Vuoi saperne di più? Esplora i profili dei soci **Non Riservato**, leggi il suo [**Manifesto**](http://www.nonriservato.net/pages/manifesto), scarica lo statuto e, naturalmente, contattaci! Scrivi a info@nonriservato.net. 
+
+   Sei un imprenditore, un cittadino, un’associazione e desideri sostenere **Non Riservato** e prendere parte al suo progetto per Milano senza diventarne socio ordinario? Scopri come fare sulle pagine [**Sostienici**](http://www.nonriservato.net/pages/support-us).
+   " %>
+   
+   
+<% desc =   "La Rete Non Riservato è un laboratorio di sperimentazione per nuovi modelli di cooperazione tra le realtà che ne fanno parte, una struttura condivisa stabile, capace al tempo stesso di salvaguardare autonomie progettuali dei partner. Mira a migliorare il rapporto tra organizzazioni creative, mercato e istituzioni, valorizzando i ruoli professionali, incrementando le capacità presenti all’interno delle organizzazioni sui temi della sostenibilità e la rigenerazione urbana e sociale, la progettazione e la gestione di interventi creativi, urbanistici e sociali, attraverso lo scambio di competenze e la realizzazione di cicli formativi ad hoc.
+
+   Non Riservato è una Rete aperta all’ingresso di nuovi partner che, indipendentemente dai linguaggi utilizzati, ne condividano filosofia e obiettivi.
+
+   Essere soci ordinari di Non Riservato significa partecipare a un esperimento di innovazione sociale e professionale, proporre progetti e adottare quelli degli altri, confrontarsi in un ambiente stimolante con professionalità differenti, intervenire agli appuntamenti formativi, e perché no? Fare qualcosa di bello per Milano divertendosi!
+" %>
+   
+   
+   
+   
+   
+   
+   
+   
+   <div class="intro">
+      <%= markdown_d desc %>
+   </div>
+   
+   
+   <div class="sort_bar">
+      <span>Ordina per:</span> <%= sort_link @search, :name, "Nome" %>
+   </div>
+   
+   <%= render "organizations/organization" %>
+   
+</div>

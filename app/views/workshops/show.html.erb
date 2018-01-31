@@ -1,0 +1,58 @@
+<% set_meta_tags(
+  title: @workshop.name,
+  description:  @workshop.definition,
+  og: {
+  image: image_path(@workshop.images[0].data(:big))
+  })
+%>
+
+<div class="grid_12">
+   <div class="clearfix heading">
+      <h1><%= @workshop.name %></h1>
+      <div class="date"><%= l(@workshop.date_begun, :format => :long) %> <%= (@workshop.date_ended.blank? || @workshop.date_ended > Date.today) ? "> Oggi (Attivo)" : ("> " + l(@workshop.date_ended, :format => :long) + " (archiviato)") %></div>
+   </div>
+   <div class="grid_9 alpha">
+      <div class="shared_definition"><%= @workshop.definition %></div>
+   </div>
+</div>
+
+<div class="grid_9">
+   <%# image_tag @workshop.image(:big) %>
+   
+   <div class="slider-container">
+      <ul id="slider">
+      	<% @workshop.images.each do |i| %>
+      	<li><%= image_tag(i.data(:big)) %></li>
+      	<% end %>
+      </ul>
+   </div>
+   
+   <div class="shared_description">
+      <%= markdown_d @workshop.description %>
+   </div>
+</div>
+
+<div class="grid_3 sidebar">
+   <%= link_to "modifica workshop", edit_admin_workshop_path(@workshop), :class => "edit_object" if admin? %>
+   
+   <% if @workshop.url.size > 0 %>
+   <p>
+      <strong>web</strong>: <%= link_to @workshop.url.split("//").last, ensure_url(@workshop.url), :target => "_blank" %>
+   </p>
+   <% end %>
+   
+   <% if false %>
+   un progetto <span>di</span><br>
+   <%= link_to organization_path(@workshop.organization) do %>
+      <%= @workshop.organization.name %>
+      <div class="square_logo o_image">
+         <%= image_tag @workshop.organization.logo(:big_thumb) %>
+      </div>
+   <% end %>
+   <% end %>
+   
+   <%# render "shared/partners" %>
+   
+</div>
+
+

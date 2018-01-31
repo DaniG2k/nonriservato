@@ -1,0 +1,2 @@
+module ExternalPartnershipsHelper
+end

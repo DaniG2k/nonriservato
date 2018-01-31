@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  address: MyString
+  url: MyString
+  date_begun: 2013-03-04
+  date_ended: 2013-03-04
+  active: false
+
+two:
+  name: MyString
+  description: MyText
+  address: MyString
+  url: MyString
+  date_begun: 2013-03-04
+  date_ended: 2013-03-04
+  active: false

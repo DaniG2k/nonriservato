@@ -1,0 +1,10 @@
+<% @posts.each do |p| %>
+   <%= link_to (admin_namespace? ? edit_admin_post_path(p) : post_path(p)), :class => "post_element clearfix" do %>
+      <div class="date"><%= l(p.date_published, :format => :long) %></div>
+      
+      <%= image_tag p.image("thumb"), :title => "#{p.title}" %>
+      
+      <div class="summary"><%= p.summary %></div>
+
+   <% end %>
+<% end %>

@@ -1,0 +1,22 @@
+  <%= semantic_form_for ([:admin, @post]) do |f| %>
+    <%= f.inputs do %>
+      <%= f.input :title,              :label =>"Titolo",               :placeholder => "Titolo del post", :wrapper_html => {:class => ''} %>
+      <%= f.input :date_published,     :label =>"Data",        :as => :ui_date_picker, :wrapper_html => {:class => 'quarter'} %>
+      <%# f.input :summary,            :label =>"Introduzione di 200 caratteri",     :input_html => { :class => 'autogrow', :rows => 3  }  %>      
+      <%= f.input :summary,            :label =>"Introduzione di 200 caratteri",     :input_html => { :class => 'autogrow', :rows => 3, :counter => 200 },  :wrapper_html => {:class => 'countit'}  %>
+
+
+      <%= f.input :body,               :label =>"Testo dell'articolo",  :input_html => { :class => 'autogrow', :rows => 20  }  %>
+
+      <% unless @post.image.nil? %>
+         <div class="post_image">
+            <%= image_tag @post.image(:thumb) %>
+         </div>
+      <% end %>
+      
+      <%= f.input :image, :label =>"Carica immagine", :wrapper_html => {:class => "half extra_hint"} %>
+ 
+    <% end %>
+     <%= f.action :submit, :button_html => { :value => 'Salva' } %>
+  <% end %>
+  <%= button_to "Cancella", admin_post_path(@post), :class => "delete", method: :delete, :confirm => "Sei sicuro di voler cancellare questo post?", :method => :delete unless @post.new_record?  %>

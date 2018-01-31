@@ -1,0 +1,40 @@
+<li>
+   <div class="big_featured">
+      <div class="grid_9 img_box alpha">
+         <%= link_to (image_tag event.image(:featured)), event_path(event) %>
+         <div class="title"><%= event.name %></div>
+         <div class="zone"><%= event.zone.empty? ? "tutta la città" : "municipio #{event.zone}" %></div>
+         <div class="date"><%= l(event.date_begun, :format => :long) %></div>
+      </div>
+      <div class="grid_3 info_box omega">
+         <div class="what">Cos'è?</div>
+         <div class="what_details"><%= event.definition %></div>
+         <div class="where">Dov'è?  </div>
+         <div class="where_details"><%= event.address %></div>
+         
+         
+         
+         <div class="map">
+            <%= gmaps({
+                "map_options" => {  "zoom" => 13, 
+                                    "auto_zoom" => false, 
+                                    :id => "event_#{event.id}", 
+                                    :class => "rails_map",
+                                    :raw => '{ panControl: false,
+                                             zoomControl: false,
+                                             mapTypeControl: false,
+                                             scaleControl: false,
+                                             streetViewControl: false,
+                                             overviewMapControl: false,
+                                             draggable: false,
+                                             scrollwheel: false}'
+                                    },
+                "markers" => { "data" => event.to_gmaps4rails, "options" => { "picture" => "/assets/event_marker.png", "width" => 32, "length" => 36 }},
+                :scripts => h.is_last_event?(hos) ? :true : :none,
+                :last_map => h.is_last_event?(hos) ? true : false
+                }) %>
+
+         </div>
+      </div>
+   </div>
+</li>

@@ -1,0 +1,4 @@
+<%= link_to ensure_url(external_organization_thumb.url), :class => "organization_as_thumb #{last_if_module(external_organization_thumb_counter,6) }", :target => "_blank" do %>
+   <div class="square_logo"><%= image_tag(external_organization_thumb.logo(:big_thumb)) %></div>
+   <div class="name"><%= external_organization_thumb.name %></div>
+<% end %>

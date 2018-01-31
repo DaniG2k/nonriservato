@@ -1,0 +1,4 @@
+<%= link_to organization_path(organization_thumb), :class => "organization_as_thumb #{last_if_module(organization_thumb_counter,6) }" do %>
+   <div class="square_logo"><%= image_tag(organization_thumb.logo(:big_thumb)) %></div>
+   <div class="name"><%= organization_thumb.name %></div>
+<% end %>

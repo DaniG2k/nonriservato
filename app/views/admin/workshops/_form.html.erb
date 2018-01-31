@@ -1,0 +1,42 @@
+<%= semantic_form_for ([:admin, @workshop]) do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :name,         :label =>"Nome",    :hint => "Clicca sul nome per cambiare", :placeholder => "nome del workshop" %>
+    
+    <%= f.input :workshop_partner_ids,  :label =>"Partner", :hint => "Scrivi nella barra il nome e scegli il partner", :placeholder => "es: Ex-Voto", :as => :string, :multiple => true, :wrapper_html => {:class => 'right_hint'}  %>
+    
+    <%= f.input :date_begun,         :label =>"Data Inizio",    :as => :ui_date_picker, :wrapper_html => {:class => 'quarter'} %>
+    <%= f.input :date_ended,         :label =>"Data Fine",    :as => :ui_date_picker, :wrapper_html => {:class => 'quarter'} %>
+    <%= f.input :active,       :label =>"Attivo/Archiviato",    :as => :select, :collection => {"attivo" => true, "archiviato" => false}, :include_blank => false, :wrapper_html => {:class => 'half float first'} %>
+    <%= f.input :zone,         :label =>"Zona",    :as => :select, :collection => @zone_collection, :include_blank => false, :wrapper_html => {:class => 'half float'} %>
+    <%= f.input :definition,   :label =>"Definizione",    :hint => "Il tuo progetto in 150 caratteri", :input_html => { :class => 'autogrow', :rows => 2, :counter => 150 },  :wrapper_html => {:class => 'countit clearform'}  %>
+    <%= f.input :description,  :label =>"Descrizione",    :hint => "Gli obiettivi, la storia, ecc...", :input_html => { :class => 'autogrow', :rows => 8  }  %>
+    <%= f.input :url,          :label =>"Sito internet",  :placeholder => "es: http://www.focuscoop.it", :wrapper_html => {:class => 'divider_below'} %>
+
+    
+    <% unless f.object.new_record? %>
+       <%= f.inputs "Images" do %>
+          <%= f.semantic_fields_for :images do |image| %>
+             <% unless image.object.new_record? %>
+                <%= link_to (image_tag image.object.data(:mini)), admin_image_path(image.object.id), :class => "upload_image", method: :delete unless image.object.id.nil?  %>
+             <% else %>
+                <%# link_to (image_tag image.object.data(:mini), :class => "upload_image"), admin_image_path(image.object.id), method: :delete unless image.object.id.nil?  %>
+                <%= image.input :data, :label =>"Carica una nuova immagine", :wrapper_html => {:class => "image_field"}, :name => "Add Image" %>
+             <% end %>
+          <% end %>
+       <% end %>
+    <% end %>
+    
+    <% if f.object.pdf_download.blank? %>
+      <%= f.input :pdf_download, :label => 'PDF del workshop', :as => :file  %> 
+    <% else %>
+      <%= link_to "Scarica PDF #{f.object.pdf_download_file_name}", f.object.pdf_download.url %>
+      
+    <% end %>
+
+
+
+  <% end %>
+  <%# f.actions %>
+  <%= f.action :submit, :button_html => { :value => 'Salva' } %>
+<% end %>
+<%= button_to "Cancella", admin_project_path(@workshop), :class => "delete", method: :delete, :confirm => "Sei sicuro di voler cancellare questo workshop?", :method => :delete unless @workshop.new_record?  %>

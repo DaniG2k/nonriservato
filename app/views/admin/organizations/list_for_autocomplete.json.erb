@@ -1,0 +1,5 @@
+<%= 
+  @organizations.collect {|organization| 
+    {:id => organization.id, :name => organization.name}
+  }.to_json
+%>

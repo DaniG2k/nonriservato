@@ -1,0 +1,44 @@
+
+featurable:
+fare in modo che quando cancelli un evento/post che è featured venga cancellato anche l'highlight
+   
+      controllare che dependent destroy funzioni
+
+
+
+
+
+------------
+
+
+
+
+da fare:
+**********************************
+
+
+aggiungere validazioni ai vari modelli
+
+
+
+I pulsanti sul fondo (mappa del sito) o non sono attivi o rimandano ad altri contenuti.
+
+testata pagina post
+testata pagina organizzazioni
+testata pagina progetti
+
+*****************
+
+------
+
+ricerca
+
+cambiare testo mail di invito a organizzazione
+
+controllare che ci siano tutti i metodi nei controller del backend
+   destroy
+   update
+   edit...
+
+
+   -> accetta invito form -> tasto salva
