@@ -8,23 +8,23 @@ class PagesController < ApplicationController
         @page = Page.new(:slug => params[:slug])
         render :action => :new
       else
-        redirect_to '/404'        
+        redirect_to '/404'
       end
-    end    
+    end
   end
-  
+
   def create
     @page = Page.new(params[:page])
     if @page.save
       redirect_to "/pages/#{@page.slug}"
     end
   end
-  
+
   def edit
     @page = Page.find_by_id(params[:id])
   end
-  
-  def update    
+
+  def update
     @page = Page.find(params[:id])
     @page.update_attributes(params[:page])
 
@@ -32,13 +32,6 @@ class PagesController < ApplicationController
       redirect_to "/pages/#{@page.slug}", notice: 'page was successfully created.'
     else
       render action: "edit"
-    end    
-    
+    end
   end
-  
-  
-  
-  
-  
-
 end

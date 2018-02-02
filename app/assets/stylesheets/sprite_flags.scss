@@ -1,0 +1,3159 @@
+.sprite_flag_30x19, .wd_flag.sprite_flag_30x19 {
+  background-image: image-url("sprite_flag_30x19.png");
+}
+
+.retinaDisplay {
+  .sprite_flag_30x19, .wd_flag.sprite_flag_30x19 {
+    background-image: image-url("sprite_flag_30x19@2x.png");
+    background-size: auto 380px;
+  }
+}
+
+.sprite_flag_40x25, .wd_flag.sprite_flag_40x25 {
+  background-image: image-url("sprite_flag_40x25.png");
+}
+
+.retinaDisplay {
+  .sprite_flag_40x25, .wd_flag.sprite_flag_40x25 {
+    background-image: image-url("sprite_flag_40x25@2x.png");
+    background-size: auto 500px;
+  }
+}
+
+.sprite_flag_30x19 {
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.wd_flag {
+  display: block;
+  &.inline_flag {
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+  }
+  &.sprite_flag_30x19 {
+    background-repeat: no-repeat;
+    background-position: -270px -76px;
+    width: 30px;
+    height: 19px;
+  }
+  &.sprite_flag_40x25 {
+    background-position: -360px -100px;
+    width: 40px;
+    height: 25px;
+  }
+}
+
+.retinaDisplay .wd-flag {
+  background-repeat: no-repeat;
+  background-size: auto 210px;
+  display: block;
+  &.SA5 {
+    background-position: -5px -5px;
+    width: 120px;
+    height: 80px;
+  }
+  &.CN16 {
+    background-position: -135px -5px;
+    width: 120px;
+    height: 80px;
+  }
+  &.FR29 {
+    background-position: -5px -95px;
+    width: 120px;
+    height: 80px;
+  }
+  &.GB31 {
+    background-position: -135px -95px;
+    width: 120px;
+    height: 80px;
+  }
+  &.IT86 {
+    background-position: -5px -185px;
+    width: 120px;
+    height: 80px;
+  }
+  &.PT55 {
+    background-position: -135px -185px;
+    width: 120px;
+    height: 80px;
+  }
+  &.RO61 {
+    background-position: -265px -5px;
+    width: 120px;
+    height: 80px;
+  }
+  &.RU262 {
+    background-position: -265px -95px;
+    width: 120px;
+    height: 80px;
+  }
+  &.ES67 {
+    background-position: -265px -185px;
+    width: 120px;
+    height: 80px;
+  }
+}
+
+.wd-flag {
+  background-repeat: no-repeat;
+  display: block;
+  &.SA5 {
+    background-position: -5px -5px;
+    width: 60px;
+    height: 40px;
+  }
+  &.CN16 {
+    background-position: -75px -5px;
+    width: 60px;
+    height: 40px;
+  }
+  &.FR29 {
+    background-position: -5px -55px;
+    width: 60px;
+    height: 40px;
+  }
+  &.GB31 {
+    background-position: -75px -55px;
+    width: 60px;
+    height: 40px;
+  }
+  &.IT86 {
+    background-position: -5px -105px;
+    width: 60px;
+    height: 40px;
+  }
+  &.PT55 {
+    background-position: -75px -105px;
+    width: 60px;
+    height: 40px;
+  }
+  &.RO61 {
+    background-position: -145px -5px;
+    width: 60px;
+    height: 40px;
+  }
+  &.RU262 {
+    background-position: -145px -55px;
+    width: 60px;
+    height: 40px;
+  }
+  &.ES67 {
+    background-position: -145px -105px;
+    width: 60px;
+    height: 40px;
+  }
+}
+
+.sprite_flag_30x19.AD4, .wd_flag.sprite_flag_30x19.AD4 {
+  background-position: 0 0;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.AE238, .wd_flag.sprite_flag_30x19.AE238 {
+  background-position: -30px 0;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.AF2, .wd_flag.sprite_flag_30x19.AF2 {
+  background-position: -60px 0;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.AG197, .wd_flag.sprite_flag_30x19.AG197 {
+  background-position: -90px 0;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.AI209, .wd_flag.sprite_flag_30x19.AI209 {
+  background-position: -120px 0;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.AL87, .wd_flag.sprite_flag_30x19.AL87 {
+  background-position: -150px 0;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.AM266, .wd_flag.sprite_flag_30x19.AM266 {
+  background-position: -180px 0;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.AO133, .wd_flag.sprite_flag_30x19.AO133 {
+  background-position: -210px 0;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.AQ180, .wd_flag.sprite_flag_30x19.AQ180 {
+  background-position: -240px 0;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.AR6, .wd_flag.sprite_flag_30x19.AR6 {
+  background-position: -270px 0;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.AS148, .wd_flag.sprite_flag_30x19.AS148 {
+  background-position: -300px 0;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.AT8, .wd_flag.sprite_flag_30x19.AT8 {
+  background-position: -330px 0;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.AU7, .wd_flag.sprite_flag_30x19.AU7 {
+  background-position: 0 -19px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.AW212, .wd_flag.sprite_flag_30x19.AW212 {
+  background-position: -30px -19px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.AX-1, .wd_flag.sprite_flag_30x19.AX-1 {
+  background-position: -60px -19px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.AZ268, .wd_flag.sprite_flag_30x19.AZ268 {
+  background-position: -90px -19px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BA274, .wd_flag.sprite_flag_30x19.BA274 {
+  background-position: -120px -19px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BB118, .wd_flag.sprite_flag_30x19.BB118 {
+  background-position: -150px -19px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BD130, .wd_flag.sprite_flag_30x19.BD130 {
+  background-position: -180px -19px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BD97, .wd_flag.sprite_flag_30x19.BD97 {
+  background-position: -210px -19px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BE9, .wd_flag.sprite_flag_30x19.BE9 {
+  background-position: -240px -19px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BF142, .wd_flag.sprite_flag_30x19.BF142 {
+  background-position: -270px -19px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BG12, .wd_flag.sprite_flag_30x19.BG12 {
+  background-position: -300px -19px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BH169, .wd_flag.sprite_flag_30x19.BH169 {
+  background-position: -330px -19px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BI25, .wd_flag.sprite_flag_30x19.BI25 {
+  background-position: 0 -38px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BJ158, .wd_flag.sprite_flag_30x19.BJ158 {
+  background-position: -30px -38px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BL-1, .wd_flag.sprite_flag_30x19.BL-1 {
+  background-position: -60px -38px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BM207, .wd_flag.sprite_flag_30x19.BM207 {
+  background-position: -90px -38px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BN125, .wd_flag.sprite_flag_30x19.BN125 {
+  background-position: -120px -38px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BO10, .wd_flag.sprite_flag_30x19.BO10 {
+  background-position: -150px -38px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BQ-1, .wd_flag.sprite_flag_30x19.BQ-1 {
+  background-position: -180px -38px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BR11, .wd_flag.sprite_flag_30x19.BR11 {
+  background-position: -210px -38px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BS160, .wd_flag.sprite_flag_30x19.BS160 {
+  background-position: -240px -38px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BV280, .wd_flag.sprite_flag_30x19.BV280 {
+  background-position: -270px -38px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BW98, .wd_flag.sprite_flag_30x19.BW98 {
+  background-position: -300px -38px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BY264, .wd_flag.sprite_flag_30x19.BY264 {
+  background-position: -330px -38px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.BZ198, .wd_flag.sprite_flag_30x19.BZ198 {
+  background-position: 0 -57px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CA13, .wd_flag.sprite_flag_30x19.CA13 {
+  background-position: -30px -57px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CC281, .wd_flag.sprite_flag_30x19.CC281 {
+  background-position: -60px -57px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CD18, .wd_flag.sprite_flag_30x19.CD18 {
+  background-position: -90px -57px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CF143, .wd_flag.sprite_flag_30x19.CF143 {
+  background-position: -120px -57px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CG145, .wd_flag.sprite_flag_30x19.CG145 {
+  background-position: -150px -57px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CH71, .wd_flag.sprite_flag_30x19.CH71 {
+  background-position: -180px -57px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CI146, .wd_flag.sprite_flag_30x19.CI146 {
+  background-position: -210px -57px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CK237, .wd_flag.sprite_flag_30x19.CK237 {
+  background-position: -240px -57px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CL15, .wd_flag.sprite_flag_30x19.CL15 {
+  background-position: -270px -57px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CM119, .wd_flag.sprite_flag_30x19.CM119 {
+  background-position: -300px -57px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CN16, .wd_flag.sprite_flag_30x19.CN16 {
+  background-position: -330px -57px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CO17, .wd_flag.sprite_flag_30x19.CO17 {
+  background-position: 0 -76px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CR19, .wd_flag.sprite_flag_30x19.CR19 {
+  background-position: -30px -76px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CU20, .wd_flag.sprite_flag_30x19.CU20 {
+  background-position: -60px -76px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CV188, .wd_flag.sprite_flag_30x19.CV188 {
+  background-position: -90px -76px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CW-1, .wd_flag.sprite_flag_30x19.CW-1 {
+  background-position: -120px -76px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CX282, .wd_flag.sprite_flag_30x19.CX282 {
+  background-position: -150px -76px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CY101, .wd_flag.sprite_flag_30x19.CY101 {
+  background-position: -180px -76px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.CZ275, .wd_flag.sprite_flag_30x19.CZ275 {
+  background-position: -210px -76px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.DE94, .wd_flag.sprite_flag_30x19.DE94 {
+  background-position: -240px -76px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.DEFAULT, .wd_flag.sprite_flag_30x19.DEFAULT {
+  background-position: -270px -76px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.DJ113, .wd_flag.sprite_flag_30x19.DJ113 {
+  background-position: -300px -76px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.DK21, .wd_flag.sprite_flag_30x19.DK21 {
+  background-position: -330px -76px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.DM192, .wd_flag.sprite_flag_30x19.DM192 {
+  background-position: 0 -95px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.DO63, .wd_flag.sprite_flag_30x19.DO63 {
+  background-position: -30px -95px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.DZ3, .wd_flag.sprite_flag_30x19.DZ3 {
+  background-position: -60px -95px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.EC24, .wd_flag.sprite_flag_30x19.EC24 {
+  background-position: -90px -95px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.EE257, .wd_flag.sprite_flag_30x19.EE257 {
+  background-position: -120px -95px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.EG23, .wd_flag.sprite_flag_30x19.EG23 {
+  background-position: -150px -95px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.EH166, .wd_flag.sprite_flag_30x19.EH166 {
+  background-position: -180px -95px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.ER277, .wd_flag.sprite_flag_30x19.ER277 {
+  background-position: -210px -95px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.ES67, .wd_flag.sprite_flag_30x19.ES67 {
+  background-position: -240px -95px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.ET26, .wd_flag.sprite_flag_30x19.ET26 {
+  background-position: -270px -95px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.EUR, .wd_flag.sprite_flag_30x19.EUR {
+  background-position: -300px -95px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.FI28, .wd_flag.sprite_flag_30x19.FI28 {
+  background-position: -330px -95px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.FJ161, .wd_flag.sprite_flag_30x19.FJ161 {
+  background-position: 0 -114px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.FK190, .wd_flag.sprite_flag_30x19.FK190 {
+  background-position: -30px -114px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.FM215, .wd_flag.sprite_flag_30x19.FM215 {
+  background-position: -60px -114px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.FO204, .wd_flag.sprite_flag_30x19.FO204 {
+  background-position: -90px -114px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.FR29, .wd_flag.sprite_flag_30x19.FR29 {
+  background-position: -120px -114px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GA157, .wd_flag.sprite_flag_30x19.GA157 {
+  background-position: -150px -114px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GB31, .wd_flag.sprite_flag_30x19.GB31 {
+  background-position: -180px -114px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GD156, .wd_flag.sprite_flag_30x19.GD156 {
+  background-position: -210px -114px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GE267, .wd_flag.sprite_flag_30x19.GE267 {
+  background-position: -240px -114px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GF123, .wd_flag.sprite_flag_30x19.GF123 {
+  background-position: -270px -114px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GG201, .wd_flag.sprite_flag_30x19.GG201 {
+  background-position: -300px -114px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GH112, .wd_flag.sprite_flag_30x19.GH112 {
+  background-position: -330px -114px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GI102, .wd_flag.sprite_flag_30x19.GI102 {
+  background-position: 0 -133px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GL200, .wd_flag.sprite_flag_30x19.GL200 {
+  background-position: -30px -133px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GM164, .wd_flag.sprite_flag_30x19.GM164 {
+  background-position: -60px -133px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GN137, .wd_flag.sprite_flag_30x19.GN137 {
+  background-position: -90px -133px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GP214, .wd_flag.sprite_flag_30x19.GP214 {
+  background-position: -120px -133px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GQ167, .wd_flag.sprite_flag_30x19.GQ167 {
+  background-position: -150px -133px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GR32, .wd_flag.sprite_flag_30x19.GR32 {
+  background-position: -180px -133px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GS283, .wd_flag.sprite_flag_30x19.GS283 {
+  background-position: -210px -133px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GT33, .wd_flag.sprite_flag_30x19.GT33 {
+  background-position: -240px -133px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GU154, .wd_flag.sprite_flag_30x19.GU154 {
+  background-position: -270px -133px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GW185, .wd_flag.sprite_flag_30x19.GW185 {
+  background-position: -300px -133px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.GY159, .wd_flag.sprite_flag_30x19.GY159 {
+  background-position: -330px -133px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.HK103, .wd_flag.sprite_flag_30x19.HK103 {
+  background-position: 0 -152px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.HM284, .wd_flag.sprite_flag_30x19.HM284 {
+  background-position: -30px -152px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.HN35, .wd_flag.sprite_flag_30x19.HN35 {
+  background-position: -60px -152px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.HR261, .wd_flag.sprite_flag_30x19.HR261 {
+  background-position: -90px -152px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.HT34, .wd_flag.sprite_flag_30x19.HT34 {
+  background-position: -120px -152px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.HU77, .wd_flag.sprite_flag_30x19.HU77 {
+  background-position: -150px -152px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.ID129, .wd_flag.sprite_flag_30x19.ID129 {
+  background-position: -180px -152px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.IE40, .wd_flag.sprite_flag_30x19.IE40 {
+  background-position: -210px -152px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.IL182, .wd_flag.sprite_flag_30x19.IL182 {
+  background-position: -240px -152px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.IM203, .wd_flag.sprite_flag_30x19.IM203 {
+  background-position: -270px -152px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.IN114, .wd_flag.sprite_flag_30x19.IN114 {
+  background-position: -300px -152px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.IO245, .wd_flag.sprite_flag_30x19.IO245 {
+  background-position: -330px -152px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.IQ38, .wd_flag.sprite_flag_30x19.IQ38 {
+  background-position: 0 -171px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.IR39, .wd_flag.sprite_flag_30x19.IR39 {
+  background-position: -30px -171px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.IS41, .wd_flag.sprite_flag_30x19.IS41 {
+  background-position: -60px -171px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.IT86, .wd_flag.sprite_flag_30x19.IT86 {
+  background-position: -90px -171px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.JE202, .wd_flag.sprite_flag_30x19.JE202 {
+  background-position: -120px -171px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.JM82, .wd_flag.sprite_flag_30x19.JM82 {
+  background-position: -150px -171px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.JO122, .wd_flag.sprite_flag_30x19.JO122 {
+  background-position: -180px -171px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.JP88, .wd_flag.sprite_flag_30x19.JP88 {
+  background-position: -210px -171px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.KE116, .wd_flag.sprite_flag_30x19.KE116 {
+  background-position: -240px -171px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.KG270, .wd_flag.sprite_flag_30x19.KG270 {
+  background-position: -270px -171px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.KH135, .wd_flag.sprite_flag_30x19.KH135 {
+  background-position: -300px -171px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.KI194, .wd_flag.sprite_flag_30x19.KI194 {
+  background-position: -330px -171px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.KM176, .wd_flag.sprite_flag_30x19.KM176 {
+  background-position: 0 -190px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.KN195, .wd_flag.sprite_flag_30x19.KN195 {
+  background-position: -30px -190px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.KP74, .wd_flag.sprite_flag_30x19.KP74 {
+  background-position: -60px -190px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.KR84, .wd_flag.sprite_flag_30x19.KR84 {
+  background-position: -90px -190px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.KW126, .wd_flag.sprite_flag_30x19.KW126 {
+  background-position: -120px -190px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.KY211, .wd_flag.sprite_flag_30x19.KY211 {
+  background-position: -150px -190px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.KZ269, .wd_flag.sprite_flag_30x19.KZ269 {
+  background-position: -180px -190px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.LA136, .wd_flag.sprite_flag_30x19.LA136 {
+  background-position: -210px -190px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.LB95, .wd_flag.sprite_flag_30x19.LB95 {
+  background-position: -240px -190px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.LC199, .wd_flag.sprite_flag_30x19.LC199 {
+  background-position: -270px -190px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.LI90, .wd_flag.sprite_flag_30x19.LI90 {
+  background-position: -300px -190px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.LK85, .wd_flag.sprite_flag_30x19.LK85 {
+  background-position: -330px -190px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.LR44, .wd_flag.sprite_flag_30x19.LR44 {
+  background-position: 0 -209px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.LS89, .wd_flag.sprite_flag_30x19.LS89 {
+  background-position: -30px -209px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.LT259, .wd_flag.sprite_flag_30x19.LT259 {
+  background-position: -60px -209px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.LU92, .wd_flag.sprite_flag_30x19.LU92 {
+  background-position: -90px -209px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.LV258, .wd_flag.sprite_flag_30x19.LV258 {
+  background-position: -120px -209px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.LY45, .wd_flag.sprite_flag_30x19.LY45 {
+  background-position: -150px -209px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MA107, .wd_flag.sprite_flag_30x19.MA107 {
+  background-position: -180px -209px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MC91, .wd_flag.sprite_flag_30x19.MC91 {
+  background-position: -210px -209px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MD265, .wd_flag.sprite_flag_30x19.MD265 {
+  background-position: -240px -209px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.ME290, .wd_flag.sprite_flag_30x19.ME290 {
+  background-position: -270px -209px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MF-1, .wd_flag.sprite_flag_30x19.MF-1 {
+  background-position: -300px -209px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MG104, .wd_flag.sprite_flag_30x19.MG104 {
+  background-position: -330px -209px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MH217, .wd_flag.sprite_flag_30x19.MH217 {
+  background-position: 0 -228px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MK278, .wd_flag.sprite_flag_30x19.MK278 {
+  background-position: -30px -228px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.ML149, .wd_flag.sprite_flag_30x19.ML149 {
+  background-position: -60px -228px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MM83, .wd_flag.sprite_flag_30x19.MM83 {
+  background-position: -90px -228px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MN110, .wd_flag.sprite_flag_30x19.MN110 {
+  background-position: -120px -228px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MO59, .wd_flag.sprite_flag_30x19.MO59 {
+  background-position: -150px -228px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MP219, .wd_flag.sprite_flag_30x19.MP219 {
+  background-position: -180px -228px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MQ213, .wd_flag.sprite_flag_30x19.MQ213 {
+  background-position: -210px -228px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MR141, .wd_flag.sprite_flag_30x19.MR141 {
+  background-position: -240px -228px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MS208, .wd_flag.sprite_flag_30x19.MS208 {
+  background-position: -270px -228px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MT105, .wd_flag.sprite_flag_30x19.MT105 {
+  background-position: -300px -228px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MU128, .wd_flag.sprite_flag_30x19.MU128 {
+  background-position: -330px -228px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MV127, .wd_flag.sprite_flag_30x19.MV127 {
+  background-position: 0 -247px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MW56, .wd_flag.sprite_flag_30x19.MW56 {
+  background-position: -30px -247px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MX46, .wd_flag.sprite_flag_30x19.MX46 {
+  background-position: -60px -247px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MY106, .wd_flag.sprite_flag_30x19.MY106 {
+  background-position: -90px -247px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.MZ134, .wd_flag.sprite_flag_30x19.MZ134 {
+  background-position: -120px -247px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.NA206, .wd_flag.sprite_flag_30x19.NA206 {
+  background-position: -150px -247px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.NC253, .wd_flag.sprite_flag_30x19.NC253 {
+  background-position: -180px -247px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.NE150, .wd_flag.sprite_flag_30x19.NE150 {
+  background-position: -210px -247px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.NF285, .wd_flag.sprite_flag_30x19.NF285 {
+  background-position: -240px -247px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.NG117, .wd_flag.sprite_flag_30x19.NG117 {
+  background-position: -270px -247px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.NI47, .wd_flag.sprite_flag_30x19.NI47 {
+  background-position: -300px -247px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.NL50, .wd_flag.sprite_flag_30x19.NL50 {
+  background-position: -330px -247px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.NO48, .wd_flag.sprite_flag_30x19.NO48 {
+  background-position: 0 -266px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.NP115, .wd_flag.sprite_flag_30x19.NP115 {
+  background-position: -30px -266px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.NR109, .wd_flag.sprite_flag_30x19.NR109 {
+  background-position: -60px -266px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.NU205, .wd_flag.sprite_flag_30x19.NU205 {
+  background-position: -90px -266px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.NZ49, .wd_flag.sprite_flag_30x19.NZ49 {
+  background-position: -120px -266px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.OM163, .wd_flag.sprite_flag_30x19.OM163 {
+  background-position: -150px -266px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.PA51, .wd_flag.sprite_flag_30x19.PA51 {
+  background-position: -180px -266px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.PE53, .wd_flag.sprite_flag_30x19.PE53 {
+  background-position: -210px -266px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.PF225, .wd_flag.sprite_flag_30x19.PF225 {
+  background-position: -240px -266px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.PG186, .wd_flag.sprite_flag_30x19.PG186 {
+  background-position: -270px -266px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.PH27, .wd_flag.sprite_flag_30x19.PH27 {
+  background-position: -300px -266px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.PK36, .wd_flag.sprite_flag_30x19.PK36 {
+  background-position: -330px -266px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.PL54, .wd_flag.sprite_flag_30x19.PL54 {
+  background-position: 0 -285px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.PM248, .wd_flag.sprite_flag_30x19.PM248 {
+  background-position: -30px -285px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.PN175, .wd_flag.sprite_flag_30x19.PN175 {
+  background-position: -60px -285px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.PR220, .wd_flag.sprite_flag_30x19.PR220 {
+  background-position: -90px -285px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.PS279, .wd_flag.sprite_flag_30x19.PS279 {
+  background-position: -120px -285px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.PT55, .wd_flag.sprite_flag_30x19.PT55 {
+  background-position: -150px -285px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.PW216, .wd_flag.sprite_flag_30x19.PW216 {
+  background-position: -180px -285px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.PY52, .wd_flag.sprite_flag_30x19.PY52 {
+  background-position: -210px -285px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.QA168, .wd_flag.sprite_flag_30x19.QA168 {
+  background-position: -240px -285px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.RE247, .wd_flag.sprite_flag_30x19.RE247 {
+  background-position: -270px -285px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.RO61, .wd_flag.sprite_flag_30x19.RO61 {
+  background-position: -300px -285px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.RS289, .wd_flag.sprite_flag_30x19.RS289 {
+  background-position: -330px -285px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.RU262, .wd_flag.sprite_flag_30x19.RU262 {
+  background-position: 0 -304px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.RW151, .wd_flag.sprite_flag_30x19.RW151 {
+  background-position: -30px -304px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SA5, .wd_flag.sprite_flag_30x19.SA5 {
+  background-position: -60px -304px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SB191, .wd_flag.sprite_flag_30x19.SB191 {
+  background-position: -90px -304px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SC189, .wd_flag.sprite_flag_30x19.SC189 {
+  background-position: -120px -304px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SD70, .wd_flag.sprite_flag_30x19.SD70 {
+  background-position: -150px -304px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SE68, .wd_flag.sprite_flag_30x19.SE68 {
+  background-position: -180px -304px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SG147, .wd_flag.sprite_flag_30x19.SG147 {
+  background-position: -210px -304px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SH254, .wd_flag.sprite_flag_30x19.SH254 {
+  background-position: -240px -304px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SI260, .wd_flag.sprite_flag_30x19.SI260 {
+  background-position: -270px -304px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SJ286, .wd_flag.sprite_flag_30x19.SJ286 {
+  background-position: -300px -304px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SK276, .wd_flag.sprite_flag_30x19.SK276 {
+  background-position: -330px -304px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SL153, .wd_flag.sprite_flag_30x19.SL153 {
+  background-position: 0 -323px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SM37, .wd_flag.sprite_flag_30x19.SM37 {
+  background-position: -30px -323px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SN152, .wd_flag.sprite_flag_30x19.SN152 {
+  background-position: -60px -323px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SO66, .wd_flag.sprite_flag_30x19.SO66 {
+  background-position: -90px -323px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SR124, .wd_flag.sprite_flag_30x19.SR124 {
+  background-position: -120px -323px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SS-1, .wd_flag.sprite_flag_30x19.SS-1 {
+  background-position: -150px -323px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.ST187, .wd_flag.sprite_flag_30x19.ST187 {
+  background-position: -180px -323px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SV64, .wd_flag.sprite_flag_30x19.SV64 {
+  background-position: -210px -323px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SX-1, .wd_flag.sprite_flag_30x19.SX-1 {
+  background-position: -240px -323px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SY65, .wd_flag.sprite_flag_30x19.SY65 {
+  background-position: -270px -323px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.SZ138, .wd_flag.sprite_flag_30x19.SZ138 {
+  background-position: -300px -323px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.TC210, .wd_flag.sprite_flag_30x19.TC210 {
+  background-position: -330px -323px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.TD144, .wd_flag.sprite_flag_30x19.TD144 {
+  background-position: 0 -342px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.TF183, .wd_flag.sprite_flag_30x19.TF183 {
+  background-position: -30px -342px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.TG155, .wd_flag.sprite_flag_30x19.TG155 {
+  background-position: -60px -342px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.TH72, .wd_flag.sprite_flag_30x19.TH72 {
+  background-position: -90px -342px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.TJ272, .wd_flag.sprite_flag_30x19.TJ272 {
+  background-position: -120px -342px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.TK236, .wd_flag.sprite_flag_30x19.TK236 {
+  background-position: -150px -342px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.TL287, .wd_flag.sprite_flag_30x19.TL287 {
+  background-position: -180px -342px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.TM273, .wd_flag.sprite_flag_30x19.TM273 {
+  background-position: -210px -342px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.TN75, .wd_flag.sprite_flag_30x19.TN75 {
+  background-position: -240px -342px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.TO162, .wd_flag.sprite_flag_30x19.TO162 {
+  background-position: -270px -342px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.TR76, .wd_flag.sprite_flag_30x19.TR76 {
+  background-position: -300px -342px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.TT120, .wd_flag.sprite_flag_30x19.TT120 {
+  background-position: -330px -342px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.TV193, .wd_flag.sprite_flag_30x19.TV193 {
+  background-position: -360px 0;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.TW22, .wd_flag.sprite_flag_30x19.TW22 {
+  background-position: -360px -19px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.TZ57, .wd_flag.sprite_flag_30x19.TZ57 {
+  background-position: -360px -38px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.UA263, .wd_flag.sprite_flag_30x19.UA263 {
+  background-position: -360px -57px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.UG132, .wd_flag.sprite_flag_30x19.UG132 {
+  background-position: -360px -76px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.UM178, .wd_flag.sprite_flag_30x19.UM178 {
+  background-position: -360px -95px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.US69, .wd_flag.sprite_flag_30x19.US69 {
+  background-position: -360px -114px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.UY80, .wd_flag.sprite_flag_30x19.UY80 {
+  background-position: -360px -133px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.UZ271, .wd_flag.sprite_flag_30x19.UZ271 {
+  background-position: -360px -152px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.VA93, .wd_flag.sprite_flag_30x19.VA93 {
+  background-position: -360px -171px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.VC196, .wd_flag.sprite_flag_30x19.VC196 {
+  background-position: -360px -190px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.VE81, .wd_flag.sprite_flag_30x19.VE81 {
+  background-position: -360px -209px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.VG249, .wd_flag.sprite_flag_30x19.VG249 {
+  background-position: -360px -228px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.VI221, .wd_flag.sprite_flag_30x19.VI221 {
+  background-position: -360px -247px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.VN62, .wd_flag.sprite_flag_30x19.VN62 {
+  background-position: -360px -266px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.VU121, .wd_flag.sprite_flag_30x19.VU121 {
+  background-position: -360px -285px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.WF218, .wd_flag.sprite_flag_30x19.WF218 {
+  background-position: -360px -304px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.WS131, .wd_flag.sprite_flag_30x19.WS131 {
+  background-position: -360px -323px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.YE42, .wd_flag.sprite_flag_30x19.YE42 {
+  background-position: -360px -342px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.YT226, .wd_flag.sprite_flag_30x19.YT226 {
+  background-position: 0 -361px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.ZA78, .wd_flag.sprite_flag_30x19.ZA78 {
+  background-position: -30px -361px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.ZM58, .wd_flag.sprite_flag_30x19.ZM58 {
+  background-position: -60px -361px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_30x19.ZW73, .wd_flag.sprite_flag_30x19.ZW73 {
+  background-position: -90px -361px;
+  width: 30px;
+  height: 19px;
+}
+
+.sprite_flag_40x25.AD4, .wd_flag.sprite_flag_40x25.AD4 {
+  background-position: 0 0;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.AE238, .wd_flag.sprite_flag_40x25.AE238 {
+  background-position: -40px 0;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.AF2, .wd_flag.sprite_flag_40x25.AF2 {
+  background-position: -80px 0;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.AG197, .wd_flag.sprite_flag_40x25.AG197 {
+  background-position: -120px 0;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.AI209, .wd_flag.sprite_flag_40x25.AI209 {
+  background-position: -160px 0;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.AL87, .wd_flag.sprite_flag_40x25.AL87 {
+  background-position: -200px 0;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.AM266, .wd_flag.sprite_flag_40x25.AM266 {
+  background-position: -240px 0;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.AO133, .wd_flag.sprite_flag_40x25.AO133 {
+  background-position: -280px 0;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.AQ180, .wd_flag.sprite_flag_40x25.AQ180 {
+  background-position: -320px 0;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.AR6, .wd_flag.sprite_flag_40x25.AR6 {
+  background-position: -360px 0;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.AS148, .wd_flag.sprite_flag_40x25.AS148 {
+  background-position: -400px 0;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.AT8, .wd_flag.sprite_flag_40x25.AT8 {
+  background-position: -440px 0;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.AU7, .wd_flag.sprite_flag_40x25.AU7 {
+  background-position: 0 -25px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.AW212, .wd_flag.sprite_flag_40x25.AW212 {
+  background-position: -40px -25px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.AX-1, .wd_flag.sprite_flag_40x25.AX-1 {
+  background-position: -80px -25px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.AZ268, .wd_flag.sprite_flag_40x25.AZ268 {
+  background-position: -120px -25px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BA274, .wd_flag.sprite_flag_40x25.BA274 {
+  background-position: -160px -25px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BB118, .wd_flag.sprite_flag_40x25.BB118 {
+  background-position: -200px -25px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BD130, .wd_flag.sprite_flag_40x25.BD130 {
+  background-position: -240px -25px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BD97, .wd_flag.sprite_flag_40x25.BD97 {
+  background-position: -280px -25px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BE9, .wd_flag.sprite_flag_40x25.BE9 {
+  background-position: -320px -25px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BF142, .wd_flag.sprite_flag_40x25.BF142 {
+  background-position: -360px -25px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BG12, .wd_flag.sprite_flag_40x25.BG12 {
+  background-position: -400px -25px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BH169, .wd_flag.sprite_flag_40x25.BH169 {
+  background-position: -440px -25px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BI25, .wd_flag.sprite_flag_40x25.BI25 {
+  background-position: 0 -50px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BJ158, .wd_flag.sprite_flag_40x25.BJ158 {
+  background-position: -40px -50px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BL-1, .wd_flag.sprite_flag_40x25.BL-1 {
+  background-position: -80px -50px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BM207, .wd_flag.sprite_flag_40x25.BM207 {
+  background-position: -120px -50px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BN125, .wd_flag.sprite_flag_40x25.BN125 {
+  background-position: -160px -50px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BO10, .wd_flag.sprite_flag_40x25.BO10 {
+  background-position: -200px -50px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BQ-1, .wd_flag.sprite_flag_40x25.BQ-1 {
+  background-position: -240px -50px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BR11, .wd_flag.sprite_flag_40x25.BR11 {
+  background-position: -280px -50px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BS160, .wd_flag.sprite_flag_40x25.BS160 {
+  background-position: -320px -50px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BV280, .wd_flag.sprite_flag_40x25.BV280 {
+  background-position: -360px -50px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BW98, .wd_flag.sprite_flag_40x25.BW98 {
+  background-position: -400px -50px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BY264, .wd_flag.sprite_flag_40x25.BY264 {
+  background-position: -440px -50px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.BZ198, .wd_flag.sprite_flag_40x25.BZ198 {
+  background-position: 0 -75px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CA13, .wd_flag.sprite_flag_40x25.CA13 {
+  background-position: -40px -75px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CC281, .wd_flag.sprite_flag_40x25.CC281 {
+  background-position: -80px -75px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CD18, .wd_flag.sprite_flag_40x25.CD18 {
+  background-position: -120px -75px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CF143, .wd_flag.sprite_flag_40x25.CF143 {
+  background-position: -160px -75px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CG145, .wd_flag.sprite_flag_40x25.CG145 {
+  background-position: -200px -75px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CH71, .wd_flag.sprite_flag_40x25.CH71 {
+  background-position: -240px -75px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CI146, .wd_flag.sprite_flag_40x25.CI146 {
+  background-position: -280px -75px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CK237, .wd_flag.sprite_flag_40x25.CK237 {
+  background-position: -320px -75px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CL15, .wd_flag.sprite_flag_40x25.CL15 {
+  background-position: -360px -75px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CM119, .wd_flag.sprite_flag_40x25.CM119 {
+  background-position: -400px -75px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CN16, .wd_flag.sprite_flag_40x25.CN16 {
+  background-position: -440px -75px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CO17, .wd_flag.sprite_flag_40x25.CO17 {
+  background-position: 0 -100px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CR19, .wd_flag.sprite_flag_40x25.CR19 {
+  background-position: -40px -100px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CU20, .wd_flag.sprite_flag_40x25.CU20 {
+  background-position: -80px -100px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CV188, .wd_flag.sprite_flag_40x25.CV188 {
+  background-position: -120px -100px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CW-1, .wd_flag.sprite_flag_40x25.CW-1 {
+  background-position: -160px -100px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CX282, .wd_flag.sprite_flag_40x25.CX282 {
+  background-position: -200px -100px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CY101, .wd_flag.sprite_flag_40x25.CY101 {
+  background-position: -240px -100px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.CZ275, .wd_flag.sprite_flag_40x25.CZ275 {
+  background-position: -280px -100px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.DE94, .wd_flag.sprite_flag_40x25.DE94 {
+  background-position: -320px -100px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.DEFAULT, .wd_flag.sprite_flag_40x25.DEFAULT {
+  background-position: -360px -100px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.DJ113, .wd_flag.sprite_flag_40x25.DJ113 {
+  background-position: -400px -100px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.DK21, .wd_flag.sprite_flag_40x25.DK21 {
+  background-position: -440px -100px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.DM192, .wd_flag.sprite_flag_40x25.DM192 {
+  background-position: 0 -125px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.DO63, .wd_flag.sprite_flag_40x25.DO63 {
+  background-position: -40px -125px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.DZ3, .wd_flag.sprite_flag_40x25.DZ3 {
+  background-position: -80px -125px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.EC24, .wd_flag.sprite_flag_40x25.EC24 {
+  background-position: -120px -125px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.EE257, .wd_flag.sprite_flag_40x25.EE257 {
+  background-position: -160px -125px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.EG23, .wd_flag.sprite_flag_40x25.EG23 {
+  background-position: -200px -125px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.EH166, .wd_flag.sprite_flag_40x25.EH166 {
+  background-position: -240px -125px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.ER277, .wd_flag.sprite_flag_40x25.ER277 {
+  background-position: -280px -125px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.ES67, .wd_flag.sprite_flag_40x25.ES67 {
+  background-position: -320px -125px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.ET26, .wd_flag.sprite_flag_40x25.ET26 {
+  background-position: -360px -125px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.EUR, .wd_flag.sprite_flag_40x25.EUR {
+  background-position: -400px -125px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.FI28, .wd_flag.sprite_flag_40x25.FI28 {
+  background-position: -440px -125px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.FJ161, .wd_flag.sprite_flag_40x25.FJ161 {
+  background-position: 0 -150px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.FK190, .wd_flag.sprite_flag_40x25.FK190 {
+  background-position: -40px -150px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.FM215, .wd_flag.sprite_flag_40x25.FM215 {
+  background-position: -80px -150px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.FO204, .wd_flag.sprite_flag_40x25.FO204 {
+  background-position: -120px -150px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.FR29, .wd_flag.sprite_flag_40x25.FR29 {
+  background-position: -160px -150px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GA157, .wd_flag.sprite_flag_40x25.GA157 {
+  background-position: -200px -150px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GB31, .wd_flag.sprite_flag_40x25.GB31 {
+  background-position: -240px -150px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GD156, .wd_flag.sprite_flag_40x25.GD156 {
+  background-position: -280px -150px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GE267, .wd_flag.sprite_flag_40x25.GE267 {
+  background-position: -320px -150px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GF123, .wd_flag.sprite_flag_40x25.GF123 {
+  background-position: -360px -150px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GG201, .wd_flag.sprite_flag_40x25.GG201 {
+  background-position: -400px -150px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GH112, .wd_flag.sprite_flag_40x25.GH112 {
+  background-position: -440px -150px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GI102, .wd_flag.sprite_flag_40x25.GI102 {
+  background-position: 0 -175px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GL200, .wd_flag.sprite_flag_40x25.GL200 {
+  background-position: -40px -175px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GM164, .wd_flag.sprite_flag_40x25.GM164 {
+  background-position: -80px -175px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GN137, .wd_flag.sprite_flag_40x25.GN137 {
+  background-position: -120px -175px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GP214, .wd_flag.sprite_flag_40x25.GP214 {
+  background-position: -160px -175px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GQ167, .wd_flag.sprite_flag_40x25.GQ167 {
+  background-position: -200px -175px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GR32, .wd_flag.sprite_flag_40x25.GR32 {
+  background-position: -240px -175px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GS283, .wd_flag.sprite_flag_40x25.GS283 {
+  background-position: -280px -175px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GT33, .wd_flag.sprite_flag_40x25.GT33 {
+  background-position: -320px -175px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GU154, .wd_flag.sprite_flag_40x25.GU154 {
+  background-position: -360px -175px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GW185, .wd_flag.sprite_flag_40x25.GW185 {
+  background-position: -400px -175px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.GY159, .wd_flag.sprite_flag_40x25.GY159 {
+  background-position: -440px -175px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.HK103, .wd_flag.sprite_flag_40x25.HK103 {
+  background-position: 0 -200px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.HM284, .wd_flag.sprite_flag_40x25.HM284 {
+  background-position: -40px -200px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.HN35, .wd_flag.sprite_flag_40x25.HN35 {
+  background-position: -80px -200px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.HR261, .wd_flag.sprite_flag_40x25.HR261 {
+  background-position: -120px -200px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.HT34, .wd_flag.sprite_flag_40x25.HT34 {
+  background-position: -160px -200px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.HU77, .wd_flag.sprite_flag_40x25.HU77 {
+  background-position: -200px -200px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.ID129, .wd_flag.sprite_flag_40x25.ID129 {
+  background-position: -240px -200px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.IE40, .wd_flag.sprite_flag_40x25.IE40 {
+  background-position: -280px -200px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.IL182, .wd_flag.sprite_flag_40x25.IL182 {
+  background-position: -320px -200px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.IM203, .wd_flag.sprite_flag_40x25.IM203 {
+  background-position: -360px -200px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.IN114, .wd_flag.sprite_flag_40x25.IN114 {
+  background-position: -400px -200px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.IO245, .wd_flag.sprite_flag_40x25.IO245 {
+  background-position: -440px -200px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.IQ38, .wd_flag.sprite_flag_40x25.IQ38 {
+  background-position: 0 -225px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.IR39, .wd_flag.sprite_flag_40x25.IR39 {
+  background-position: -40px -225px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.IS41, .wd_flag.sprite_flag_40x25.IS41 {
+  background-position: -80px -225px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.IT86, .wd_flag.sprite_flag_40x25.IT86 {
+  background-position: -120px -225px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.JE202, .wd_flag.sprite_flag_40x25.JE202 {
+  background-position: -160px -225px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.JM82, .wd_flag.sprite_flag_40x25.JM82 {
+  background-position: -200px -225px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.JO122, .wd_flag.sprite_flag_40x25.JO122 {
+  background-position: -240px -225px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.JP88, .wd_flag.sprite_flag_40x25.JP88 {
+  background-position: -280px -225px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.KE116, .wd_flag.sprite_flag_40x25.KE116 {
+  background-position: -320px -225px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.KG270, .wd_flag.sprite_flag_40x25.KG270 {
+  background-position: -360px -225px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.KH135, .wd_flag.sprite_flag_40x25.KH135 {
+  background-position: -400px -225px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.KI194, .wd_flag.sprite_flag_40x25.KI194 {
+  background-position: -440px -225px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.KM176, .wd_flag.sprite_flag_40x25.KM176 {
+  background-position: 0 -250px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.KN195, .wd_flag.sprite_flag_40x25.KN195 {
+  background-position: -40px -250px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.KP74, .wd_flag.sprite_flag_40x25.KP74 {
+  background-position: -80px -250px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.KR84, .wd_flag.sprite_flag_40x25.KR84 {
+  background-position: -120px -250px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.KW126, .wd_flag.sprite_flag_40x25.KW126 {
+  background-position: -160px -250px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.KY211, .wd_flag.sprite_flag_40x25.KY211 {
+  background-position: -200px -250px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.KZ269, .wd_flag.sprite_flag_40x25.KZ269 {
+  background-position: -240px -250px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.LA136, .wd_flag.sprite_flag_40x25.LA136 {
+  background-position: -280px -250px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.LB95, .wd_flag.sprite_flag_40x25.LB95 {
+  background-position: -320px -250px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.LC199, .wd_flag.sprite_flag_40x25.LC199 {
+  background-position: -360px -250px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.LI90, .wd_flag.sprite_flag_40x25.LI90 {
+  background-position: -400px -250px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.LK85, .wd_flag.sprite_flag_40x25.LK85 {
+  background-position: -440px -250px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.LR44, .wd_flag.sprite_flag_40x25.LR44 {
+  background-position: 0 -275px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.LS89, .wd_flag.sprite_flag_40x25.LS89 {
+  background-position: -40px -275px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.LT259, .wd_flag.sprite_flag_40x25.LT259 {
+  background-position: -80px -275px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.LU92, .wd_flag.sprite_flag_40x25.LU92 {
+  background-position: -120px -275px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.LV258, .wd_flag.sprite_flag_40x25.LV258 {
+  background-position: -160px -275px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.LY45, .wd_flag.sprite_flag_40x25.LY45 {
+  background-position: -200px -275px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MA107, .wd_flag.sprite_flag_40x25.MA107 {
+  background-position: -240px -275px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MC91, .wd_flag.sprite_flag_40x25.MC91 {
+  background-position: -280px -275px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MD265, .wd_flag.sprite_flag_40x25.MD265 {
+  background-position: -320px -275px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.ME290, .wd_flag.sprite_flag_40x25.ME290 {
+  background-position: -360px -275px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MF-1, .wd_flag.sprite_flag_40x25.MF-1 {
+  background-position: -400px -275px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MG104, .wd_flag.sprite_flag_40x25.MG104 {
+  background-position: -440px -275px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MH217, .wd_flag.sprite_flag_40x25.MH217 {
+  background-position: 0 -300px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MK278, .wd_flag.sprite_flag_40x25.MK278 {
+  background-position: -40px -300px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.ML149, .wd_flag.sprite_flag_40x25.ML149 {
+  background-position: -80px -300px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MM83, .wd_flag.sprite_flag_40x25.MM83 {
+  background-position: -120px -300px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MN110, .wd_flag.sprite_flag_40x25.MN110 {
+  background-position: -160px -300px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MO59, .wd_flag.sprite_flag_40x25.MO59 {
+  background-position: -200px -300px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MP219, .wd_flag.sprite_flag_40x25.MP219 {
+  background-position: -240px -300px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MQ213, .wd_flag.sprite_flag_40x25.MQ213 {
+  background-position: -280px -300px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MR141, .wd_flag.sprite_flag_40x25.MR141 {
+  background-position: -320px -300px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MS208, .wd_flag.sprite_flag_40x25.MS208 {
+  background-position: -360px -300px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MT105, .wd_flag.sprite_flag_40x25.MT105 {
+  background-position: -400px -300px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MU128, .wd_flag.sprite_flag_40x25.MU128 {
+  background-position: -440px -300px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MV127, .wd_flag.sprite_flag_40x25.MV127 {
+  background-position: 0 -325px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MW56, .wd_flag.sprite_flag_40x25.MW56 {
+  background-position: -40px -325px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MX46, .wd_flag.sprite_flag_40x25.MX46 {
+  background-position: -80px -325px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MY106, .wd_flag.sprite_flag_40x25.MY106 {
+  background-position: -120px -325px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.MZ134, .wd_flag.sprite_flag_40x25.MZ134 {
+  background-position: -160px -325px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.NA206, .wd_flag.sprite_flag_40x25.NA206 {
+  background-position: -200px -325px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.NC253, .wd_flag.sprite_flag_40x25.NC253 {
+  background-position: -240px -325px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.NE150, .wd_flag.sprite_flag_40x25.NE150 {
+  background-position: -280px -325px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.NF285, .wd_flag.sprite_flag_40x25.NF285 {
+  background-position: -320px -325px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.NG117, .wd_flag.sprite_flag_40x25.NG117 {
+  background-position: -360px -325px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.NI47, .wd_flag.sprite_flag_40x25.NI47 {
+  background-position: -400px -325px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.NL50, .wd_flag.sprite_flag_40x25.NL50 {
+  background-position: -440px -325px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.NO48, .wd_flag.sprite_flag_40x25.NO48 {
+  background-position: 0 -350px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.NP115, .wd_flag.sprite_flag_40x25.NP115 {
+  background-position: -40px -350px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.NR109, .wd_flag.sprite_flag_40x25.NR109 {
+  background-position: -80px -350px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.NU205, .wd_flag.sprite_flag_40x25.NU205 {
+  background-position: -120px -350px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.NZ49, .wd_flag.sprite_flag_40x25.NZ49 {
+  background-position: -160px -350px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.OM163, .wd_flag.sprite_flag_40x25.OM163 {
+  background-position: -200px -350px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.PA51, .wd_flag.sprite_flag_40x25.PA51 {
+  background-position: -240px -350px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.PE53, .wd_flag.sprite_flag_40x25.PE53 {
+  background-position: -280px -350px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.PF225, .wd_flag.sprite_flag_40x25.PF225 {
+  background-position: -320px -350px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.PG186, .wd_flag.sprite_flag_40x25.PG186 {
+  background-position: -360px -350px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.PH27, .wd_flag.sprite_flag_40x25.PH27 {
+  background-position: -400px -350px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.PK36, .wd_flag.sprite_flag_40x25.PK36 {
+  background-position: -440px -350px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.PL54, .wd_flag.sprite_flag_40x25.PL54 {
+  background-position: 0 -375px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.PM248, .wd_flag.sprite_flag_40x25.PM248 {
+  background-position: -40px -375px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.PN175, .wd_flag.sprite_flag_40x25.PN175 {
+  background-position: -80px -375px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.PR220, .wd_flag.sprite_flag_40x25.PR220 {
+  background-position: -120px -375px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.PS279, .wd_flag.sprite_flag_40x25.PS279 {
+  background-position: -160px -375px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.PT55, .wd_flag.sprite_flag_40x25.PT55 {
+  background-position: -200px -375px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.PW216, .wd_flag.sprite_flag_40x25.PW216 {
+  background-position: -240px -375px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.PY52, .wd_flag.sprite_flag_40x25.PY52 {
+  background-position: -280px -375px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.QA168, .wd_flag.sprite_flag_40x25.QA168 {
+  background-position: -320px -375px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.RE247, .wd_flag.sprite_flag_40x25.RE247 {
+  background-position: -360px -375px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.RO61, .wd_flag.sprite_flag_40x25.RO61 {
+  background-position: -400px -375px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.RS289, .wd_flag.sprite_flag_40x25.RS289 {
+  background-position: -440px -375px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.RU262, .wd_flag.sprite_flag_40x25.RU262 {
+  background-position: 0 -400px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.RW151, .wd_flag.sprite_flag_40x25.RW151 {
+  background-position: -40px -400px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SA5, .wd_flag.sprite_flag_40x25.SA5 {
+  background-position: -80px -400px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SB191, .wd_flag.sprite_flag_40x25.SB191 {
+  background-position: -120px -400px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SC189, .wd_flag.sprite_flag_40x25.SC189 {
+  background-position: -160px -400px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SD70, .wd_flag.sprite_flag_40x25.SD70 {
+  background-position: -200px -400px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SE68, .wd_flag.sprite_flag_40x25.SE68 {
+  background-position: -240px -400px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SG147, .wd_flag.sprite_flag_40x25.SG147 {
+  background-position: -280px -400px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SH254, .wd_flag.sprite_flag_40x25.SH254 {
+  background-position: -320px -400px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SI260, .wd_flag.sprite_flag_40x25.SI260 {
+  background-position: -360px -400px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SJ286, .wd_flag.sprite_flag_40x25.SJ286 {
+  background-position: -400px -400px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SK276, .wd_flag.sprite_flag_40x25.SK276 {
+  background-position: -440px -400px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SL153, .wd_flag.sprite_flag_40x25.SL153 {
+  background-position: 0 -425px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SM37, .wd_flag.sprite_flag_40x25.SM37 {
+  background-position: -40px -425px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SN152, .wd_flag.sprite_flag_40x25.SN152 {
+  background-position: -80px -425px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SO66, .wd_flag.sprite_flag_40x25.SO66 {
+  background-position: -120px -425px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SR124, .wd_flag.sprite_flag_40x25.SR124 {
+  background-position: -160px -425px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SS-1, .wd_flag.sprite_flag_40x25.SS-1 {
+  background-position: -200px -425px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.ST187, .wd_flag.sprite_flag_40x25.ST187 {
+  background-position: -240px -425px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SV64, .wd_flag.sprite_flag_40x25.SV64 {
+  background-position: -280px -425px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SX-1, .wd_flag.sprite_flag_40x25.SX-1 {
+  background-position: -320px -425px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SY65, .wd_flag.sprite_flag_40x25.SY65 {
+  background-position: -360px -425px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.SZ138, .wd_flag.sprite_flag_40x25.SZ138 {
+  background-position: -400px -425px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.TC210, .wd_flag.sprite_flag_40x25.TC210 {
+  background-position: -440px -425px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.TD144, .wd_flag.sprite_flag_40x25.TD144 {
+  background-position: 0 -450px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.TF183, .wd_flag.sprite_flag_40x25.TF183 {
+  background-position: -40px -450px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.TG155, .wd_flag.sprite_flag_40x25.TG155 {
+  background-position: -80px -450px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.TH72, .wd_flag.sprite_flag_40x25.TH72 {
+  background-position: -120px -450px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.TJ272, .wd_flag.sprite_flag_40x25.TJ272 {
+  background-position: -160px -450px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.TK236, .wd_flag.sprite_flag_40x25.TK236 {
+  background-position: -200px -450px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.TL287, .wd_flag.sprite_flag_40x25.TL287 {
+  background-position: -240px -450px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.TM273, .wd_flag.sprite_flag_40x25.TM273 {
+  background-position: -280px -450px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.TN75, .wd_flag.sprite_flag_40x25.TN75 {
+  background-position: -320px -450px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.TO162, .wd_flag.sprite_flag_40x25.TO162 {
+  background-position: -360px -450px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.TR76, .wd_flag.sprite_flag_40x25.TR76 {
+  background-position: -400px -450px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.TT120, .wd_flag.sprite_flag_40x25.TT120 {
+  background-position: -440px -450px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.TV193, .wd_flag.sprite_flag_40x25.TV193 {
+  background-position: 0 -475px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.TW22, .wd_flag.sprite_flag_40x25.TW22 {
+  background-position: -40px -475px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.TZ57, .wd_flag.sprite_flag_40x25.TZ57 {
+  background-position: -80px -475px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.UA263, .wd_flag.sprite_flag_40x25.UA263 {
+  background-position: -120px -475px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.UG132, .wd_flag.sprite_flag_40x25.UG132 {
+  background-position: -160px -475px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.UM178, .wd_flag.sprite_flag_40x25.UM178 {
+  background-position: -200px -475px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.US69, .wd_flag.sprite_flag_40x25.US69 {
+  background-position: -240px -475px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.UY80, .wd_flag.sprite_flag_40x25.UY80 {
+  background-position: -280px -475px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.UZ271, .wd_flag.sprite_flag_40x25.UZ271 {
+  background-position: -320px -475px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.VA93, .wd_flag.sprite_flag_40x25.VA93 {
+  background-position: -360px -475px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.VC196, .wd_flag.sprite_flag_40x25.VC196 {
+  background-position: -400px -475px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.VE81, .wd_flag.sprite_flag_40x25.VE81 {
+  background-position: -440px -475px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.VG249, .wd_flag.sprite_flag_40x25.VG249 {
+  background-position: -480px 0;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.VI221, .wd_flag.sprite_flag_40x25.VI221 {
+  background-position: -480px -25px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.VN62, .wd_flag.sprite_flag_40x25.VN62 {
+  background-position: -480px -50px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.VU121, .wd_flag.sprite_flag_40x25.VU121 {
+  background-position: -480px -75px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.WF218, .wd_flag.sprite_flag_40x25.WF218 {
+  background-position: -480px -100px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.WS131, .wd_flag.sprite_flag_40x25.WS131 {
+  background-position: -480px -125px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.YE42, .wd_flag.sprite_flag_40x25.YE42 {
+  background-position: -480px -150px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.YT226, .wd_flag.sprite_flag_40x25.YT226 {
+  background-position: -480px -175px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.ZA78, .wd_flag.sprite_flag_40x25.ZA78 {
+  background-position: -480px -200px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.ZM58, .wd_flag.sprite_flag_40x25.ZM58 {
+  background-position: -480px -225px;
+  width: 40px;
+  height: 25px;
+}
+
+.sprite_flag_40x25.ZW73, .wd_flag.sprite_flag_40x25.ZW73 {
+  background-position: -480px -250px;
+  width: 40px;
+  height: 25px;
+}

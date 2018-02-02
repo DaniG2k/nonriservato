@@ -20,8 +20,8 @@ module Nonriservato
     # %w(middleware).each do |dir|
     #    config.autoload_paths << "#{Rails.root.to_s}/app/#{dir}"
     # end
-    
-    
+
+
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.
     # config.plugins = [ :exception_notification, :ssl_requirement, :all ]
@@ -38,7 +38,7 @@ module Nonriservato
     config.i18n.default_locale = :it
 
     # Configure the default encoding used in templates for Ruby 1.9.
-    config.encoding = "utf-8"
+    config.encoding = 'utf-8'
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
@@ -62,9 +62,9 @@ module Nonriservato
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-    
+
     config.assets.initialize_on_precompile = false
-    
+
     config.assets.precompile += %w( *.js *.css )
   end
 end

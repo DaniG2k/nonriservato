@@ -1,0 +1,4 @@
+-f documentation
+--color
+--require spec_helper
+--order rand

@@ -12,12 +12,13 @@
  *= require text
  *= require 960
  *= require 960-responsive
+ *= require sprite_flags
  *= require_self
- *= require jquery.bxslider 
+ *= require jquery.bxslider
  *= require main
  *= require neue-helvetica-47-condensed-light-latin-1
  *= require neue-helvetica-55-roman-latin-ext-1
  *= require formtastic
  *= require menu
- *= require my_formtastic_changes 
+ *= require my_formtastic_changes
  */

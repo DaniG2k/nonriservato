@@ -11,25 +11,25 @@
   <script src="//load.sumome.com/" data-sumo-site-id="5c6831a22972a3351468dcbc4017a52cd97ffb9040338b3cc3c06984ae29d5af" async="async"></script>
 </head>
 <body id="<%= controller.controller_name + "_" + controller.action_name %>" class="<%= namespace %>">
-    
+
 		<div class="container_12" id="wrapper">
          <!-- <div id="notifications">
             <p class="notice"><%= notice %></p>
-            <p class="alert"><%= alert %></p>            
+            <p class="alert"><%= alert %></p>
          </div> -->
-				
-			<%= render "home/header" %>	
-			   
+
+			<%= render "home/header" %>
+
 			<div id="main">
 			   <% flash.each do |name, msg| -%>
               <%= content_tag :div, msg, class: name %>
             <% end -%>
-            
+
 				<%= render "admin/shared/header" if admin_namespace? %>
 				<%= yield %>
 				<%= render "admin/shared/box_dashboard" if admin_namespace? %>
 			</div>
-		   
+
 		</div>
 
 <%= render "home/footer" %>
@@ -43,6 +43,5 @@
 
   ga('create', 'UA-69838097-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 </html>

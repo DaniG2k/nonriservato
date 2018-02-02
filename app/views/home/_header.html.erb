@@ -30,6 +30,11 @@
              <input type="image" src="/assets/freccia_search.png" name="sa" id="search_button" />
          </form>
 
+		<div class="flags">
+			<%= link_to('', {locale: 'it'}, class: "wd_flag inline_flag sprite_flag_30x19 IT86") %>
+			<%= link_to('', {locale: 'en'}, class: "wd_flag inline_flag sprite_flag_30x19 GB31") %>
+		</div>
+
 		<div class="social_icons">
 		  <%= link_to (image_tag "social_icons/facebook.png", :title => "Facebook"), "https://www.facebook.com/pages/NON-Riservato/438274402925876?fref=ts", :target => "_blank" %>
 		  <%= link_to (image_tag "social_icons/instagram.png", :title => "Instagram"), "https://instagram.com/nonriservato/", :target => "_blank" %>
@@ -44,9 +49,9 @@
 <%= yield :header_banner %>
 
 	  <% if false %>
-		<% nav_order.each_with_index do |nav, i| %>
-	    <li class="<%= "right" if (i == (nav_order.count - 1)) %>"><a href="/<%= nav.first %>" class="<%= is_active?(nav.first) %>"><%= nav.last %></a></li>
-		<% end %>
+			<% nav_order.each_with_index do |nav, i| %>
+		    <li class="<%= "right" if (i == (nav_order.count - 1)) %>"><a href="/<%= nav.first %>" class="<%= is_active?(nav.first) %>"><%= nav.last %></a></li>
+			<% end %>
 		<% end %>
 
 <div id='cssmenu'>
@@ -54,7 +59,7 @@
        <li><a href='/' class='<%= is_active?("home") %>'><span>Home</span></a></li>
        <li class='has-sub'><a href='#'><span>About</span></a>
           <ul>
-             <li><a href='/pages/who_we_are'><span>Cos'è</span></a></li>
+						 <li><%= link_to "Cos'è", page_path('who_we_are')%></li>
              <li><a href='/pages/chi-siamo'><span>Chi siamo</span></a></li>
              <li><a href='/pages/manifesto'><span>Manifesto</span></a></li>
              <li><a href='/pages/thanks'><span>Thanks</span></a></li>
