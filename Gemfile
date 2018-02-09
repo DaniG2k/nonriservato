@@ -12,6 +12,7 @@ gem 'aws-sdk', '~> 1.3'
 gem 'mime-types', :require => 'mime/types'
 gem 'meta-tags'
 gem 'friendly_id'
+gem 'globalize', '~> 3.1.0'
 
 # Remove this once Rails version is upgraded:
 gem "test-unit", :require => false

@@ -17,40 +17,34 @@
 	</div>
 
 	<div id="logo_search_container" class="clearfix">
-		<%= link_to (image_tag "logo.png", :title => "Non Riservato", :id => "logo"), root_path %>
+		<%= link_to (image_tag 'logo.png', title: 'Non Riservato', id: 'logo'), root_path %>
 		<%# link_to (image_tag "banner_gallab.png", :title => "Sostieni il Gallab", :id => "banner_gallab"), "https://www.eppela.com/it/projects/9112-realizziamo-il-gallab-non-riservato?t=contributors" %>
-		<%= image_tag "5-nr.png", :class => "x1000" %>
+		<%= image_tag "5-nr.png", class: 'x1000' %>
 
 	   <form action="<%# search_url %>" id="search_nr">
 	       <input type="hidden" name="cx" value="001621681078880853769:bs9kq8zsatc" />
 	       <input type="hidden" name="cof" value="FORID:9" />
 	       <input type="hidden" name="ie" value="UTF-8" />
-	       <%= text_field :qasd, nil, :placeholder => "cerca nel sito", :id => "q", :name => "q" %>
+	       <%= text_field :qasd, nil, placeholder: "cerca nel sito", id: 'q', name: 'q' %>
 	       <input type="image" src="/assets/freccia_search.png" name="sa" id="search_button" />
 	   </form>
 
-		<%= render 'common/language_selector' %>
-
 		<div class="social_icons">
-		  <%= link_to (image_tag "social_icons/facebook.png", :title => "Facebook"), "https://www.facebook.com/pages/NON-Riservato/438274402925876?fref=ts", :target => "_blank" %>
-		  <%= link_to (image_tag "social_icons/instagram.png", :title => "Instagram"), "https://instagram.com/nonriservato/", :target => "_blank" %>
-		  <%= link_to (image_tag "social_icons/twitter.png", :title => "Twitter"), "https://twitter.com/nonriservato", :target => "_blank" %>
+		  <%= link_to (image_tag "social_icons/facebook.png", :title => "Facebook"), "https://www.facebook.com/pages/NON-Riservato/438274402925876?fref=ts", target: "_blank" %>
+		  <%= link_to (image_tag "social_icons/instagram.png", :title => "Instagram"), "https://instagram.com/nonriservato/", target: "_blank" %>
+		  <%= link_to (image_tag "social_icons/twitter.png", :title => "Twitter"), "https://twitter.com/nonriservato", target: "_blank" %>
 		  <%# link_to (image_tag "social_icons/pinterest.png", :title => "Pinterest"), "https://www.pinterest.com/nonriservato/", :target => "_blank" %>
 		  <%# link_to (image_tag "social_icons/youtube.png", :title => "Youtube"), "#", :target => "_blank" %>
-		  <%= link_to (image_tag "social_icons/newsletter.png", :title => "Newsletter"), "http://eepurl.com/bo2dmv", :target => "_blank" %>
+		  <%= link_to (image_tag "social_icons/newsletter.png", :title => "Newsletter"), "http://eepurl.com/bo2dmv", target: "_blank" %>
 		</div>
-
+		<%= render 'common/language_selector' %>
 	</div>
 
-<%= yield :header_banner %>
+	<%= yield :header_banner %>
+</div>
 
-<% if false %>
-	<% nav_order.each_with_index do |nav, i| %>
-    <li class="<%= "right" if (i == (nav_order.count - 1)) %>"><a href="/<%= nav.first %>" class="<%= is_active?(nav.first) %>"><%= nav.last %></a></li>
-	<% end %>
-<% end %>
-
-<div id='cssmenu'>
+<div class="grid_12">
+	<div id='cssmenu'>
     <ul class="nav">
        <li><%= link_to('Home', root_path, class: is_active?("home")) %></li>
        <li class='has-sub'><a href='#'><span>About</span></a>
@@ -86,5 +80,4 @@
        <li class='last right'><a href='/posts' class='<%= is_active?("posts") %>'><span>Blog</span></a></li>
     </ul>
    </div>
-
 </div>

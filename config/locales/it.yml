@@ -19,6 +19,7 @@ it:
       go_to_admin_area: Vai all'area non riservata
       exit: Esci
     footer:
+      support_us: Sostienici
       footer_slogan: NON RISERVATO - UNA PIATTAFORMA CONDIVISA DI ORGANIZZAZIONI CHE DECIDONO DI CAMBIARE L’AMBIENTE URBANO IN CUI VIVONO
   views:
     pagination:
