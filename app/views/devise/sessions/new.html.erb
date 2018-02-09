@@ -1,7 +1,7 @@
 <div id="signin_box">
    <%= image_tag "logo_plain.png", :title => "Non Riservato", :id => "logo" %>
 
-   <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :class => "main"}) do |f| %>
+   <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "main"}) do |f| %>
      <div><%= f.label :email %><br />
      <%= f.email_field :email, :autofocus => true %></div>
 
@@ -9,13 +9,12 @@
      <%= f.password_field :password %></div>
 
      <% if devise_mapping.rememberable? -%>
-       <div><%= f.check_box :remember_me %> <%= f.label :remember_me, "ricordati di me", :class => "small" %></div>
+       <div><%= f.check_box :remember_me %> <%= f.label :remember_me, t('.remember_me'), class: "small" %></div>
      <% end -%>
-     
-     <div>
-        <input type="submit" style="visibility: hidden;" />
-        <a href="#" class="submit">Invia</a>
-        </div>
-   <% end %>
 
+     <div>
+       <input type="submit" style="visibility: hidden;" />
+       <%= link_to t('.log_in'), '#', class: 'submit' %>
+     </div>
+   <% end %>
 </div>

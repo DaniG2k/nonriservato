@@ -25,6 +25,7 @@ group :assets do
 end
 
 group :development, :test do
+  gem 'pry'
   gem 'rspec-rails', '~> 3.7'
   gem 'factory_bot_rails'
   gem 'faker'

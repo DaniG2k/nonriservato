@@ -2,16 +2,16 @@
 	<div id="login_tab" class="<%= "big" if current_organization %>">
 	   <% if current_organization %>
 	      <p>
-	         ciao <%= current_organization.name %><br>
-	         <%= link_to "vai all'area non riservata", "/admin" %><br>
-	         <%= link_to "Esci", destroy_organization_session_path, :method => :delete, :class=> "red" %>
+	         <%= "#{t('hello')} #{current_organization.name}" %><br>
+	         <%= link_to t('.go_to_admin_area'), admin_root_path %><br>
+	         <%= link_to t('.exit'), destroy_organization_session_path, method: :delete, class: 'red' %>
 	      </p>
 	      <div class="square_logo micro">
 	        <%= image_tag current_organization.logo(:micro) %>
 	      </div>
 
 	   <% else  %>
-	      <a href="/organizations/sign_in">Entra </a>
+		 	<%= link_to t('.enter'), new_organization_session_path %>
 	   <% end %>
 
 	</div>
@@ -21,19 +21,15 @@
 		<%# link_to (image_tag "banner_gallab.png", :title => "Sostieni il Gallab", :id => "banner_gallab"), "https://www.eppela.com/it/projects/9112-realizziamo-il-gallab-non-riservato?t=contributors" %>
 		<%= image_tag "5-nr.png", :class => "x1000" %>
 
+	   <form action="<%# search_url %>" id="search_nr">
+	       <input type="hidden" name="cx" value="001621681078880853769:bs9kq8zsatc" />
+	       <input type="hidden" name="cof" value="FORID:9" />
+	       <input type="hidden" name="ie" value="UTF-8" />
+	       <%= text_field :qasd, nil, :placeholder => "cerca nel sito", :id => "q", :name => "q" %>
+	       <input type="image" src="/assets/freccia_search.png" name="sa" id="search_button" />
+	   </form>
 
-         <form action="<%# search_url %>" id="search_nr">
-             <input type="hidden" name="cx" value="001621681078880853769:bs9kq8zsatc" />
-             <input type="hidden" name="cof" value="FORID:9" />
-             <input type="hidden" name="ie" value="UTF-8" />
-             <%= text_field :qasd, nil, :placeholder => "cerca nel sito", :id => "q", :name => "q" %>
-             <input type="image" src="/assets/freccia_search.png" name="sa" id="search_button" />
-         </form>
-
-		<div class="flags">
-			<%= link_to('', {locale: 'it'}, class: "wd_flag inline_flag sprite_flag_30x19 IT86") %>
-			<%= link_to('', {locale: 'en'}, class: "wd_flag inline_flag sprite_flag_30x19 GB31") %>
-		</div>
+		<%= render 'common/language_selector' %>
 
 		<div class="social_icons">
 		  <%= link_to (image_tag "social_icons/facebook.png", :title => "Facebook"), "https://www.facebook.com/pages/NON-Riservato/438274402925876?fref=ts", :target => "_blank" %>
@@ -48,41 +44,43 @@
 
 <%= yield :header_banner %>
 
-	  <% if false %>
-			<% nav_order.each_with_index do |nav, i| %>
-		    <li class="<%= "right" if (i == (nav_order.count - 1)) %>"><a href="/<%= nav.first %>" class="<%= is_active?(nav.first) %>"><%= nav.last %></a></li>
-			<% end %>
-		<% end %>
+<% if false %>
+	<% nav_order.each_with_index do |nav, i| %>
+    <li class="<%= "right" if (i == (nav_order.count - 1)) %>"><a href="/<%= nav.first %>" class="<%= is_active?(nav.first) %>"><%= nav.last %></a></li>
+	<% end %>
+<% end %>
 
 <div id='cssmenu'>
     <ul class="nav">
-       <li><a href='/' class='<%= is_active?("home") %>'><span>Home</span></a></li>
+       <li><%= link_to('Home', root_path, class: is_active?("home")) %></li>
        <li class='has-sub'><a href='#'><span>About</span></a>
           <ul>
-						 <li><%= link_to "Cos'è", page_path('who_we_are')%></li>
-             <li><a href='/pages/chi-siamo'><span>Chi siamo</span></a></li>
+						 <li><%= link_to t('.what_we_are'), page_path('who_we_are')%></li>
+             <li><%= link_to t('.who_we_are'), page_path('chi-siamo') %></li>
              <li><a href='/pages/manifesto'><span>Manifesto</span></a></li>
              <li><a href='/pages/thanks'><span>Thanks</span></a></li>
-             <li><a href='/pages/sede'><span>Sede</span></a></li>
-             <li class='last'><a href='/pages/contacts'><span>Contatti</span></a></li>
+						 <li><%= link_to(t('.head_office'), page_path('sede')) %></li>
+             <li><%= link_to(t('.contacts'), page_path('contacts')) %></li>
           </ul>
        </li>
-       <li><a href='/events' class='<%= is_active?("events") %>'><span>Calendario</span></a></li>
-       <li class='has-sub'><a href='/projects' class='<%= is_active?("projects") %>'><span>Progetti</span></a>
+       <li><%= link_to t('.calendar'), events_path, class: is_active?("events") %></li>
+       <li class='has-sub'>
+				 <%= link_to(t('.projects'), projects_path, class: is_active?("projects")) %>
          <ul>
-           <li><a href='/projects' class='<%= is_active?("projects") %>'><span>Progetti</span></a></li>
-           <li><a href='http://maps.nonriservato.net/' target="_blank"><span>Maps</span></a></li>
+           <li><%= link_to(t('.projects'), projects_path, class: is_active?("projects")) %></li>
+           <li><%= link_to t('.maps'), 'http://maps.nonriservato.net/', target: '_blank' %></li>
          </ul>
        </li>
-       <li><a href='/organizations' class='<%= is_active?("organizations") %>'><span>Network</span></a></li>
-       <li><a href='/pages/support-us'><span>Sostienici</span></a></li>
-       <li class='has-sub'><a href='#'><span>Acquista</span></a>
+       <li><%= link_to('Network', organizations_path, class: is_active?("organizations")) %></li>
+       <li><%= link_to(t('.support_us'), page_path('support-us')) %></li>
+       <li class='has-sub'>
+				 <%= link_to(t('.purchase'), '#') %>
           <ul>
-             <li><a href='/pages/formazione'><span>Formazione</span></a></li>
-             <li><a href='/pages/commissione'><span>Progetti su commissione</span></a></li>
-             <li><a href='/workshops' class='<%= is_active?("workshops") %>'><span>Laboratori Creativi</span></a></li>
-             <li><a href='/pages/shop'><span>Shop</span></a></li>
-             <li class='last'><a href='/pages/sponsorizza'><span>Sponsorizza</span></a></li>
+             <li><%= link_to(t('.lectures'), page_path('formazione')) %></li>
+             <li><%= link_to(t('.commissioned_projects'), page_path('commissione')) %></li>
+             <li><%= link_to(t('.creative_workshops'), workshops_path, class: is_active?("workshops")) %>
+             <li><%= link_to('Shop', page_path('shop')) %></li>
+						 <%= link_to t('.sponsor'), page_path('sponsorizza'), class: 'last'%>
           </ul>
        </li>
        <li class='last right'><a href='/posts' class='<%= is_active?("posts") %>'><span>Blog</span></a></li>

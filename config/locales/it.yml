@@ -1,4 +1,25 @@
 it:
+  hello: Ciao
+  home:
+    header:
+      enter: Entra
+      what_we_are: Cos'è
+      what_we_are: Chi siamo
+      head_office: Sede
+      contacts: Contatti
+      calendar: Calendario
+      projects: Progetti
+      maps: Mappe
+      support_us: Sostienici
+      purchase: Acquista
+      creative_workshops: Laboratori Creativi
+      lectures: Formazione
+      commissioned_projects: Progetti su commissione
+      sponsor: Sponsorizza
+      go_to_admin_area: Vai all'area non riservata
+      exit: Esci
+    footer:
+      footer_slogan: NON RISERVATO - UNA PIATTAFORMA CONDIVISA DI ORGANIZZAZIONI CHE DECIDONO DI CAMBIARE L’AMBIENTE URBANO IN CUI VIVONO
   views:
     pagination:
       next: prossima >>
@@ -15,7 +36,7 @@ it:
     - ven
     - sab
     abbr_month_names:
-    - 
+    -
     - gen
     - feb
     - mar
@@ -41,7 +62,7 @@ it:
       long: ! '%d %B %Y'
       short: ! '%d %b'
     month_names:
-    - 
+    -
     - gennaio
     - febbraio
     - marzo

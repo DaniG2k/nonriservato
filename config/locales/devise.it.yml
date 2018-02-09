@@ -25,6 +25,9 @@ it:
       timeout: "Sessione scaduta, accedere nuovamente per continuare."
       inactive: "Il tuo account non è stato ancora attivato."
     sessions:
+      new:
+        log_in: Invia
+        remember_me: Ricordati di me
       signed_in: "Accesso effettuato con successo."
       signed_out: "Sei uscito correttamente."
     passwords:

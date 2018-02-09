@@ -2,4 +2,24 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  hello: Hello
+  home:
+    header:
+      enter: Enter
+      what_we_are: What we are
+      who_we_are: Who we are
+      head_office: Head office
+      contacts: Contacts
+      calendar: Calendar
+      projects: Projects
+      maps: Maps
+      support_us: Support us
+      purchase: Purchase
+      creative_workshops: Creative workshops
+      lectures: Lectures
+      commissioned_projects: Commissioned projects
+      sponsor: Sponsor
+      go_to_admin_area: Go to the admin area
+      exit: Exit
+    footer:
+      footer_slogan: NON RISERVATO - A SHARED PLATFORM OF ORGANIZATIONS THAT DECIDE TO CHANGE THE URBAN ENVIRONMENT IN WHICH THEY LIVE
