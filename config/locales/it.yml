@@ -1,4 +1,5 @@
 it:
+  website: Non Riservato
   hello: Ciao
   home:
     header:
@@ -20,7 +21,7 @@ it:
       exit: Esci
     footer:
       support_us: Sostienici
-      footer_slogan: NON RISERVATO - UNA PIATTAFORMA CONDIVISA DI ORGANIZZAZIONI CHE DECIDONO DI CAMBIARE L’AMBIENTE URBANO IN CUI VIVONO
+      footer_slogan: UNA PIATTAFORMA CONDIVISA DI ORGANIZZAZIONI CHE DECIDONO DI CAMBIARE L’AMBIENTE URBANO IN CUI VIVONO
   views:
     pagination:
       next: prossima >>

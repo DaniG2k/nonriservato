@@ -1,5 +1,5 @@
 function sessions_news(){
-	
+
 }
 
 function projects_new(){
@@ -14,10 +14,10 @@ function projects_new(){
      noResultsText: 'nessun risultato',
      hintText: 'Comincia a scrivere il nome del partner istituzionale'
    });
-   
+
    $('input.ui-date-picker').datepicker( $.datepicker.regional[ "fr" ] );
    count_textarea()
-   
+
 }
 
 function workshops_new(){
@@ -27,7 +27,7 @@ function workshops_new(){
     noResultsText: 'nessun risultato',
     hintText: 'Comincia a scrivere il nome del partner'
   });
-  
+
   $('input.ui-date-picker').datepicker( $.datepicker.regional[ "fr" ] );
   count_textarea()
 }
@@ -47,17 +47,17 @@ function organizations_edit_external_partners(){
      noResultsText: 'nessun risultato',
      hintText: 'Comincia a scrivere il nome del partner istituzionale'
    });
-} 
+}
 
 function events_new(){
-  
+
   // partner_ids = {}
   $("#event_event_partner_ids").tokenInput("/admin/organizations/json_names", {
     searchingText: 'cerco...',
     noResultsText: 'nessun risultato',
     hintText: 'Comincia a scrivere il nome del partner'
-  });  
-  
+  });
+
   count_textarea()
   $('input.ui-date-picker').datepicker( $.datepicker.regional[ "fr" ] );
 }
@@ -81,7 +81,7 @@ function projects_show(){
       // $(document).ready(function(){
 
 		$('#slider').hide().fadeIn('slow');
-				
+
 		$('#slider').bxSlider({
 			        infiniteLoop: false,
 			        speed: 600,
@@ -92,7 +92,7 @@ function projects_show(){
 			        pause: 5000,
 			        mode: 'horizontal'
 			      }).goToFirstSlide()
-			
+
   // });
 }
 
@@ -119,53 +119,42 @@ function home_index() {
 var events_index = home_index
 
 
-// function events_new(){
-//    // partner_ids = {}
-//    $("#event_projectid").tokenInput("/admin/projects/json_names", {
-//      searchingText: 'cerco...',
-//      noResultsText: 'nessun risultato',
-//      hintText: 'Comincia a scrivere il nome del progetto'
-//    });
-// }
-
-
-
 function count_textarea(){
 	  $(".countit").prepend("<span id='countit_counter'>caratteri rimasti: <span></span></span>");
-	  
+
 	  var cmax = $(".countit textarea").attr("counter");
 	  $("#countit_counter span").text(cmax - $(".countit textarea").val().length);
-	  
+
   	$(".countit textarea").keyup(function () {
-      
+
       if ($(this).val().length >= cmax) {
         $(this).val($(this).val().substr(0, cmax));
       }
       $("#countit_counter span").text(cmax - $(this).val().length);
-    });  
- 
+    });
+
 }
 
 
 
-$(function() { 
+$(function() {
 
 	var funcName = $('body').attr('id');
 	if (eval("typeof " + funcName + " == 'function'")) eval(funcName + '()');
-	
+
 	$('a.submit').click(function(){
     $('form.main').submit();
     return false;
   });
-	
-	
+
+
   // counter per campi limitati
 	$(document).ready(function(){
-	  
+
 
   });
-	
-	
+
+
 });
 
 
@@ -213,9 +202,3 @@ $(window).load(function(){
     	$(this).css('margin-left', margin_left + 'px');
     });
 })
-
-
-
-$(document).ready(function(){
- 
-});

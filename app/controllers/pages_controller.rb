@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  before_filter :protect_admin, :only => [:edit, :update]
+  before_filter :protect_admin, only: [:edit, :update]
 
   def show
     @page = Page.find_by_slug(params[:slug])
@@ -17,6 +17,8 @@ class PagesController < ApplicationController
     @page = Page.new(params[:page])
     if @page.save
       redirect_to "/pages/#{@page.slug}"
+    else
+      render action: 'edit'
     end
   end
 
@@ -31,7 +33,7 @@ class PagesController < ApplicationController
     if @page.save
       redirect_to "/pages/#{@page.slug}", notice: 'page was successfully created.'
     else
-      render action: "edit"
+      render action: 'edit'
     end
   end
 end
