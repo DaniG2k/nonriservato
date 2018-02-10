@@ -1,4 +1,4 @@
-en:
+it:
   devise:
     invitations:
       send_instructions: 'An invitation email has been sent to %{email}.'
@@ -6,8 +6,9 @@ en:
       updated: 'Your password was set successfully. You are now signed in.'
       no_invitations_remaining: "No invitations remaining"
       new:
+        title: Invita una nuova organizzazione
         header: "Send invitation"
-        submit_button: "Send an invitation"
+        submit_button: "Invita"
       edit:
         header: "Set your password"
         submit_button: "Set my password"

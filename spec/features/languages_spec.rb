@@ -2,14 +2,18 @@ RSpec.feature 'Website visitors can change page language' do
   before { visit root_path }
 
   scenario 'to Italian' do
-    click_link '/it'
+    within('.flags') do
+      find("a[href='/it']").click
+    end
 
-    expect(page).to have_content('Benvenuti')
+    expect(page).to have_selector("html[lang='it']")
   end
 
   scenario 'to English' do
-    click_link '/en'
+    within('.flags') do
+      find("a[href='/en']").click
+    end
 
-    expect(page).to have_content('Welcome')
+    expect(page).to have_selector("html[lang='en']")
   end
 end

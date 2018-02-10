@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20170214161530) do
+ActiveRecord::Schema.define(:version => 20180211123342) do
 
   create_table "event_partnerships", :force => true do |t|
     t.integer  "organization_id"
@@ -20,9 +20,20 @@ ActiveRecord::Schema.define(:version => 20170214161530) do
     t.datetime "updated_at",      :null => false
   end
 
-  create_table "events", :force => true do |t|
+  create_table "event_translations", :force => true do |t|
+    t.integer  "event_id"
+    t.string   "locale",      :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
     t.string   "name"
     t.text     "description"
+    t.text     "definition"
+  end
+
+  add_index "event_translations", ["event_id"], :name => "index_event_translations_on_event_id"
+  add_index "event_translations", ["locale"], :name => "index_event_translations_on_locale"
+
+  create_table "events", :force => true do |t|
     t.integer  "project_id"
     t.string   "address"
     t.string   "url"
@@ -43,7 +54,6 @@ ActiveRecord::Schema.define(:version => 20170214161530) do
     t.float    "latitude"
     t.float    "longitude"
     t.boolean  "gmaps"
-    t.text     "definition"
     t.integer  "organization_id"
     t.string   "event_type"
     t.string   "event_category"
@@ -154,9 +164,19 @@ ActiveRecord::Schema.define(:version => 20170214161530) do
   add_index "organizations", ["reset_password_token"], :name => "index_organizations_on_reset_password_token", :unique => true
   add_index "organizations", ["slug"], :name => "index_organizations_on_slug", :unique => true
 
-  create_table "pages", :force => true do |t|
+  create_table "page_translations", :force => true do |t|
+    t.integer  "page_id"
+    t.string   "locale",     :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.string   "title"
     t.text     "text"
+  end
+
+  add_index "page_translations", ["locale"], :name => "index_page_translations_on_locale"
+  add_index "page_translations", ["page_id"], :name => "index_page_translations_on_page_id"
+
+  create_table "pages", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.string   "slug"
@@ -169,13 +189,23 @@ ActiveRecord::Schema.define(:version => 20170214161530) do
     t.datetime "updated_at",      :null => false
   end
 
-  create_table "posts", :force => true do |t|
+  create_table "post_translations", :force => true do |t|
+    t.integer  "post_id"
+    t.string   "locale",     :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.string   "title"
+    t.text     "summary"
     t.text     "body"
+  end
+
+  add_index "post_translations", ["locale"], :name => "index_post_translations_on_locale"
+  add_index "post_translations", ["post_id"], :name => "index_post_translations_on_post_id"
+
+  create_table "posts", :force => true do |t|
     t.date     "date_published"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
-    t.text     "summary"
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
@@ -191,9 +221,20 @@ ActiveRecord::Schema.define(:version => 20170214161530) do
     t.datetime "updated_at", :null => false
   end
 
-  create_table "projects", :force => true do |t|
+  create_table "project_translations", :force => true do |t|
+    t.integer  "project_id"
+    t.string   "locale",      :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
     t.string   "name"
+    t.text     "definition"
     t.text     "description"
+  end
+
+  add_index "project_translations", ["locale"], :name => "index_project_translations_on_locale"
+  add_index "project_translations", ["project_id"], :name => "index_project_translations_on_project_id"
+
+  create_table "projects", :force => true do |t|
     t.string   "address"
     t.string   "url"
     t.date     "date_begun"
@@ -204,7 +245,6 @@ ActiveRecord::Schema.define(:version => 20170214161530) do
     t.boolean  "invisible",           :default => false, :null => false
     t.integer  "organization_id"
     t.integer  "zone"
-    t.text     "definition"
     t.integer  "project_category_id"
     t.string   "slug"
   end

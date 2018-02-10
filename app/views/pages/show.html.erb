@@ -6,12 +6,12 @@
 
 <div class="grid_12">
    <h1><%= @page.title %></h1>
-   
+
    <div class="page_main">
       <%= markdown_d @page.text %>
    </div>
-   
+
    <div class="admin_box">
-     <%= link_to("modifica questa pagina", edit_page_path(@page), class: "edit_object") if admin? %>
+     <%= link_to(t('.edit_page'), edit_page_path(@page), class: "edit_object") if admin? %>
    </div>
 </div>

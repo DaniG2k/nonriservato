@@ -1,18 +1,16 @@
-<%# array_of_styles = [["small","small",""], ["small", "", "small"], ["", "small", "small"]] %>
-<% array_of_styles = [["small","small","small", ""], ["small", "", "small"], ["", "small", "small"]] %>
-<% array_of_colors = ["color_1", "color_2", "color_3", "color_4", "color_5", "color_6"] %>
+<%# array_of_styles = [["small","small","small", ""], ["small", "", "small"], ["", "small", "small"]] %>
+
 <% @events.each_slice(4) do |row| %>
-   <% style_array = array_of_styles[Random.new.rand(0..3)] %>
-   <% row.each_with_index do |e, i| %>
+   <%# style_array = array_of_styles.sample %>
+   <% row.each_with_index do |event, idx| %>
       <% style = "small" %>
-      <% color = e.event_type == "made" ? "color_1" : "color_2" %>
-      <%= link_to (admin_namespace? ? edit_admin_event_path(e) : event_path(e)), :class => "event_element grid_3 alpha #{"last" if i == 3}" do %>
-         <%# image_tag e.image("#{style == "" ? "medium" : "small"}"), :title => "#{e.name}" %>
-         <%= image_tag e.image("big"), :title => "#{e.name}" %>
-         <div class="date"><%= l(e.date_begun, :format => :long) %></div>
-         <div class="title <%= color %>"><%= e.name %></div>
-         <div class="zone">municipio <%= e.zone %></div>
-         <div class="definition"><%= e.definition %></div>
+      <% color = event.event_type == "made" ? "color_1" : "color_2" %>
+      <%= link_to (admin_namespace? ? edit_admin_event_path(event) : event_path(event)), class: "event_element grid_3 alpha #{"last" if idx == 3}" do %>
+         <%= image_tag event.image("big"), title: "#{event.name}" %>
+         <div class="date"><%= l(event.date_begun, format: :long) %></div>
+         <div class="title <%= color %>"><%= event.name %></div>
+         <div class="zone">municipio <%= event.zone %></div>
+         <div class="definition"><%= event.definition %></div>
          <div class="see_more"><span>leggi di più...</span></div>
       <% end %>
    <% end %>

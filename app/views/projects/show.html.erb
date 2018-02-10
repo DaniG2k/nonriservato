@@ -1,99 +1,99 @@
-<% set_meta_tags(
-  title: @project.name,
-  description:  @project.description,
-  og: {
-  image: image_path(@project.images[0].data(:big))
-  })
-%>
+<% if @project.images.present? %>
+  <% set_meta_tags(
+    title: @project.name,
+    description: @project.description,
+    og: {
+      image: image_path(@project.images[0].data(:big))
+    }
+  ) %>
 
 
-<div class="grid_12">
-   <div class="clearfix heading">
-      <h1><%= @project.name %></h1>
-      <div class="date"><%= l(@project.date_begun, :format => :long) %> <%= (@project.date_ended.blank? || @project.date_ended > Time.now) ? "> Oggi (Attivo)" : (l(@project.date_begun, :format => :long) + " (archiviato)") %></div>
-   </div>
-   <div class="grid_12 alpha">
-      <div class="shared_definition"><%= @project.definition %></div>
-   </div>
-</div>
-
-<div class="grid_9">
-   <%# image_tag @project.image(:big) %>
-   
-   <div class="slider-container">
-      <ul id="slider">
-      	<% @project.images.each do |i| %>
-      	<li><%= image_tag(i.data(:big)) %></li>
-      	<% end %>
-      </ul>
-   </div>
-   
-
-   <div class="shared_description">
-      <%# simple_format @project.description %>
-      <%= markdown_d @project.description %>
-   </div>
-</div>
-
-<div class="grid_3 sidebar">
-  
-  <% if admin? %>
-  <div class="admin_box">
-     <%= link_to "modifica progetto", edit_admin_project_path(@project), :class => "edit_object" %>
-     
-     <%= form_for (@project) do |f| %>
-              
-        <%= f.check_box :highlighted, {checked: @project.highlighted?}    %>
-        <%= f.label     :highlighted, "Homepage"    %>
-        
-        <%= f.label       :weight, "ordine:" %>
-	      <%= f.text_field  :weight, :value => @project.highlight.try("weight"), :style => "width:20px" %>
-	      <br>
-
-        <%= f.submit 'aggiorna' %>
-
-     <% end %>
+  <div class="grid_12">
+     <div class="clearfix heading">
+        <h1><%= @project.name %></h1>
+        <div class="date"><%= l(@project.date_begun, :format => :long) %> <%= (@project.date_ended.blank? || @project.date_ended > Time.now) ? "> Oggi (Attivo)" : (l(@project.date_begun, :format => :long) + " (archiviato)") %></div>
+     </div>
+     <div class="grid_12 alpha">
+        <div class="shared_definition"><%= @project.definition %></div>
+     </div>
   </div>
-  <% end %>  
-  
 
-   <% if @project.url.size > 0 %>
-   <p>
-      <strong>web</strong>: <%= link_to @project.url.split("//").last, ensure_url(@project.url), :target => "_blank" %>
-   </p>
-   <% end %>
-   
-   <% if false %>
-   un progetto <span>di</span><br>
-   <%= link_to organization_path(@project.organization) do %>
-      <%= @project.organization.name %>
-      <div class="square_logo o_image">
-         <%= image_tag @project.organization.logo(:big_thumb) %>
-      </div>
-   <% end %>
-   <% end %>
-   
-   
-   <%= render "shared/partners" %>
-   
-</div>
+  <div class="grid_9">
+     <%# image_tag @project.image(:big) %>
+
+     <div class="slider-container">
+        <ul id="slider">
+        	<% @project.images.each do |i| %>
+        	<li><%= image_tag(i.data(:big)) %></li>
+        	<% end %>
+        </ul>
+     </div>
 
 
-<div class="grid_12">
-   
-   <% unless @events.nil? %>
-   <div class="sort_bar">
-      <span>Eventi di questo progetto:</span> 
-   </div>
-   <%= render "events/event" %>   
-   <% end %>
-   
-   <% if false %>
-   <div class="sort_bar red">
-      <span>Altri progetti di <%= @project.organization.name %>:</span> 
-   </div>
-   <%= render "projects/project" %>      
-   <% end %>
-   
-</div>
+     <div class="shared_description">
+        <%= markdown_d @project.description %>
+     </div>
+  </div>
 
+  <div class="grid_3 sidebar">
+
+    <% if admin? %>
+    <div class="admin_box">
+       <%= link_to "modifica progetto", edit_admin_project_path(@project), :class => "edit_object" %>
+
+       <%= form_for (@project) do |f| %>
+
+          <%= f.check_box :highlighted, {checked: @project.highlighted?}    %>
+          <%= f.label     :highlighted, "Homepage"    %>
+
+          <%= f.label       :weight, "ordine:" %>
+  	      <%= f.text_field  :weight, :value => @project.highlight.try("weight"), :style => "width:20px" %>
+  	      <br>
+
+          <%= f.submit 'aggiorna' %>
+
+       <% end %>
+    </div>
+    <% end %>
+
+
+     <% if @project.url.size > 0 %>
+     <p>
+        <strong>web</strong>: <%= link_to @project.url.split("//").last, ensure_url(@project.url), :target => "_blank" %>
+     </p>
+     <% end %>
+
+     <% if false %>
+     un progetto <span>di</span><br>
+     <%= link_to organization_path(@project.organization) do %>
+        <%= @project.organization.name %>
+        <div class="square_logo o_image">
+           <%= image_tag @project.organization.logo(:big_thumb) %>
+        </div>
+     <% end %>
+     <% end %>
+
+
+     <%= render "shared/partners" %>
+
+  </div>
+
+
+  <div class="grid_12">
+
+     <% unless @events.nil? %>
+     <div class="sort_bar">
+        <span>Eventi di questo progetto:</span>
+     </div>
+     <%= render "events/event" %>
+     <% end %>
+
+     <% if false %>
+     <div class="sort_bar red">
+        <span>Altri progetti di <%= @project.organization.name %>:</span>
+     </div>
+     <%= render "projects/project" %>
+     <% end %>
+
+  </div>
+<% end %>

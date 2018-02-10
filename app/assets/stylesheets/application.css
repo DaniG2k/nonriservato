@@ -12,7 +12,6 @@
  *= require text
  *= require 960
  *= require 960-responsive
- *= require sprite_flags
  *= require_self
  *= require jquery.bxslider
  *= require main

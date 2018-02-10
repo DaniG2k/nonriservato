@@ -1,27 +1,144 @@
 it:
   website: Non Riservato
   hello: Ciao
+  carousel:
+    what_is_it: Cos'è?
+    where_is_it: Dov'è?
   home:
     header:
       enter: Entra
       what_we_are: Cos'è
-      what_we_are: Chi siamo
+      who_we_are: Chi siamo
       head_office: Sede
       contacts: Contatti
       calendar: Calendario
       projects: Progetti
       maps: Mappe
       support_us: Sostienici
-      purchase: Acquista
+      services: Servizi
       creative_workshops: Laboratori Creativi
       lectures: Formazione
       commissioned_projects: Progetti su commissione
       sponsor: Sponsorizza
       go_to_admin_area: Vai all'area non riservata
       exit: Esci
+    index:
+      calendar: Calendario
+      updates: Aggiornamenti
     footer:
       support_us: Sostienici
       footer_slogan: UNA PIATTAFORMA CONDIVISA DI ORGANIZZAZIONI CHE DECIDONO DI CAMBIARE L’AMBIENTE URBANO IN CUI VIVONO
+  admin:
+    shared:
+      box_dashboard:
+        content: Contenuti
+        sub_invite_organization: invita un nuovo ente
+        sub_add_post: aggiungi un nuovo post
+        sub_add_workshop: carica un nuovo workshop
+        sub_add_project: aggiungi un nuovo progetto
+        sub_add_event: aggiungi un nuovo evento
+    events:
+      new:
+        title: Nuovo evento
+      edit:
+        title: Modifica evento
+    posts:
+      index:
+        modify_existing: Modificane uno esistente
+      new:
+        title: Nuovo post
+      edit:
+        title: Modifica post
+      form:
+        confirm: Sei sicuro di voler cancellare questo post?
+        destroy: Cancella
+    projects:
+      index:
+        project: Progetto
+        add_project: Aggiungi un nuovo progetto
+        modify_existing: Modificane uno esistente
+      new:
+        title: Nuovo Progetto
+      form:
+        upload_image: "Carica una nuova immagine"
+        destroy: Cancella
+        confirm: Sei sicuro di voler cancellare questo progetto?
+  events:
+    event_created: "L'evento è stato creato con successo."
+    event_updated: "L'evento è stato aggiornato con successo."
+    event_not_created: "L'evento non è stato creato."
+    event_not_updated: "L'evento non è stato aggiornato."
+    event_destroyed: "L'evento è stato cancellato con successo."
+  projects:
+    project_created: 'Il progetto è stato creato con successo.'
+    project_updated: 'Il progetto è stato aggiornato con successo.'
+    project_not_updated: 'Il progetto non è stato aggiornato.'
+    project_destroyed: 'Il progetto è stato cancellato con successo.'
+  posts:
+    post:
+      continue: Continua...
+    show:
+      return_to_blog: '<-- Torna al blog...'
+    post_created: 'Il post è stato creato con successo.'
+    post_updated: 'Il post è stato aggiornato con successo.'
+    post_not_created: 'Il post non è stato creato.'
+    post_not_updated: 'Il post non è stato aggiornato.'
+    post_destroyed: 'Il post è stato cancellato con successo.'
+    no_change_made: Nessun cambiamento effettuato.
+  pages:
+    new:
+      no_page: Questa pagina non esiste. Vuoi crearla?
+    show:
+      edit_page: Modifica questa pagina
+    page_created: La pagina è stata creata con successo.
+  simple_form:
+    labels:
+      page:
+        title: Titolo
+        text: Contenuto
+  formtastic:
+    labels:
+      event:
+        name: Nome
+        event_partner_ids: Partner
+        event_type: Tipologia
+        event_category: Tipologia
+        project: Progetto di riferimento
+        date_begun: Data inizio
+        date_ended: Data fine
+        time: Orari
+        zone: Zona
+        address: Indirizzo
+        description: Descrizione
+        definition: Riassunto
+        url: Sito internet
+        email: Contatto email
+        tel_1: Telefono primario
+        tel_2: Telefono secondario
+        facebook_event_url: Evento Facebook
+        image: Carica immagine
+      post:
+        title: Titolo
+        date_published: Data
+        summary: Introduzione (200 caratteri)
+        body: Testo dall'articolo
+      project:
+        name: Nome
+        date_begun: Data d'inizio
+        definition: Definizione
+        description: Descrizione
+        url: Sito internet
+        partner_ids: Partner - Non Riservato
+        external_partner_ids: Partner istituzionali
+    hints:
+      project:
+        definition: Il tuo progetto in 150 caratteri
+        description: Gli obiettivi, la storia, ecc...
+        partner_ids: Scrivi nella barra il nome e scegli il partner
+        external_partner_ids: Scrivi nella barra il nome e scegli il partner
+    actions:
+      create: "Crea %{model}"
+      update: "Salva cambiamenti"
   views:
     pagination:
       next: prossima >>
@@ -230,5 +347,16 @@ it:
     errors:
       <<: *errors
   activerecord:
+    models:
+      organization: Ente
+      page: Pagina
+      post: Post
+      workshop: Workshop
+      project: Progetto
+      event: Evento
+    attributes:
+      page:
+        title: Titolo
+        text: Contenuto
     errors:
       <<: *errors

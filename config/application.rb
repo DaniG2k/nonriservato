@@ -1,6 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+require 'i18n/backend/fallbacks'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
@@ -36,7 +37,8 @@ module Nonriservato
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :it
-
+    config.i18n.available_locales = [:it, :en]
+    config.i18n.fallbacks = true
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = 'utf-8'
 
