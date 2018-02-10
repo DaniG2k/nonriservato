@@ -46,7 +46,7 @@ $color_6: $dark_yellow;
     background: none;
     border-left:  0 solid transparent;
     border-right: ($height * 1) solid transparent;
-    border-bottom: ($height * 1.5) solid $background_color; 
+    border-bottom: ($height * 1.5) solid $background_color;
     right: ($height * -1);
     top: 0;
   }
@@ -67,7 +67,7 @@ $color_6: $dark_yellow;
     background: none;
     border-left:  ($height * 1) solid transparent;
     border-right: 0 solid transparent;
-    border-bottom: ($height * 1.5) solid $background_color; 
+    border-bottom: ($height * 1.5) solid $background_color;
     left: ($height * -1);
     top: 0;
   }
@@ -86,7 +86,7 @@ $color_6: $dark_yellow;
     background: none;
     border-left:  ($height * 1) solid transparent;
     border-right: 0 solid transparent;
-    border-top:   ($height * 1.5) solid $background_color; 
+    border-top:   ($height * 1.5) solid $background_color;
     left: ($height * -1);
     top: 0;
   }
@@ -160,13 +160,13 @@ a.upper {
   a.red {
      @extend a.red;
   }
-  
+
   .square_logo {
     float:left;
     margin-left:10px;
     line-height:0;
   }
-  
+
   p {
     float:left;
     line-height:  14px;
@@ -205,7 +205,7 @@ a.upper {
     height: 62px;
     display:inline-block;
   }
-  
+
 }
 
 
@@ -217,23 +217,23 @@ a.upper {
   height:21px;
   line-height:22px;
   clear:both;
-    
+
   span {
     @include diagonal_right($dark_gray, 14px);
     margin-right:25px;
   }
-  
+
   &.red {
     span {
       @include diagonal_right($bordeaux, 14px);
     }
   }
-  
+
   a {
     text-transform:uppercase;
     text-decoration:underline;
   }
-  
+
 }
 
 .see_more {
@@ -273,7 +273,7 @@ ul#slider li {
 //                                                                          border-radius:16px;
 //                                                                          -webkit-border-radius:16px;
 //                                                                          -moz-border-radius:16px;}
-//                                                                          
+//
 //.bx-pager a.pager-active {background:#000; cursor:default; color:#fff !important; padding:3px 6px;
 //                                                                          border-radius:16px;
 //                                                                          -webkit-border-radius:16px;
@@ -288,7 +288,6 @@ ul#slider li {
   margin:10px 0;
   background-color:$color_1;
   line-height:1.6em;
-  text-transform:lowercase;
   font-size:14px;
 }
 
@@ -296,7 +295,7 @@ ul#slider li {
 .fb-like, .tw-like{
   float:left;
   margin-right:10px;
-  
+
 }
 
 
@@ -313,20 +312,20 @@ ul#slider li {
 
 #logo_search_container {
   margin-top:25px;
-  margin-bottom:40px;
+  margin-bottom:30px;
   position:relative;
-  
+
   a img {
     float:left;
   }
-  
+
   #search_nr {
   position:absolute;
   bottom:0px;
   right:0px;
   width:220px;
- 
-  
+
+
   input[type="text"] {
     width:220px;
     text-transform:uppercase;
@@ -335,7 +334,7 @@ ul#slider li {
     padding-right:35px;
     display:none;
   }
-  
+
   input[type="image"] {
     right:10px;
     top:7px;
@@ -344,7 +343,7 @@ ul#slider li {
 
     }
   }
-  
+
 }
 
 
@@ -358,26 +357,39 @@ ul#slider li {
   }
 }
 
+.flags {
+  float: right;
+  margin-bottom: 1em;
+  a {
+    padding-left: 5px;
+  }
+}
+
+.img-flag {
+  height: 19px;
+  margin-left: 1em;
+}
+
 
 ol.nav {
   border-bottom:1px dotted $dark_gray;
   height:27px;
   margin-bottom:15px;
-  
+
   li {
     float:left;
     list-style:none;
     &:first-child {
       margin-left:0px;
     }
-  }  
-  
+  }
 
-  
+
+
   li.right {
     float:right;
   }
-  
+
   a {
     text-transform:uppercase;
     font-size:18px;
@@ -388,19 +400,19 @@ ol.nav {
       @include diagonal_right($dark_gray, 15px)
     }
   }
-  
+
 }
 
 .pagination{
   a, span{
     font-size: 15px;
     font-weight:400;
-  }  
+  }
   .current{
    font-weight:800;
    color:red;
   }
-  
+
 }
 
 
@@ -422,7 +434,7 @@ ol.nav {
   .map h4 {
     @include diagonal_right($color_1)
   }
-  
+
   .about h4 {
     @include diagonal_right($color_2)
   }
@@ -434,9 +446,9 @@ ol.nav {
   .social h4 {
     @include diagonal_right($color_4)
   }
-  
-  
-  
+
+
+
   ul, p {
     clear:both;
     margin-bottom:0;
@@ -448,9 +460,9 @@ ol.nav {
     }
     li.separated {
       margin-top:15px;
-    }  
+    }
   }
-  
+
   .bottom {
     @extend .dotted_line;
     padding-top:10px;
@@ -478,28 +490,28 @@ ol.nav {
         }
       }
     }
-    
+
   }
-  
-  
+
+
   img.cariplo{
     max-width:150px;
     margin-bottom:15px;
     display:block;
   }
-  
+
   img.comune{
     max-width:110px;
     margin-top:15px;
     display:block;
-  }  
-  
-  
+  }
+
+
   .donations img{
     float:right;
     clear:both;
   }
-  
+
 
 }
 
@@ -515,9 +527,9 @@ ol.nav {
   .img_box{
     position:relative;
     float:left;
-    
+
   }
-  
+
   .title{
     @include diagonal_right($color_1, 24px);
     position:absolute;
@@ -525,7 +537,7 @@ ol.nav {
     left: 20px;
     font-size:21px;
   }
-  
+
   .zone {
     @include diagonal_right($dark_gray, 14px);
     font-size:14px;
@@ -533,7 +545,7 @@ ol.nav {
     top:  56px;
     left: 20px;
   }
-  
+
   .date {
     @include diagonal_right(#FFF, 14px);
     font-size:14px;
@@ -541,8 +553,8 @@ ol.nav {
     top:  76px;
     left: 20px;
     color:$dark_gray;
-  }  
-  
+  }
+
   .info_box{
     background-color:$gray_5;
     margin-left:-10px;
@@ -550,14 +562,14 @@ ol.nav {
     padding:10px;
     height:300px;
     position:relative;
-    
+
     img {
       position:absolute;
       bottom:0;
       left:0;
     }
   }
-  
+
   .what, .where{
     @include diagonal_right($color_1, 14px);
     margin-left:-20px;
@@ -572,27 +584,27 @@ ol.nav {
     	left:0px;
     }
   }
-  
+
   .what_details, .where_details{
     color:$dark_gray;
     clear:both;
-    font-size:12px;    
-    @include font_1;    
+    font-size:12px;
+    @include font_1;
     margin-bottom:20px;
     line-height:1.1em;
   }
-  
+
   .rails_map {
     width:240px;
     height:130px;
   }
-  
+
   .map {
     margin-left:-10px;
     position:absolute;
     bottom:0;
   }
-  
+
 }
 
 .nr_definition{
@@ -612,16 +624,16 @@ ol.nav {
   margin-bottom:20px;
   float:left;
 //  margin-right:19px;
-  
-  .year{
-    @include diagonal_right(white, 14px);
-    color:$dark_gray;
-    position:absolute;
-    top:0px;
-    left:0px;
-    z-index:10;
-  }
-  
+
+  // .year{
+  //   @include diagonal_right(white, 14px);
+  //   color:$dark_gray;
+  //   position:absolute;
+  //   top:0px;
+  //   left:0px;
+  //   z-index:10;
+  // }
+
   .title{
     @include diagonal_right($color_1, 24px);
     position:absolute;
@@ -630,7 +642,7 @@ ol.nav {
     font-size:21px;
     z-index:10;
   }
-  
+
   .zone {
     @include diagonal_right($dark_gray, 14px);
     font-size:14px;
@@ -639,7 +651,7 @@ ol.nav {
     left: 0px;
     z-index:10;
   }
-  
+
   .active{
     @include diagonal_right($color_1, 10px);
     position:absolute;
@@ -647,8 +659,8 @@ ol.nav {
     left: 0px;
     font-size:10px;
     z-index:10;
-  }  
-  
+  }
+
   p {
     width:160px;
     height:300px;
@@ -660,7 +672,7 @@ ol.nav {
     font-family:$font_1;
     font-size:11px;
   }
-  
+
   .who {
     @include diagonal_right($color_1, 14px);
     position:absolute;
@@ -669,7 +681,7 @@ ol.nav {
     font-size:14px;
     z-index:10;
   }
-  
+
   .who_details {
     max-width:150px;
     text-transform:uppercase;
@@ -679,11 +691,11 @@ ol.nav {
     left: 10px;
     z-index:10;
   }
-  
+
   &.last {
     margin-right:0;
   }
-  
+
   &.color_1 {
     .title{
       @include diagonal_right($color_1, 24px);
@@ -694,7 +706,7 @@ ol.nav {
       position:absolute;
     }
   }
-  
+
   &.color_2 {
     .title{
       @include diagonal_right($color_2, 24px);
@@ -706,7 +718,7 @@ ol.nav {
       position:absolute;
       color:$dark_gray;
     }
-  }  
+  }
 
   &.color_3 {
     .title{
@@ -717,7 +729,7 @@ ol.nav {
       @include diagonal_right($color_3, 14px);
       position:absolute;
     }
-  }  
+  }
 
   &.color_4 {
     .title{
@@ -728,7 +740,7 @@ ol.nav {
       @include diagonal_right($color_4, 14px);
       position:absolute;
     }
-  } 
+  }
   &.color_5 {
     .title{
       @include diagonal_right($color_5, 24px);
@@ -740,8 +752,8 @@ ol.nav {
       position:absolute;
       color:$dark_gray;
     }
-  }    
-  
+  }
+
 }
 
 .admin a.project_element:hover {
@@ -758,7 +770,7 @@ ol.nav {
     height:160px;
     opacity:1;
   }
-  
+
 }
 
 
@@ -773,7 +785,7 @@ ol.nav {
     font-size:22px;
     position:absolute;
   }
-  
+
 }
 
 
@@ -805,7 +817,7 @@ ol.nav {
       @include diagonal_right($color_2, 14px);
       color:$dark_gray;
       position:absolute;
-    }    
+    }
     &.color_3 {
       @include diagonal_right($color_3, 14px);
       position:absolute;
@@ -822,11 +834,11 @@ ol.nav {
     &.color_6 {
       @include diagonal_right($color_6, 14px);
       position:absolute;
-    }                
+    }
   }
-  
-  
-  
+
+
+
   .date{
     @include diagonal_right(white, 14px);
     color:$dark_gray;
@@ -841,17 +853,17 @@ ol.nav {
     font-family: $font_1;
     font-size:12px;
   }
-  
+
   &.small {
     .definition {
       padding-top:20px;
     }
   }
-  
+
   &.last {
     margin-right:0;
   }
-  
+
   .zone {
     @include diagonal_right($dark_gray, 14px);
     font-size:14px;
@@ -860,15 +872,15 @@ ol.nav {
     left: 0px;
     z-index:10;
   }
-  
+
   &.small {
     width:220px;
   }
-  
+
   img{
     max-width:100%;
   }
-  
+
 }
 
 
@@ -876,7 +888,7 @@ ol.nav {
 
 .admin a.event_element:hover {
   opacity:1;
-  
+
   &:after{
     content: "";
     background: transparent image-url('/assets/edit_event.png') no-repeat;
@@ -888,43 +900,43 @@ ol.nav {
     height:160px;
     opacity:1;
   }
-  
+
 }
 
 .admin a.event_element.small:hover {
   &:after{
     left:20px;
   }
-  
+
 }
 
 .banner_eventi {
   position:relative;
-  
+
   #map {
-  height:360px;  
+  height:360px;
   }
-  
+
   .events {
     bottom:68px;
     @include diagonal_right($color_1);
     font-size:22px;
     position:absolute;
   }
-  
+
   .where {
     bottom:35px;
     @include diagonal_right($dark_gray);
     font-size:22px;
-    position:absolute;    
+    position:absolute;
   }
-  
+
 }
 
 
 #events_show {
   position:relative;
-  
+
   .heading {
     height:82px;
     margin-bottom:20px;
@@ -932,14 +944,14 @@ ol.nav {
     border-bottom:1px dotted $dark_gray;
     margin-top:30px;
   }
-  
+
   h1 {
     @include diagonal_right($color_1, 40px);
     font-size:36px;
     font-weight:normal;
     text-transform:uppercase;
   }
-  
+
   .by {
     height:60px;
     position:absolute;
@@ -956,21 +968,21 @@ ol.nav {
         }
       }
   }
-  
+
   .image_box {
-   
+
    .image_group{
       position:relative;
-      
+
       .date_time{
         bottom:0;
         @include diagonal_right(white);
         color:$dark_gray;
         font-size:22px;
         position:absolute;
-      }     
+      }
    }
-   
+
    .from_project {
      width:460px;
      background-color:$dark_gray;
@@ -983,12 +995,12 @@ ol.nav {
      height:73px;
      margin-bottom:20px;
      max-width:100%;
-     
-     
+
+
      img {
        float:right;
      }
-     
+
      .text {
        padding:10px;
        line-height:1.2em;
@@ -999,13 +1011,13 @@ ol.nav {
      }
    }
   }
-  
-  
+
+
   .where_box {
     margin-bottom:20px;
     .map {
        position:relative;
-        
+
         .address {
         bottom:33px;
         @include diagonal_right(lighten($dark_gray, 30%));
@@ -1013,7 +1025,7 @@ ol.nav {
         font-size:22px;
         position:absolute;
         }
-    
+
         .zone {
         bottom:0;
         @include diagonal_right(lighten($dark_gray, 30%));
@@ -1021,12 +1033,12 @@ ol.nav {
         font-size:22px;
         position:absolute;
         }
-        
+
         #map {
         width:460px;
         height:360px;
         }
-        
+
     }
 
     .urls {
@@ -1045,9 +1057,9 @@ ol.nav {
         text-decoration:underline;
       }
     }
-    
-    
-    
+
+
+
   }
 
     .event_description {
@@ -1057,9 +1069,9 @@ ol.nav {
     border-bottom: 1px dotted $dark_gray;
     padding:20px 0;
     line-height:1.2em;
-    
+
   }
-  
+
   .info_box {
       background-color:lighten($dark_gray, 30%);
       padding:20px;
@@ -1070,20 +1082,20 @@ ol.nav {
         color:white;
         text-decoration:underline;
       }
-      
+
   }
-  
+
   .share_box {
     border: 1px solid lighten($dark_gray, 50%);
     //height:70px;
     margin-top:20px;
     padding:10px;
   }
-  
 
-  
-  
-  
+
+
+
+
 }
 
 
@@ -1103,18 +1115,18 @@ ol.nav {
   position:relative;
   margin-right:17px;
   margin-bottom:20px;
-  
+
   &.last {
     margin-right:0;
   }
-  
+
   .name {
     @include diagonal_right($color_1, 14px);
     top:10px;
     z-index:15;
     position:absolute;
   }
-  
+
   .definition {
     width:220px;
     height:200px;
@@ -1127,24 +1139,24 @@ ol.nav {
     display:none;
     font-family:$font_1;
   }
-  
+
   .see_more {
     display:none;
   }
-  
+
   &:hover {
     opacity:1;
     .definition {
-      display:inline;  
+      display:inline;
     }
-    
+
     .see_more {
       display:inline;
     }
   }
 
-  
-  
+
+
 }
 
 .admin a.organization_element:hover {
@@ -1161,31 +1173,31 @@ ol.nav {
     height:160px;
     opacity:1;
   }
-  
-  
+
+
 }
 
 .banner_organizzazioni {
   position:relative;
-  
+
   div {
     top:35px;
     @include diagonal_right($color_1);
     font-size:22px;
     position:absolute;
   }
-  
+
 }
 
 
 .organization_as_list {
   display: block;
   margin-bottom:10px;
-  
+
   .square_logo {
     float:left;
   }
-  
+
   .name {
     padding-top:22px;
     float:left;
@@ -1199,57 +1211,57 @@ ol.nav {
 
 
 #organizations_show {
-  
+
   .main{
     margin-top:20px;
   }
-  
+
   .bx-wrapper{
     margin-bottom:20px;
   }
-  
-  
+
+
   #map {
     width:700px;
     height:140px;
   }
-  
+
   .organization_name{
     font-size:21px;
     font-weight:bold;
     text-align:center;
     margin:15px 0;
-    
+
   }
-  
+
   .o_element {
     font-size: 14px;
     line-height:1.2;
     margin-bottom:10px;
     text-align:center;
   }
-  
+
   .summary {
     text-transform:uppercase;
     margin-bottom:20px;
   }
-  
+
   h1 {
     font-size:36px;
     font-weight:normal;
     line-height:1em;
     @include line_under
   }
-  
+
   .shared_description.no_line{
     border-bottom:none;
   }
-  
+
   .tags {
     color:lighten($dark_gray, 20%);
     @include line_under
   }
-  
+
 }
 
 .organization_as_thumb {
@@ -1266,7 +1278,7 @@ ol.nav {
     margin-top:10px;
     text-align:center;
   }
-  
+
 }
 
 
@@ -1281,21 +1293,21 @@ ol.nav {
   padding:15px 0px;
   display:block;
   margin-bottom:0px;
-  
-  
+
+
   img {
     margin-right:20px;
 //    border-top: 1px dotted $dark_gray;
     padding-top:0px;
     max-width:100%;
   }
-  
+
   .date {
     text-transform:uppercase;
     margin-bottom:5px;
     font-size:12px;
   }
-  
+
   .title {
     font-size:24px;
     line-height:1em;
@@ -1307,13 +1319,13 @@ ol.nav {
       };
     }
   }
-  
+
   .summary {
     font-family:$font_1;
     font-size:14px;
     margin:20px 0;
 	text-align:justify;
-    
+
     a.continue {
       color:red;
     }
@@ -1322,37 +1334,37 @@ ol.nav {
     border-top: none;
     padding-top:0;
   }
-  
+
   &.single {
-    
+
     border-top:none;
-    
+
     .title{
       border-bottom:1px dotted $dark_gray;
       padding-bottom:15px;
       margin-bottom:15px;
       font-size:36px;
     }
-    
+
     .date {
       margin-bottom:15px;
     }
-    
+
     img {
       border-top: none;
       padding-top:0;
       margin-bottom:15px;
     }
-    
+
     .body {
       font-family:$font_1;
       font-size:14px;
       line-height:1.5em;
 	  text-align:justify;
     }
-    
+
   }
-  
+
 }
 
 
@@ -1364,21 +1376,21 @@ ol.nav {
     padding:15px 0px;
     display:block;
     margin-bottom:10px;
-    
+
 	.body{
 		text-align:justify;
 	}
-	
+
     img {
       float:left;
       margin-right:20px;
     }
-    
+
     .date {
       text-transform:uppercase;
       margin-bottom:15px;
     }
-    
+
     .summary {
       float:left;
       //display:inline-block;
@@ -1403,7 +1415,7 @@ ol.nav {
     font-size:22px;
     position:absolute;
   }
-  
+
 }
 
 // +++++++++++++++++++++
@@ -1411,11 +1423,11 @@ ol.nav {
 // +++++++++++++++++++++
 
 #projects_show, #organizations_show, #workshops_show {
-  
+
   .heading {
-    
+
       margin-top:30px;
-    
+
       h1 {
         @include diagonal_right($color_1, 40px);
         font-size:36px;
@@ -1424,7 +1436,7 @@ ol.nav {
         display:inline;
         margin-bottom:10px;
       }
-    
+
       .date {
         clear:both;
         font-size:12px;
@@ -1434,14 +1446,14 @@ ol.nav {
         padding-bottom:10px;
       }
   }
-  
-  
+
+
   .shared_definition {
     font-size:24px;
     line-height:1.1em;
     margin-bottom:20px;
   }
-  
+
   .shared_description {
     font-family:$font_1;
     font-size:14px;
@@ -1450,38 +1462,38 @@ ol.nav {
     border-bottom: 1px dotted $dark_gray;
     padding-bottom:20px;
   }
-  
+
   .sidebar {
     border-top: 1px dotted $dark_gray;
     padding-top:20px;
     font-size: 18px;
     text-transform:uppercase;
     line-height:1.1em;
-    
+
     span {
       text-transform:lowercase;
     }
-    
+
     .o_image{
       margin-top:10px;
     }
-    
+
     p {
       text-transform:lowercase;
       border-bottom: 1px dotted $dark_gray;
       padding-bottom:20px;
-      
+
       strong {
         text-transform:uppercase;
         font-weight: bold;
       }
     }
-    
-  }
-  
 
-  
-  
+  }
+
+
+
+
 }
 
 
@@ -1493,11 +1505,11 @@ ol.nav {
 
 #posts_show .admin_box {
   margin-top:70px;
-} 
+}
 
 
 .partner_list {
-  margin:20px 0; 
+  margin:20px 0;
 }
 
 h4 {
@@ -1513,12 +1525,12 @@ h4 {
     margin-top: 20px;
     font-size: 17px;
     line-height: 1em;
-    
-    
+
+
     a{
       color: $bordeaux;
-    }  
-    
+    }
+
   }
 }
 
@@ -1532,8 +1544,8 @@ h4 {
     display:none;
   }
   background-color:black;
-  
-  
+
+
   #signin_box{
     text-align:center;
     padding:20px 0;
@@ -1546,16 +1558,16 @@ h4 {
     top:100px;
     left:230px;
     }
-  
+
   img#logo {
 
   }
-  
+
   form {
     text-align:left;
     margin-top:50px;
     padding:0 50px;
-    
+
     input[type="email"], input[type="password"]{
       font-size:25px;
       width:380px;
@@ -1570,7 +1582,7 @@ h4 {
     label.small {
       font-size:14px;
     }
-    
+
     input[type="submit"], a.submit{
       margin-top:15px;
       font-size:24px;
@@ -1578,9 +1590,9 @@ h4 {
       min-width:150px;
       text-align:center;
     }
-    
+
   }
-  
+
 }
 
 
@@ -1605,7 +1617,7 @@ h4 {
   float:none;
   display:inline-block;
   }
-  
+
   h1.o_2 {
   @include diagonal_right($color_3);
   min-width:200px;
@@ -1626,7 +1638,7 @@ h4 {
   min-width:200px;
   float:none;
   display:inline-block;
-  }  
+  }
 
   h1.o_5 {
   @include diagonal_right($color_5);
@@ -1634,33 +1646,33 @@ h4 {
   min-width:200px;
   float:none;
   display:inline-block;
-  }  
+  }
 
   #header ol.nav {
     display: none;
   }
-  
+
   ol.nav {
     display:auto;
     clear:both;
     height:33px;
     margin-bottom:40px;
-    
+
     li a {
       line-height:1.8em;
       &.active:after {
-       display:none; 
+       display:none;
       }
     }
-    
+
     li a.o_1.active{
        @include diagonal_right($dark_gray, 22px);
     }
-    
+
     li a.o_2.active{
        @include diagonal_right($color_3, 22px);
     }
-    
+
     li a.o_3.active{
        @include diagonal_right($color_4, 22px);
     }
@@ -1668,12 +1680,12 @@ h4 {
     li a.o_4.active{
        @include diagonal_right($color_2, 22px);
        color:$dark_gray;
-    }   
-    
+    }
+
     li a.o_5.active{
        @include diagonal_right($color_5, 22px);
        color:$dark_gray;
-    }    
+    }
 
     li a.o_6.active{
        @include diagonal_left(black, 22px);
@@ -1684,7 +1696,7 @@ h4 {
     }
 
   }
-  
+
   .big_add_new {
     cursor:pointer;
     width:460px;
@@ -1702,13 +1714,13 @@ h4 {
     div{ font-size:22px;}
     &.o_1 {
       background-color: $dark_gray;
-    }    
+    }
     &.o_2 {
       background-color: $color_3;
     }
     &.o_3 {
       background-color: $color_4;
-    }    
+    }
     &.o_6 {
       background-color: black;
     }
@@ -1720,28 +1732,33 @@ h4 {
       background-color: white;
       color:black;
     }
-    
+
     &.large {
       width:540px;
     }
   }
-  
-  
+
+
   .box_dashboard .big_add_new {
     width:260px;
     height:88px;
     background-image: image-url('/assets/small_plus.png');
-    font-size:31px;
     padding-left:100px;
     padding-top:21px;
     line-height:25px;
-    div{ font-size:12px;}
+    h2 {
+      font-size:23px;
+      margin-bottom: 0;
+    }
+    .subtext {
+      font-size:12px;
+    }
     &.o_8 {
       background-image: image-url('/assets/small_plus_black.png');
     }
   }
-  
-  
+
+
   .uppercase_divider {
     text-transform:uppercase;
     font-size:22px;
@@ -1752,9 +1769,9 @@ h4 {
       border-bottom: none;
     }
   }
-  
-  
-  
+
+
+
   .box_dashboard {
     background-color: lighten($dark_gray, 70%);
     min-height:250px;
@@ -1769,22 +1786,22 @@ h4 {
       font-weight:normal;
       float:right;
     }
-    
+
     &.admin {
       background-color: ($color_1);
       margin-bottom:30px;
       clear:both;
-      
+
       h3 {
         @include diagonal_left(darken($color_1, 20%), 36px);
         float:right;
       }
     }
-    
+
 
   }
-  
-  
+
+
   #main {
     h4 {
       font-size:24px;
@@ -1793,51 +1810,51 @@ h4 {
       line-height:1em;
     }
   }
-  
+
   .token-input-list {
     clear:none;
     width:389px;
   }
-  
+
   // +++++++++++++++++++++
   // ADMIN - FORMS
   // +++++++++++++++++++++
   .formtastic {
     clear:both;
   }
-  
-  
+
+
   .formtastic .inputs {
     overflow:visible;
     margin-bottom:20px;
-    
+
     .input {
       overflow:visible;
     }
-    
+
     .clearform {
       clear:left;
     }
-    
+
     .map_container {
       width:540px;
       margin-bottom:20px;
     }
-    
+
     .gmaps4rails_map {
       width:525px;
       height:300px;
     }
-    
+
     .square_logo{
       float:left;
     }
-    
+
     .post_image {
       float:left;
     }
-    
-    
+
+
     ol li{
       position:relative;
       &.quarter{
@@ -1853,11 +1870,11 @@ h4 {
         width:270px;
         margin-left:0px;
         display:inline-block;
-      }        
+      }
       &.three_quarter {
         width:395px;
         margin-left:10px;
-        display:inline-block;          
+        display:inline-block;
       }
       &.float{
         float:left;
@@ -1870,25 +1887,25 @@ h4 {
         margin-bottom:8px;
         width:auto;
       }
-  
+
       textarea {
         padding:3px;
       }
-  
+
       .choices {
         legend, label {
           position:static;
         }
       }
-    
+
       .choices-group {
         padding-left:0px;
         margin-top:20px;
-        
+
         input {
           width:auto;
         }
-        
+
         label {
           font-size:14px;
           text-transform:none;
@@ -1900,41 +1917,41 @@ h4 {
         }
       }
 
-    
+
       input {
         font-size:21px;
         padding:3px 3px 1px 3px;
         font-family:$font_2;
         width:100%;
       }
-        
+
       textarea{
         width:100%;
       }
-  
+
       &.error{
         input, textarea {
         border:1px solid red;
         }
-      } 
-    
+      }
+
       p.inline-hints {
         position:absolute;
         top:  6px;
         left: 0px;
       }
-        
-      #countit_counter {         
+
+      #countit_counter {
         position:absolute;
         top:  13px;
-        right: 0px; 
+        right: 0px;
         z-index:60;
       }
-        
+
       &.extra_hint p.inline-hints {
         width:280px;
       }
-      
+
       &.half p.inline-hints {
         margin-left:50%;
       }
@@ -1942,46 +1959,46 @@ h4 {
       p.inline-errors {
       margin-left:0;
       }
-      
+
       &.divider_below {
         border-bottom: 1px dotted $dark_gray;
         margin-bottom:40px;
         padding-bottom:40px;
       }
-      
+
        &.right_hint p.inline-hints {
         left:100px;
       }
-    
+
       .token-input-list {
         width:100%;
       }
-        
+
       .token-input-input-token input {
         font-family:verdana;
         font-size:12px;
       }
-      
+
       &.image_field{
         float:none;
         clear:both;
       }
-       
-      // fieldset interno per immagini        
+
+      // fieldset interno per immagini
       fieldset.inputs {
         position:relative;
         padding-top:70px;
-      
+
         legend {
           display:none;
         }
-        
+
         li{
           position:absolute;
           top:0;
           left:0;
         }
-          
+
       a.upload_image {
         float:left;
         margin-right:10px;
@@ -1996,18 +2013,18 @@ h4 {
           top:0;
           left:0;
         }
-      }          
+      }
     }
   }
-  
 
-  
-}  
-  
+
+
+}
+
   .formtastic .action {
     list-style:none;
-  }  
-  
+  }
+
   input[type="submit"]{
     border:0;
     width:300px;
@@ -2028,9 +2045,9 @@ h4 {
         background: lighten(red, 20%);
       }
     }
-    
+
   }
-  
+
   .event_image {
     margin-bottom:20px;
   }
@@ -2041,7 +2058,7 @@ h4 {
     font-size:14px;
     line-height:1em;
   }
-  
+
 }
 
 
@@ -2053,12 +2070,12 @@ h4 {
 
 .gm-style-iw div{
   overflow:hidden !important;
-  
+
 }
 
 
 #pages_show {
-  
+
 //  .heading {
 //    height:82px;
 //    margin-bottom:20px;
@@ -2066,21 +2083,21 @@ h4 {
 //    border-bottom:1px dotted $dark_gray;
 //    margin-top:30px;
 //  }
-  
+
   h1 {
     @include diagonal_right($color_1, 40px);
     font-size:36px;
     font-weight:normal;
     text-transform:uppercase;
-    
+
   }
-  
-  
+
+
   .main a{
     color: $bordeaux;
   }
-  
-  
+
+
   .page_main{
     clear:both;
     font-family:$font_1;
@@ -2088,26 +2105,26 @@ h4 {
     border-top: 1px dotted $dark_gray;
     border-bottom: 1px dotted $dark_gray;
     padding:20px 0;
-    line-height:1.2em;    
+    line-height:1.2em;
   }
-  
+
   .cariplo{
     max-width:200px;
   }
-  
+
   .statuto_holder{
     position:relative;
-    
+
     .statuto{
       font-size:25px;
       position:absolute;
       top:30px;
       left:30px;
     }
-    
+
   }
-  
-  
+
+
 }
 
 #pages_show .page{
@@ -2118,14 +2135,14 @@ h4 {
 .banner_cf{
   margin-top:-35px;
   margin-bottom:10px;
-  
+
 }
 
 
 
-#posts_show .body, 
-#events_show .event_description, 
-#projects_show .shared_description, 
+#posts_show .body,
+#events_show .event_description,
+#projects_show .shared_description,
 #workshops_show .shared_description{
 		a{
 		text-decoration:underline;
@@ -2166,11 +2183,11 @@ h4 {
   img{
     max-width:100%;
   }
-  
+
   #map{
     max-width:100%;
   }
-  
+
 }
 
 
@@ -2212,12 +2229,12 @@ h4 {
 
 
    .organization_as_list {
-     
+
      .square_logo.small{
         display:none;
      }
-     
-     
+
+
      .name {
 //       padding-top:22px;
 //       float:left;
@@ -2255,13 +2272,13 @@ h4 {
     .project_element p, .workshop_element p{
       height:274px !important;
     }
-    
+
     .x1000{
       margin-left:0px;
       margin-top:20px;
     }
-    
-    
+
+
 }
 
 @media only screen and (max-width: 480px){
@@ -2296,29 +2313,29 @@ h4 {
     .map{
       display:none;
     }
-    
-  }  
-  
-  
+
+  }
+
+
   .project_element, .project_element {
     img{
       width:100%;
     }
-    
+
     .who, .who_details{
       display:none;
     }
-    
+
     p{
       height:225px;
     }
-    
-  } 
-  
+
+  }
+
   .nr_definition{
     font-size:2.2em;
   }
-  
+
   #banner_gallab{
   	margin-left:100px;
   }
@@ -2327,35 +2344,35 @@ h4 {
 
 
 @media only screen and (max-width: 767px) {
- 
- 
-  
+
+
+
   #footer .grid_4{
     margin-bottom:25px;
-  
+
     &.donations img{
       clear:both;
       float:left;
     }
-  } 
-  
+  }
+
   #footer .bottom span{
     top:inherit;
   }
- 
- 
+
+
  .social_icons{
    position: inherit;
    top: inherit;
    right: inherit;
-   margin-top: 30px; 
+   margin-top: 30px;
  }
- 
+
  #logo_search_container{
    margin-bottom:20px;
  }
- 
- 
+
+
   .big_featured .info_box{
     margin-left:20px;
     width:400px;
@@ -2363,17 +2380,17 @@ h4 {
 
   #home_index #slider {
 //    height:350px;
-    
+
     .bx-viewport{
       height:370px !important;
     }
-    
+
   }
 
   .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
     left:20px;
   }
-  
+
   .bx-wrapper .bx-controls-direction a{
     top:40%;
   }
@@ -2388,7 +2405,7 @@ h4 {
   #banner_gallab{
   	display:none;
   }
-  
+
 }
 
 
@@ -2396,42 +2413,39 @@ h4 {
   .big_featured .title{
     font-size:13px;
   }
-  
+
   .big_featured .zone, .big_featured .date{
     display:none;
   }
-  
+
   .bx-wrapper .bx-controls-direction a{
     top:28%;
   }
-  
+
   .big_featured .info_box{
     width:280px;
   }
-  
+
   .project_element, .workshop_element {
     p{
       height:196px;
       background:transparent url(/assets/dark_trans_back.png) repeat-x;
       width:300px;
     }
-  }  
-  
+  }
+
   #logo_search_container a img{
     float:none;
   }
   #logo_search_container{
     text-align:center;
   }
-  
+
   #footer .bottom span.credits{
     top:55px;
   }
-  
 
-  
-  
+
+
+
 }
-
-
-

@@ -4,21 +4,21 @@ module ApplicationHelper
   def nav_order
     [["events", "calendario"], ["projects", "progetti"], ["organizations", "network"], ["workshops", "workshop"], ["posts", "blog"]]
   end
-  
+
   def is_active?(page_name)
-      stripped_controller = params[:controller].split("/").last
-      current_route = request.env['PATH_INFO'].split("/").last
-      if @current_tab.nil?
-        " active" if (params[:action] == page_name) || (page_name == "home" && (stripped_controller == page_name)) ||  ((current_route == page_name))
-      else
-        " active" if page_name == @current_tab
-      end
+    stripped_controller = params[:controller].split("/").last
+    current_route = request.env['PATH_INFO'].split("/").last
+    if @current_tab.nil?
+      " active" if (params[:action] == page_name) || (page_name == "home" && (stripped_controller == page_name)) ||  ((current_route == page_name))
+    else
+      " active" if page_name == @current_tab
+    end
   end
-  
+
   def asset_url asset
     "#{request.protocol}#{request.host_with_port}#{asset_path(asset)}"
   end
-  
+
   def default_meta_tags
     {
       site: 'NonRiservato',
@@ -27,7 +27,7 @@ module ApplicationHelper
       og: {
         title:            :title,
         description:      :description,
-        type:             "website", 
+        type:             "website",
         url:              request.original_url,
         image:            "http://nonriservato.net/assets/header_calendario.jpg"
           },
@@ -36,9 +36,9 @@ module ApplicationHelper
       }
     }
   end
-  
-  
-  
+
+
+
   def admin_nav_order
     if current_organization.try(:admin?)
       [["edit_profile", "profilo"], ["projects", "progetti"], ["events","eventi"], ["workshops", "workshops"], ["posts","post"], ["organizations","enti"]]
@@ -46,7 +46,7 @@ module ApplicationHelper
       [["edit_profile", "profilo"], ["projects", "progetti"], ["events","eventi"], ["partners","partner nr"], ["external_partners","partner istituzionali"]]
     end
   end
-  
+
   def admin_namespace?
     controller_path.split('/').first == "admin" ? true : false
   end
@@ -58,15 +58,15 @@ module ApplicationHelper
   def prepopulate_organizations
     content_tag( :script, render('/admin/organizations/prepopulate'), :type => "text/javascript")
   end
-  
+
   def prepopulate_external_organizations
     content_tag(:script, render('/admin/external_organizations/prepopulate_project'),:type => "text/javascript")
-  end  
+  end
 
   def prepopulate_projects
     content_tag( :script, render('/admin/projects/prepopulate'),:type => "text/javascript")
   end
-  
+
   def prepopulate_external_partners
     content_tag( :script, render('/admin/external_organizations/prepopulate_organization'),:type => "text/javascript")
   end
@@ -78,20 +78,16 @@ module ApplicationHelper
       return "http://#{url}"
     end
   end
-  
+
   def last_if_module(counter, elements_per_row)
-    return "last" if ((counter + 1) % elements_per_row == 0 && counter != 0)
+    'last' if ((counter + 1) % elements_per_row == 0 && counter != 0)
   end
 
   def markdown(key)
-      markdown = raw (RDiscount.new(I18n.t(key)).to_html)      
+    markdown = raw (RDiscount.new(I18n.t(key)).to_html)
   end
 
   def markdown_d(key)
-      markdown = raw (RDiscount.new(key).to_html)
+    markdown = raw (RDiscount.new(key).to_html)
   end
-    
-
-
-
 end

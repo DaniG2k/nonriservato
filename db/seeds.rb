@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+user = Organization.new(
+  name: 'Test Admin',
+  email: 'test@example.com',
+  password: 'test1234',
+  password_confirmation: 'test1234',
+  definition: Faker::Lorem.sentence
+)
+user.admin = true
+user.save

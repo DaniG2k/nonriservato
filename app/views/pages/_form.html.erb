@@ -1,8 +1,7 @@
-<%= form_for @page do |f| %>
-
+<%= simple_form_for @page do |f| %>
   <% if @page.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@page.errors.count, "error") %> prohibited this event from being saved:</h2>
+      <h2><%= pluralize(@page.errors.count, 'error') %> prohibited this page from being saved:</h2>
 
       <ul>
       <% @page.errors.full_messages.each do |msg| %>
@@ -11,20 +10,10 @@
       </ul>
     </div>
   <% end %>
-  
-  <%= f.hidden_field :slug %>
 
-  <p>
-    <%= f.label :title, "title", :class => "required" %>
-    <%= f.text_field :title %>
-  </p>
-  
-  <p>
-    <%= f.label :text, "Text", :class => "required" %>
-    <%= f.text_area :text, :style => "height:400px;width:100%" %>
-  </p>
-  
-  <p>
-    <%= f.submit @page.new_record? ? "Crea" : "Aggiorna" %>
-  </p>
+  <%= f.input :slug, as: :hidden %>
+  <p><%= f.input :title %></p>
+  <p><%= f.input :text, style: 'height:400px;width:100%' %></p>
+
+  <p><%= f.button :submit %></p>
 <% end %>

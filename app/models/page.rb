@@ -1,5 +1,8 @@
 class Page < ActiveRecord::Base
   attr_accessible :text, :title, :slug
 
-  validates :title, :text, presence: true
+  # Validations
+  validates_presence_of :title, :text
+
+  translates :title, :text
 end

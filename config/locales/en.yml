@@ -4,6 +4,9 @@
 en:
   website: Non Riservato
   hello: Hello
+  carousel:
+    what_is_it: What is it?
+    where_is_it: Where is it?
   home:
     header:
       enter: Enter
@@ -15,13 +18,139 @@ en:
       projects: Projects
       maps: Maps
       support_us: Support us
-      purchase: Purchase
+      services: Services
       creative_workshops: Creative workshops
       lectures: Lectures
       commissioned_projects: Commissioned projects
       sponsor: Sponsor
       go_to_admin_area: Go to the admin area
       exit: Exit
+    index:
+      calendar: Calendar
+      updates: Updates
     footer:
       support_us: Support us
       footer_slogan: A SHARED PLATFORM FOR ORGANIZATIONS THAT DECIDE TO CHANGE THE URBAN ENVIRONMENT IN WHICH THEY LIVE
+  admin:
+    shared:
+      box_dashboard:
+        content: Content
+        sub_invite_organization: invite a new organization
+        sub_add_post: add a new post
+        sub_add_workshop: add a new workshop
+        sub_add_project: add a new project
+        sub_add_event: add a new event
+    events:
+      new:
+        title: New event
+      edit:
+        title: Edit event
+    posts:
+      index:
+        modify_existing: Modify an existing post
+      new:
+        title: New post
+      edit:
+        title: Edit post
+      form:
+        confirm: Are you sure you'd like to destroy this post?
+        destroy: Destroy
+    projects:
+      index:
+        project: Project
+        add_project: Add a new project
+        modify_existing: Modify an existing project
+      new:
+        title: New Project
+      form:
+        upload_image: Upload a new image
+        destroy: Destroy
+        confirm: Are you sure you'd like to destroy this project?
+  events:
+    event_created: 'Event was created successfully.'
+    event_updated: 'Event was updated successfully.'
+    event_not_created: 'Event was not created.'
+    event_not_updated: 'The event has not been updated.'
+    event_destroyed: 'The event was successfully destroyed.'
+  projects:
+    project_created: 'Project was created successfully.'
+    project_updated: 'Project was updated successfully.'
+    project_not_updated: 'The project has not been updated.'
+    project_destroyed: 'The project was successfully destroyed.'
+  posts:
+    post:
+      continue: Continue...
+    show:
+      return_to_blog: '<-- Return to the blog...'
+    post_created: 'Post was created successfully.'
+    post_updated: 'Post was updated successfully.'
+    post_not_created: 'Post was not created.'
+    post_not_updated: 'The post has not been updated.'
+    post_destroyed: 'The post was successfully destroyed.'
+    no_change_made: No change made.
+  pages:
+    new:
+      no_page: This page doesn't exist. Would you like to create it?
+    show:
+      edit_page: Edit page
+    page_created: Page was created successfully.
+  formtastic:
+    labels:
+      event:
+        name: Name
+        event_partner_ids: Partner
+        event_type: Event type
+        event_category: Event category
+        project: Reference project
+        date_begun: Start date
+        date_ended: End date
+        time: Time
+        zone: Area
+        address: Address
+        description: Description
+        definition: Summary
+        url: Website
+        email: Contact email
+        tel_1: Primary phone number
+        tel_2: Secondary phone number
+        facebook_event_url: Facebook event
+        image: Load image
+      post:
+        title: Title
+        date_published: Date
+        summary: Introduction (200 characters)
+        body: Post body
+      project:
+        name: Name
+        date_begun: Start date
+        definition: Definition
+        description: Description
+        url: Website
+        partner_ids: Partners
+        external_partner_ids: Institutional partners
+    hints:
+      project:
+        definition: Your project in 150 characters
+        description: The objectives, story, etc.
+        partner_ids: Type a name and select the appropriate partner
+        external_partner_ids: Type a name and select the appropriate partner
+    actions:
+      create: "Create %{model}"
+      update: "Save changes"
+  simple_form:
+    labels:
+      page:
+        title: Title
+        text: Text
+  activerecord:
+    models:
+      organization: Organization
+      page: Page
+      post: Post
+      workshop: Workshop
+      project: Project
+      event: Event
+    attributes:
+      page:
+        title: Title
+        text: Text

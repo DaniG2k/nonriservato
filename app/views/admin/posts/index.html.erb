@@ -1,8 +1,10 @@
 <div class="grid_7">
-   <a href="/admin/posts/new" class="big_add_new o_6" >post<div>aggiungi un nuovo post</div></a>
-   
-   <p class="uppercase_divider post">o modificane uno esistente</p>
+  <%= link_to new_admin_post_path, class: 'big_add_new o_6' do %>
+    Post
+    <div>aggiungi un nuovo post</div>
+  <% end %>
 
-   <%= render "/posts/post_small" %>
-   
+  <p class="uppercase_divider post"><%= t('.modify_existing') %></p>
+
+  <%= render "/posts/post_small" %>
 </div>

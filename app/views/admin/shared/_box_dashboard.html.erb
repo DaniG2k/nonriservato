@@ -1,36 +1,35 @@
 <div class="grid_4">
-
    <% if admin? %>
    <div class="box_dashboard admin">
-      <h3>non riservato</h3>
-   
-      <%= link_to  new_organization_invitation_path, :class => "big_add_new o_8" do %>
-         ente<div>invita un nuovo ente</div>
+      <h3><%= t('website') %></h3>
+
+      <%= link_to new_organization_invitation_path, class: 'big_add_new o_8' do %>
+         <h2><%= t('activerecord.models.organization') %></h2>
+         <div class="subtext"><%= t('.sub_invite_organization') %></div>
       <% end %>
-      
-      <a href="/admin/posts/new" class="big_add_new o_8" >post<div>aggiungi un nuovo post</div></a>
-   
-      <%= link_to  new_admin_workshop_path, :class => "big_add_new o_8" do %>
-         workshop<div>carica un nuovo workshop</div>
+
+      <%= link_to new_admin_post_path, class: 'big_add_new o_8' do %>
+        <h2><%= t('activerecord.models.post') %></h2>
+        <div class="subtext"><%= t('.sub_add_post') %></div>
       <% end %>
-   
-   
-   </div>   
+
+      <%= link_to new_admin_workshop_path, class: 'big_add_new o_8' do %>
+         <h2><%= t('activerecord.models.workshop') %></h2>
+         <div class="subtext"><%= t('.sub_add_workshop') %></div>
+      <% end %>
+   </div>
    <% end %>
 
-   <div class="box_dashboard">
-      <h3>contenuti</h3>
-   
-      <a href="/admin/projects/new" class="big_add_new o_2" >progetto<div>aggiungi un nuovo progetto</div></a>
-   
-      <%= link_to  new_admin_event_path, :class => "big_add_new o_3" do %>
-         evento<div>aggiungi un nuovo evento</div>
-      <% end %>
-   
-   </div>
+  <div class="box_dashboard">
+    <h3><%= t('.content') %></h3>
+    <%= link_to new_admin_project_path, class: 'big_add_new o_2' do %>
+      <h2><%= t('activerecord.models.project') %></h2>
+      <div class="subtext"><%= t('.sub_add_project') %></div>
+    <% end %>
 
-
-
+    <%= link_to new_admin_event_path, class: 'big_add_new o_3' do %>
+       <h2><%= t('activerecord.models.event') %></h2>
+       <div class="subtext"><%= t('.sub_add_event') %></div>
+    <% end %>
+  </div>
 </div>
-
-

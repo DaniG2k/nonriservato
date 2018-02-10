@@ -6,8 +6,9 @@ en:
       updated: 'Your password was set successfully. You are now signed in.'
       no_invitations_remaining: "No invitations remaining"
       new:
+        title: 'Invite a new organization'
         header: "Send invitation"
-        submit_button: "Send an invitation"
+        submit_button: "Invite"
       edit:
         header: "Set your password"
         submit_button: "Set my password"

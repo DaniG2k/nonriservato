@@ -2,9 +2,9 @@
 	<div id="login_tab" class="<%= "big" if current_organization %>">
 	   <% if current_organization %>
 	      <p>
-	         <%= "#{t('hello')} #{current_organization.name}" %><br>
-	         <%= link_to t('.go_to_admin_area'), admin_root_path %><br>
-	         <%= link_to t('.exit'), destroy_organization_session_path, method: :delete, class: 'red' %>
+					<%= "#{t('hello')} #{current_organization.name}" %><br>
+					<%= link_to t('.go_to_admin_area'), admin_root_path %><br>
+					<%= link_to t('.exit'), destroy_organization_session_path, method: :delete, class: 'red' %>
 	      </p>
 	      <div class="square_logo micro">
 	        <%= image_tag current_organization.logo(:micro) %>
@@ -37,10 +37,13 @@
 		  <%# link_to (image_tag "social_icons/youtube.png", :title => "Youtube"), "#", :target => "_blank" %>
 		  <%= link_to (image_tag "social_icons/newsletter.png", :title => "Newsletter"), "http://eepurl.com/bo2dmv", target: "_blank" %>
 		</div>
-		<%= render 'common/language_selector' %>
 	</div>
 
 	<%= yield :header_banner %>
+</div>
+
+<div class="grid_12">
+	<%= render 'shared/language_selector' %>
 </div>
 
 <div class="grid_12">
@@ -68,12 +71,12 @@
        <li><%= link_to('Network', organizations_path, class: is_active?("organizations")) %></li>
        <li><%= link_to(t('.support_us'), page_path('support-us')) %></li>
        <li class='has-sub'>
-				 <%= link_to(t('.purchase'), '#') %>
+				 <%= link_to(t('.services'), '#') %>
           <ul>
              <li><%= link_to(t('.lectures'), page_path('formazione')) %></li>
              <li><%= link_to(t('.commissioned_projects'), page_path('commissione')) %></li>
              <li><%= link_to(t('.creative_workshops'), workshops_path, class: is_active?("workshops")) %>
-             <li><%= link_to('Shop', page_path('shop')) %></li>
+             <li><%= link_to('Gallab', page_path('shop')) %></li>
 						 <%= link_to t('.sponsor'), page_path('sponsorizza'), class: 'last'%>
           </ul>
        </li>

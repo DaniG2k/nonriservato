@@ -13,6 +13,7 @@ gem 'mime-types', :require => 'mime/types'
 gem 'meta-tags'
 gem 'friendly_id'
 gem 'globalize', '~> 3.1.0'
+gem 'simple_form'
 
 # Remove this once Rails version is upgraded:
 gem "test-unit", :require => false
@@ -34,6 +35,7 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'database_cleaner'
 end
 
 gem 'ransack'
