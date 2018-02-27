@@ -1,7 +1,7 @@
 <li>
    <div class="big_featured">
       <div class="grid_9 img_box alpha">
-         <%= link_to(image_tag(event.image(:featured))), event_path(event) %>
+         <%= link_to (image_tag event.image(:featured)), event_path(event) %>
          <div class="title"><%= event.name %></div>
          <div class="zone"><%= event.zone.empty? ? "tutta la città" : "municipio #{event.zone}" %></div>
          <div class="date"><%= l(event.date_begun, :format => :long) %></div>

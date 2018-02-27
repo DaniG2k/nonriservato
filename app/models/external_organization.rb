@@ -11,7 +11,7 @@ class ExternalOrganization < ActiveRecord::Base
   if Rails.env.production?
     PAPERCLIP_STORAGE_OPTS.merge!(
       storage: :s3,
-      s3_credentials: "#{Rails.root}/config/s3.yml",
+      s3_credentials: S3_SECRETS,
       path: "/external_organizations/:id/:style/:filename",
       s3_host_name: 's3-eu-west-1.amazonaws.com'
     )

@@ -1,5 +1,25 @@
 # encoding: utf-8
 class Organization < ActiveRecord::Base
+  PAPERCLIP_STORAGE_OPTS = {
+    styles: {
+      micro: '40x40>',
+      small_thumb: '60x60>',
+      mini: '120x120>',
+      big_thumb: '140x140>',
+      medium: '220x220>'
+    }
+  }
+
+  if Rails.env.production?
+    PAPERCLIP_STORAGE_OPTS.merge!(
+      storage: :s3,
+      s3_credentials: S3_SECRETS,
+      path: "/organizations/:id/:style/:filename",
+      s3_host_name: 's3-eu-west-1.amazonaws.com',
+      default_url: '/assets/missing_:style_organization.png'
+    )
+  end
+
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
@@ -37,13 +57,7 @@ class Organization < ActiveRecord::Base
 
   # accepts_nested_attributes_for :user
 
-  has_attached_file :logo,
-  :styles => {:micro =>"40x40>", :small_thumb => "60x60>", :mini =>"120x120>", :big_thumb => "140x140>", :medium => "220x220>"},
-  :storage => :s3,
-  :s3_credentials => "#{Rails.root}/config/s3.yml",
-  :path => "/organizations/:id/:style/:filename",
-  :s3_host_name => 's3-eu-west-1.amazonaws.com',
-  :default_url => '/assets/missing_:style_organization.png'
+  has_attached_file :logo, PAPERCLIP_STORAGE_OPTS
 
   extend FriendlyId
   friendly_id :name, use: [:slugged, :history]
