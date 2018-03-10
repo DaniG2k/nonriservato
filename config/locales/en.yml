@@ -12,6 +12,8 @@ en:
       enter: Enter
       what_we_are: What we are
       who_we_are: Who we are
+      manifesto: Manifesto
+      thanks: Thanks
       head_office: Head office
       contacts: Contacts
       calendar: Calendar
@@ -28,10 +30,27 @@ en:
     index:
       calendar: Calendar
       updates: Updates
+      intro_text_html: 'Permanent lab for <strong>creative participation</strong> in <strong>public spaces</strong>.<br />Urban projects, art, sport, games, gardening, workshops.'
     footer:
       support_us: Support us
       footer_slogan: A SHARED PLATFORM FOR ORGANIZATIONS THAT DECIDE TO CHANGE THE URBAN ENVIRONMENT IN WHICH THEY LIVE
   admin:
+    sections:
+      new:
+        title: New section
+      edit:
+        title: 'Edit section'
+        destroy: Delete
+        confirm: Are you sure you'd like to delete this section?
+      index:
+        create: Create section
+        create_subtitle: Create a new section
+    organizations:
+      index:
+        invite: Invite organization
+        invite_subtite: Invite a new organization
+        create: Create organization
+        create_subtitle: Create a new organization
     shared:
       box_dashboard:
         content: Content
@@ -67,6 +86,8 @@ en:
         destroy: Destroy
         confirm: Are you sure you'd like to destroy this project?
   events:
+    index:
+      search: Search
     event_created: 'Event was created successfully.'
     event_updated: 'Event was updated successfully.'
     event_not_created: 'Event was not created.'
@@ -94,6 +115,12 @@ en:
     show:
       edit_page: Edit page
     page_created: Page was created successfully.
+  sections:
+    section_created: 'Section was created successfully.'
+    section_updated: 'Section was updated successfully.'
+    section_not_created: 'Section was not created.'
+    section_not_updated: 'Section has not been updated.'
+    section_destroyed: 'Section was destroyed successfully.'
   formtastic:
     labels:
       event:
@@ -144,6 +171,7 @@ en:
         text: Text
   activerecord:
     models:
+      section: Section
       organization: Organization
       page: Page
       post: Post
@@ -151,6 +179,9 @@ en:
       project: Project
       event: Event
     attributes:
+      section:
+        title: Title
+        description: Description
       page:
         title: Title
         text: Text

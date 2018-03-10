@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20180211123342) do
+ActiveRecord::Schema.define(:version => 20180310203754) do
 
   create_table "event_partnerships", :force => true do |t|
     t.integer  "organization_id"
@@ -250,6 +250,23 @@ ActiveRecord::Schema.define(:version => 20180211123342) do
   end
 
   add_index "projects", ["slug"], :name => "index_projects_on_slug", :unique => true
+
+  create_table "section_translations", :force => true do |t|
+    t.integer  "section_id"
+    t.string   "locale",      :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "title"
+    t.text     "description"
+  end
+
+  add_index "section_translations", ["locale"], :name => "index_section_translations_on_locale"
+  add_index "section_translations", ["section_id"], :name => "index_section_translations_on_section_id"
+
+  create_table "sections", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

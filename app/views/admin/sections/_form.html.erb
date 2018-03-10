@@ -1,0 +1,6 @@
+<%= simple_form_for([:admin, @section]) do |f| %>
+  <%= f.input :title, placeholder: "Titolo della sezione" %>
+  <%= f.input :description, input_html: { class: 'autogrow', rows: 3, counter: 200 } %>
+
+  <%= f.submit %>
+<% end %>

@@ -5,7 +5,7 @@
   </div>
 
   <div class="sort_bar">
-    <span>Cerca:</span>
+    <span><%= t('.search') %>:</span>
     <%= search_form_for @search do |f| %>
       <%= f.search_field :translations_name_cont %>
     <% end %>

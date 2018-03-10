@@ -9,6 +9,8 @@ it:
       enter: Entra
       what_we_are: Cos'è
       who_we_are: Chi siamo
+      manifesto: Manifesto
+      thanks: Thanks
       head_office: Sede
       contacts: Contatti
       calendar: Calendario
@@ -25,10 +27,27 @@ it:
     index:
       calendar: Calendario
       updates: Aggiornamenti
+      intro_text_html: 'Laboratorio permanente per la <strong>socialità creativa</strong> negli <strong>spazi pubblici</strong>.<br />Interventi urbani, arte, sport, giochi, gardening, workshop.'
     footer:
       support_us: Sostienici
       footer_slogan: UNA PIATTAFORMA CONDIVISA DI ORGANIZZAZIONI CHE DECIDONO DI CAMBIARE L’AMBIENTE URBANO IN CUI VIVONO
   admin:
+    sections:
+      new:
+        title: Nuova sezione
+      edit:
+        title: Modifica sezione
+        destroy: Cancella
+        confirm: Sei sicuro/a di voler eliminare questa sezione?
+      index:
+        create: Crea sezione
+        create_subtitle: Crea una nuova sezione
+    organizations:
+      index:
+        invite: Invita ente
+        invite_subtite: Invita una nuova organizzazione
+        create: Crea ente
+        create_subtitle: Crea una nuova organizzazione
     shared:
       box_dashboard:
         content: Contenuti
@@ -64,6 +83,8 @@ it:
         destroy: Cancella
         confirm: Sei sicuro di voler cancellare questo progetto?
   events:
+    index:
+      search: Cerca
     event_created: "L'evento è stato creato con successo."
     event_updated: "L'evento è stato aggiornato con successo."
     event_not_created: "L'evento non è stato creato."
@@ -91,6 +112,12 @@ it:
     show:
       edit_page: Modifica questa pagina
     page_created: La pagina è stata creata con successo.
+  sections:
+    section_created: 'La sezione è stata creata con successo.'
+    section_updated: 'La sezione è stata aggiornata con successo.'
+    section_not_created: 'La sezione non è stata creata.'
+    section_not_updated: 'La sezione non è stata aggiornata.'
+    section_destroyed: 'La sezione è stata cancellata con successo.'
   simple_form:
     labels:
       page:
@@ -348,6 +375,7 @@ it:
       <<: *errors
   activerecord:
     models:
+      section: Sezione
       organization: Ente
       page: Pagina
       post: Post
@@ -355,6 +383,9 @@ it:
       project: Progetto
       event: Evento
     attributes:
+      section:
+        title: Titolo
+        description: Descrizione
       page:
         title: Titolo
         text: Contenuto
