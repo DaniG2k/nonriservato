@@ -1,11 +1,8 @@
 <div class="grid_7">
-
-   <%= link_to  new_admin_event_path, :class => "big_add_new o_3" do %>
+   <%= link_to new_admin_event_path, class: 'big_add_new o_3' do %>
       evento<div>aggiungi un nuovo evento</div>
    <% end %>
-   
-   <p class="uppercase_divider">o modificane uno esistente</p>
 
-   <%= render "/events/event" %>
-   
+   <p class="uppercase_divider">o modificane uno esistente</p>
+   <%= render '/events/event' %>
 </div>

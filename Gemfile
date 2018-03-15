@@ -48,6 +48,7 @@ gem 'gmaps4rails'
 gem 'devise', '~> 2.2.3'
 gem 'devise_invitable', '~> 1.1.0'
 gem 'kaminari'
+gem 'kaminari-i18n'
 gem 'rdiscount'
 
 # To use ActiveModel has_secure_password

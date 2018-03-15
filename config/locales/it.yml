@@ -1,6 +1,15 @@
 it:
   website: Non Riservato
   hello: Ciao
+  workshops:
+    index:
+      intro_text_html: "<p>Grazie alle molte professionalità presenti al suo interno, <strong>Non Riservato</strong> crea, produce, distribuisce contenuti culturali, creativi e ludici all’insegna della socializzazione e del coinvolgimento attivo di un pubblico trasversale. <strong>Commissiona</strong> o <strong>acquista</strong> uno dei prodotti culturali di <strong>Non Riservato</strong>!</p>
+      <p>Per informazioni: info@nonriservato.net</p>"
+  organizations:
+    index:
+      intro_text_html: "<p>La Rete Non Riservato è un laboratorio di sperimentazione per nuovi modelli di cooperazione tra le realtà che ne fanno parte, una struttura condivisa stabile, capace al tempo stesso di salvaguardare autonomie progettuali dei partner. Mira a migliorare il rapporto tra organizzazioni creative, mercato e istituzioni, valorizzando i ruoli professionali, incrementando le capacità presenti all'interno delle organizzazioni sui temi della sostenibilità e la rigenerazione urbana e sociale, la progettazione e la gestione di interventi creativi, urbanistici e sociali, attraverso lo scambio di competenze e la realizzazione di cicli formativi ad hoc.</p>
+        <p>Non Riservato è una Rete aperta all’ingresso di nuovi partner che, indipendentemente dai linguaggi utilizzati, ne condividano filosofia e obiettivi.</p>
+        <p>Essere soci ordinari di Non Riservato significa partecipare a un esperimento di innovazione sociale e professionale, proporre progetti e adottare quelli degli altri, confrontarsi in un ambiente stimolante con professionalità differenti, intervenire agli appuntamenti formativi, e perché no? Fare qualcosa di bello per Milano divertendosi!</p>"
   carousel:
     what_is_it: Cos'è?
     where_is_it: Dov'è?

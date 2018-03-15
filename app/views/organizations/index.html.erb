@@ -4,15 +4,21 @@
     <div>organizzazioni non riservate</div>
   </div>
 
-  <% if @section.present? %>
-    <div class="intro">
-      <%= markdown_d @section.description %>
-    </div>
-  <% end %>
-
-  <div class="sort_bar">
-    <span>Ordina per:</span> <%= sort_link @search, :name, "Nome" %>
+  <div class="intro">
+    <%# markdown_d t('.intro_text_html') %>
+    <%= t('.intro_text_html') %>
   </div>
 
-  <%= render "organizations/organization" %>
+  <% if params[:locale] == 'en' %>
+    <div class="intro">
+      <p>
+        <%= link_to 'Discover the network', organizations_path(locale: :it) %> (This page is only available in Italian)
+      </p>
+    </div>
+  <% else %>
+    <div class="sort_bar">
+      <span>Ordina per:</span> <%= sort_link @search, :name, "Nome" %>
+    </div>
+    <%= render "organizations/organization" %>
+  <% end %>
 </div>
