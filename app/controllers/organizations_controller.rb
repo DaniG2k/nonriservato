@@ -6,7 +6,6 @@ class OrganizationsController < ApplicationController
     q = params[:q].blank? ? {'s' => 'name asc'} : params[:q]
     @search = Organization.visible.search(q)
     @organizations = @search.result
-    @section = Section.find_by_title 'Network'
   end
 
   def show

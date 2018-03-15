@@ -35,16 +35,6 @@ en:
       support_us: Support us
       footer_slogan: A SHARED PLATFORM FOR ORGANIZATIONS THAT DECIDE TO CHANGE THE URBAN ENVIRONMENT IN WHICH THEY LIVE
   admin:
-    sections:
-      new:
-        title: New section
-      edit:
-        title: 'Edit section'
-        destroy: Delete
-        confirm: Are you sure you'd like to delete this section?
-      index:
-        create: Create section
-        create_subtitle: Create a new section
     organizations:
       index:
         invite: Invite organization
@@ -115,12 +105,6 @@ en:
     show:
       edit_page: Edit page
     page_created: Page was created successfully.
-  sections:
-    section_created: 'Section was created successfully.'
-    section_updated: 'Section was updated successfully.'
-    section_not_created: 'Section was not created.'
-    section_not_updated: 'Section has not been updated.'
-    section_destroyed: 'Section was destroyed successfully.'
   formtastic:
     labels:
       event:
@@ -171,7 +155,6 @@ en:
         text: Text
   activerecord:
     models:
-      section: Section
       organization: Organization
       page: Page
       post: Post
@@ -179,9 +162,6 @@ en:
       project: Project
       event: Event
     attributes:
-      section:
-        title: Title
-        description: Description
       page:
         title: Title
         text: Text

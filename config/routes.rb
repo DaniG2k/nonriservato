@@ -11,7 +11,6 @@ Nonriservato::Application.routes.draw do
       resources :posts
       resources :events
       resources :partners, only: [:index]
-      resources :sections
 
       resources :projects, except: [:show] do
         get :json_names, on: :collection
