@@ -117,10 +117,7 @@
   #cssmenu > ul li.has-sub ul li {
     display: block !important;
     margin-right:0px !important;
-  }
-  #cssmenu > ul li.has-sub ul li a span {
-    display: block;
-    padding-left: 24px;
+    padding-left: 30px;
   }
   #cssmenu > ul li.has-sub > a {
     background-image: none;
@@ -131,7 +128,7 @@
 
 /* Make sure they show even if hidden in mobile view by JS */
 @media (min-width: 768px) {
-  
+
   #cssmenu > ul > li.collapsed {
     display: inline-block !important;
     *display: inline;
@@ -140,7 +137,7 @@
   #cssmenu > ul ul li.collapsed {
     display: block !important;
   }
-  
+
   #cssmenu > ul li.last.right{
     /*float:right;
         margin-right:0px;*/
@@ -149,6 +146,6 @@
     top:0px;
     margin-right:0px;
   }
-  
-  
+
+
 }

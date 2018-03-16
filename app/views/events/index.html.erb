@@ -1,18 +1,29 @@
-<div class="grid_12">
-  <div class="banner_projects">
-    <%= image_tag "banner_calendario.jpg", title: "calendario" %>
-    <div>calendario</div>
+<% if params[:locale] == 'it' %>
+  <div class="grid_12">
+    <div class="banner_projects">
+      <%= image_tag "banner_calendario.jpg", title: "calendario" %>
+      <div>Calendario</div>
+    </div>
+    <div class="sort_bar">
+      <span><%= t('.search') %>:</span>
+      <%= search_form_for @search do |f| %>
+        <%= f.search_field :translations_name_cont %>
+      <% end %>
+    </div>
+    <%= render "events/event" %>
   </div>
 
-  <div class="sort_bar">
-    <span>Cerca:</span>
-    <%= search_form_for @search do |f| %>
-      <%= f.search_field :translations_name_cont %>
-    <% end %>
+  <div class="grid_12 pagination">
+    <%= paginate @events %>
   </div>
-  <%= render "events/event" %>
-</div>
-
-<div class="grid_12 pagination">
-  <%= paginate @events %>
-</div>
+<% else %>
+  <div class="grid_12">
+    <div class="banner_projects">
+      <%= image_tag "banner_calendario.jpg", title: "calendario" %>
+      <div>Calendario</div>
+    </div>
+  </div>
+  <div class="grid_12">
+    <%= content_tag :h4, link_to('This page is only available in Italian.', events_path(locale: :it)) %>
+  </div>
+<% end %>

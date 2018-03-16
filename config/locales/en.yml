@@ -4,6 +4,15 @@
 en:
   website: Non Riservato
   hello: Hello
+  workshops:
+    index:
+      intro_text_html: "<p>Thanks to the expertise of the people in the network, <strong>Non Riservato</strong> makes and shares cultural, creative and recreational contents about socialisation and public engagement. <strong>Commission</strong> or purchase one of our cultural products!</p>
+      <p>For any further information, send an email to: info@nonriservato.net</p>"
+  organizations:
+    index:
+      intro_text_html: "<p>The Non Riservato network is a laboratory for new models of cooperation among projects, that belong to NR. It’s a shared and stable structure, and at the same time able to preserve the autonomy of the partners. It aims to improve the relationship between creative organisations, market and institutions, giving value to professional roles, increasing the skills of organisations with the topics sustainability, urban and social regeneration, design, management of creative interventions, urban and social projects, through an exchange of expertise and the creation of ad hoc learning programmes.</p>
+      <p>NR is a network open to the entry of new partners, that apart from the styles they use, share the same philosophy and goals.</p>
+      <p>Being a normal member means to be involved in this experimentation of social and professional innovation, to suggest projects and to adopt the projects of others, to compare oneself to a stimulating environment with different professionalism, to attend to the learning meetings and… why not? To do something great for the city of Milan and obviously to have a good time!</p>"
   carousel:
     what_is_it: What is it?
     where_is_it: Where is it?
@@ -12,6 +21,8 @@ en:
       enter: Enter
       what_we_are: What we are
       who_we_are: Who we are
+      manifesto: Manifesto
+      thanks: Thanks
       head_office: Head office
       contacts: Contacts
       calendar: Calendar
@@ -28,10 +39,17 @@ en:
     index:
       calendar: Calendar
       updates: Updates
+      intro_text_html: 'Permanent lab for <strong>creative participation</strong> in <strong>public spaces</strong>.<br />Urban projects, art, sport, games, gardening, workshops.'
     footer:
       support_us: Support us
       footer_slogan: A SHARED PLATFORM FOR ORGANIZATIONS THAT DECIDE TO CHANGE THE URBAN ENVIRONMENT IN WHICH THEY LIVE
   admin:
+    organizations:
+      index:
+        invite: Invite organization
+        invite_subtite: Invite a new organization
+        create: Create organization
+        create_subtitle: Create a new organization
     shared:
       box_dashboard:
         content: Content
@@ -67,6 +85,8 @@ en:
         destroy: Destroy
         confirm: Are you sure you'd like to destroy this project?
   events:
+    index:
+      search: Search
     event_created: 'Event was created successfully.'
     event_updated: 'Event was updated successfully.'
     event_not_created: 'Event was not created.'

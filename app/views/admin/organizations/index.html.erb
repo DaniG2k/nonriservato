@@ -1,15 +1,13 @@
 <div class="grid_7">
+  <%= link_to new_organization_invitation_path, class: "big_add_new o_7" do %>
+    <%= t('.invite') %> <div><%= t('.invite_subtite') %></div>
+  <% end %>
 
-   <%= link_to  new_organization_invitation_path, :class => "big_add_new o_7" do %>
-      invita ente<div>invita una nuova organizzazione</div>
-   <% end %>
+  <%= link_to new_admin_organization_path, class: "big_add_new o_3 large" do %>
+    <%= t('.create') %> <div><%= t('.create_subtite') %></div>
+  <% end %>
 
-   <%= link_to  new_admin_organization_path, :class => "big_add_new o_3 large" do %>
-      crea ente<div>crea una nuova organizzazione</div>
-   <% end %>
+  <p class="uppercase_divider">o modificane una esistente</p><br><br>
 
-   <p class="uppercase_divider">o modificane una esistente</p><br><br>
-   
-   <%= render "/organizations/organization" %>
-   
+  <%= render "/organizations/organization" %>
 </div>

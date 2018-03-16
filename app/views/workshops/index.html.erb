@@ -1,27 +1,32 @@
 <div class="grid_12">
-   <div class="banner_projects">
-      <%= image_tag "banner_progetti.jpg", :title => "workshop" %>
-      <div>laboratori creativi</div>
-   </div>
-   
-   <% desc = "Grazie alle molte professionalità presenti al suo interno, **Non Riservato** crea, produce, distribuisce contenuti culturali, creativi e ludici all’insegna della socializzazione e del coinvolgimento attivo di un pubblico trasversale.
-   **Commissiona** o **acquista** uno dei prodotti culturali di **Non Riservato**!    
- Per informazioni: info@nonriservato.net" %>
-   
-   <div class="intro">
-       <%= markdown_d desc %>
+  <div class="banner_projects">
+     <%= image_tag "banner_progetti.jpg", :title => "workshop" %>
+    <div>laboratori creativi</div>
+  </div>
+
+  <div class="intro">
+    <%= t('.intro_text_html') %>
+  </div>
+</div>
+
+<% if params[:locale] == 'en' %>
+  <div class="grid_12">
+    <div class="intro">
+      <p>
+        <%= link_to 'Discover our workshops', workshops_path(locale: :it)%> (This page is only available in Italian)
+      </p>
     </div>
-    
-    
-   <div class="sort_bar">
-     <span>Ordina per:</span> 
-     <%= sort_link @search, :date, "Data", default_order: :desc %> //
-     <%= sort_link @search, :name, "Nome" %> //
-      
-   </div>
-   
-   <%= render "workshops/workshop" %>
-</div>
-<div class="grid_12 pagination">
+  </div>
+<% else %>
+  <div class="grid_12">
+    <div class="sort_bar">
+      <span>Ordina per:</span>
+      <%= sort_link @search, :date, "Data", default_order: :desc %> //
+      <%= sort_link @search, :name, "Nome" %> //
+    </div>
+    <%= render "workshops/workshop" %>
+  </div>
+  <div class="grid_12 pagination">
     <%= paginate @workshops %>
-</div>
+  </div>
+<% end %>

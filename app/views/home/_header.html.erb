@@ -52,19 +52,19 @@
        <li><%= link_to('Home', root_path, class: is_active?("home")) %></li>
        <li class='has-sub'><a href='#'><span>About</span></a>
           <ul>
-						 <li><%= link_to t('.what_we_are'), page_path('who_we_are')%></li>
+						 <li><%= link_to t('.what_we_are'), page_path('who_we_are') %></li>
              <li><%= link_to t('.who_we_are'), page_path('chi-siamo') %></li>
-             <li><a href='/pages/manifesto'><span>Manifesto</span></a></li>
-             <li><a href='/pages/thanks'><span>Thanks</span></a></li>
-						 <li><%= link_to(t('.head_office'), page_path('sede')) %></li>
-             <li><%= link_to(t('.contacts'), page_path('contacts')) %></li>
+             <li><%= link_to t('.manifesto'), page_path('manifesto') %></li>
+             <li><%= link_to t('.thanks'), page_path('thanks') %></li>
+						 <li><%= link_to t('.head_office'), page_path('sede') %></li>
+             <li><%= link_to t('.contacts'), page_path('contacts') %></li>
           </ul>
        </li>
        <li><%= link_to t('.calendar'), events_path, class: is_active?("events") %></li>
        <li class='has-sub'>
 				 <%= link_to(t('.projects'), projects_path, class: is_active?("projects")) %>
          <ul>
-           <li><%= link_to(t('.projects'), projects_path, class: is_active?("projects")) %></li>
+           <li><%= link_to t('.projects'), projects_path, class: is_active?("projects") %></li>
            <li><%= link_to t('.maps'), 'http://maps.nonriservato.net/', target: '_blank' %></li>
          </ul>
        </li>
