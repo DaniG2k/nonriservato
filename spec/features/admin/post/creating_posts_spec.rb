@@ -1,5 +1,5 @@
 RSpec.feature 'Admins can create posts' do
-  let(:admin) { FactoryBot.create(:organization, :admin) }
+  let(:admin) { create(:organization, :admin) }
 
   before(:each) do
     login_as(admin)

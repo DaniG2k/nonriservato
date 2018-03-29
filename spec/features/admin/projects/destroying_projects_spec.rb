@@ -1,6 +1,6 @@
 RSpec.feature 'Admins can destroy projects' do
-  let(:admin) { FactoryBot.create(:organization, :admin) }
-  let(:project) { FactoryBot.create(:project, organization: admin) }
+  let(:admin) { create(:organization, :admin) }
+  let(:project) { create(:project, organization: admin) }
 
   before do
     login_as(admin)

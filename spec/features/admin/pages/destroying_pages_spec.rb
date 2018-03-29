@@ -1,8 +1,8 @@
 # require 'rails_helper'
 #
 # RSpec.feature 'Admins can destroy pages' do
-#   let(:admin) { FactoryBot.create(:organization, :admin) }
-#   let!(:page) { FactoryBot.create(:page) }
+#   let(:admin) { create(:organization, :admin) }
+#   let!(:page) { create(:page) }
 #
 #   before do
 #     login_as(admin)

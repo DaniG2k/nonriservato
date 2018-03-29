@@ -20,7 +20,7 @@ class Workshop < ActiveRecord::Base
 
   # Validations
   validates_presence_of :name, message: 'devi dare un nome al workshop'
-  validates_length_of :definition, :minimum => 10, :maximum => 150, :allow_blank => false, :message => 'la definizione deve essere presente e meno lunga di 150 caratteri'
+  validates_length_of :definition, minimum: 10, maximum: 150, allow_blank: false, message: "la definizione dev'essere presente e meno lunga di 150 caratteri"
 
   accepts_nested_attributes_for :images, allow_destroy: true
 

@@ -81,6 +81,15 @@ it:
         upload_image: "Carica una nuova immagine"
         destroy: Cancella
         confirm: Sei sicuro di voler cancellare questo progetto?
+    workshops:
+      new:
+        title: Nuovo workshop
+      edit:
+        title: Modifica workshop
+      form:
+        confirm: Sei sicuro di voler cancellare questo workshop?
+        destroy: Cancella
+        pdf: 'PDF del workshop'
   events:
     index:
       search: Cerca
@@ -94,6 +103,11 @@ it:
     project_updated: 'Il progetto è stato aggiornato con successo.'
     project_not_updated: 'Il progetto non è stato aggiornato.'
     project_destroyed: 'Il progetto è stato cancellato con successo.'
+  workshops:
+    workshop_created: 'Il workshop è stato creato con successo.'
+    workshop_updated: 'Il workshop è stato aggiornato con successo.'
+    workshop_not_updated: 'Il workshop non è stato aggiornato.'
+    workshop_destroyed: 'Il workshop è stato cancellato con successo.'
   posts:
     post:
       continue: Continua...
@@ -150,6 +164,16 @@ it:
         url: Sito internet
         partner_ids: Partner - Non Riservato
         external_partner_ids: Partner istituzionali
+      workshop:
+        name: Nome
+        date_begun: Data d'inizio
+        date_ended: Data fine
+        workshop_partner_ids: Partner
+        active: Attivo/Archiviato
+        zone: Zona
+        definition: Definizione
+        description: Descrizione
+        url: Sito internet
     hints:
       project:
         definition: Il tuo progetto in 150 caratteri
