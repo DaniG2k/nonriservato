@@ -1,9 +1,9 @@
 # TODO
 # Fix this spec
 # RSpec.feature 'Admins can destroy events' do
-#   let(:admin) { FactoryBot.create(:organization, :admin) }
-#   let(:project) { FactoryBot.create(:project, organization: admin) }
-#   let(:event) { FactoryBot.create(:event, organization: admin, project: project) }
+#   let(:admin) { create(:organization, :admin) }
+#   let(:project) { create(:project, organization: admin) }
+#   let(:event) { create(:event, organization: admin, project: project) }
 #
 #   before do
 #     login_as(admin)

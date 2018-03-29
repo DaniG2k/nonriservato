@@ -2,78 +2,77 @@
 class Admin::WorkshopsController < ApplicationController
   before_filter :protect_admin
   before_filter :process_params
-
-  def new
-    @current_tab = "workshops"
-    @workshop = Workshop.new
-    @workshop.images.build
-  end
-
-  def create
-    @current_tab = "workshops"
-    @workshop = Workshop.new(params[:workshop])
-
-
-    respond_to do |format|
-      if @workshop.save
-        format.html { redirect_to admin_workshops_path, notice: 'workshop was successfully created.' }
-        format.json { render json: @workshop, status: :created, location: @workshop }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @workshop.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  before_filter :set_workshop, only: %i[edit update destroy]
+  before_filter :set_current_tab, only: %i[new create edit]
 
   def index
     @workshops = Workshop.all
   end
 
-  def edit
-    @current_tab = "workshops"
-
-    @workshop = Workshop.find(params[:id])
+  def new
+    @workshop = Workshop.new
     @workshop.images.build
+  end
 
-    @hash_partners = Organization.retrieve_hash(@workshop.workshop_partners.collect{|o| o.id})
+  def create
+    @workshop = Workshop.new(params[:workshop])
+    respond_to do |format|
+      if @workshop.save
+        format.html { redirect_to admin_workshops_path, notice: I18n.t('workshops.workshop_created') }
+        format.json { render json: @workshop, status: :created, location: @workshop }
+      else
+        format.html { render action: 'new' }
+        format.json { render json: @workshop.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 
+  def edit
+    @workshop.images.build
+    @hash_partners = Organization.retrieve_hash(@workshop.workshop_partners.collect { |o| o.id })
   end
 
 
   def update
-    @workshop = Workshop.find(params[:id])
-    @workshop.update_attributes(params[:workshop])
-
-    redirect_to edit_admin_workshop_path(@workshop)
+    if @workshop.update_attributes(params[:workshop])
+      flash[:notice] = I18n.t('workshops.workshop_updated')
+      redirect_to admin_workshop_path(@workshop)
+    else
+      flash.now[:alert] = I18n.t('workshops.workshop_not_updated')
+      render :edit
+    end
   end
 
-
-  # def json_names
-  #   @projects = current_organization.projects.where(["UPPER(name) LIKE UPPER(?)", params[:q].to_s + '%']).limit(12)
-  #   @projects.collect{|project|
-  #     {:id => project.id, :name => project.name}
-  #   }
-  #
-  #   respond_to do |format|
-  #     format.json { render :json => @projects }
-  #   end
-  # end
-
-
   def destroy
-    @workshop = Workshop.find(params[:id])
-    @workshop.destroy
-    redirect_to admin_workshops_path
+    if @workshop.destroy
+      flash[:notice] = I18n.t('workshops.workshop_destroyed')
+      redirect_to admin_workshops_path
+    else
+      flash.now[:error] = 'Unable to destroy this workshop'
+      render :edit
+    end
   end
 
   private
 
   def process_params
     if params[:workshop]
-       params[:workshop]["workshop_partner_ids"] = params[:workshop]["workshop_partner_ids"].split(",")
-       @hash_partners = Organization.retrieve_hash(params[:workshop]["workshop_partner_ids"])
+      if params[:workshop]['workshop_partner_ids'] == '[]'
+        params[:workshop]['workshop_partner_ids'] = []
+      else
+        params[:workshop]['workshop_partner_ids'] = params[:workshop]['workshop_partner_ids'].split(',')
+        @hash_partners = Organization.retrieve_hash(params[:workshop]['workshop_partner_ids'])
+      end
     else
        @hash_partners = []
     end
+  end
+
+  def set_workshop
+    @workshop = Workshop.find(params[:id])
+  end
+
+  def set_current_tab
+    @current_tab = 'workshops'
   end
 end

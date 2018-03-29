@@ -1,5 +1,5 @@
 RSpec.feature 'Admins can create projects' do
-  let(:admin) { FactoryBot.create(:organization, :admin) }
+  let(:admin) { create(:organization, :admin) }
 
   before do
     login_as(admin)

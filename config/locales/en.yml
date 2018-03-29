@@ -84,6 +84,15 @@ en:
         upload_image: Upload a new image
         destroy: Destroy
         confirm: Are you sure you'd like to destroy this project?
+    workshops:
+      new:
+        title: New workshop
+      edit:
+        title: Edit workshop
+      form:
+        confirm: Are you sure you'd like to destroy this workshop?
+        destroy: Destroy
+        pdf: 'Workshop PDF'
   events:
     index:
       search: Search
@@ -97,6 +106,11 @@ en:
     project_updated: 'Project was updated successfully.'
     project_not_updated: 'The project has not been updated.'
     project_destroyed: 'The project was successfully destroyed.'
+  workshops:
+    workshop_created: 'Workshop was created successfully.'
+    workshop_updated: 'Workshop was updated successfully.'
+    workshop_not_updated: 'The workshop has not been updated.'
+    workshop_destroyed: 'The workshop was successfully destroyed.'
   posts:
     post:
       continue: Continue...
@@ -148,6 +162,16 @@ en:
         url: Website
         partner_ids: Partners
         external_partner_ids: Institutional partners
+      workshop:
+        name: Name
+        date_begun: Start date
+        date_ended: End date
+        workshop_partner_ids: Partners
+        active: Active/Archived
+        zone: Zone
+        definition: Definition
+        description: Description
+        url: Website
     hints:
       project:
         definition: Your project in 150 characters
