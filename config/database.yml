@@ -7,7 +7,7 @@ default: &default
 
 development:
   <<: *default
-  database: nonriservato
+  database: nonriservato_dev
 
 test:
   <<: *default

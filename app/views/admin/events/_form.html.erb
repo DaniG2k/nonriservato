@@ -1,37 +1,37 @@
-  <%= semantic_form_for ([:admin, @event]) do |f| %>
-    <%= f.inputs do %>
-      <%= f.input :name, hint: "Clicca sul nome per cambiare", placeholder:  "nome dell'evento" %>
-      <%= f.input :event_partner_ids, hint: "Scrivi nella barra il nome e scegli il partner", placeholder:  "es: Ex-Voto", as: :string, multiple: true, wrapper_html: {class: 'right_hint'} %>
-      <%= f.input :event_type, hint: "Seleziona il tipo di evento", as: :radio, wrapper_html: {class: ''}, collection: @type_collection %>
-      <%= f.input :event_category, hint: "Seleziona la categoria", as: :select, wrapper_html: {class: ''}, collection: @category_collection %>
+<%= semantic_form_for([:admin, @event]) do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :name, hint: "Clicca sul nome per cambiare", placeholder:  "nome dell'evento" %>
+    <%= f.input :event_partner_ids, hint: "Scrivi nella barra il nome e scegli il partner", placeholder:  "es: Ex-Voto", as: :string, multiple: true, wrapper_html: {class: 'right_hint'} %>
+    <%= f.input :event_type, hint: "Seleziona il tipo di evento", as: :radio, wrapper_html: {class: ''}, collection: @type_collection %>
+    <%= f.input :event_category, hint: "Seleziona la categoria", as: :select, wrapper_html: {class: ''}, collection: @category_collection %>
 
-      <%= f.input :project, hint: "Seleziona il progetto a cui appartiene l'evento", placeholder:  "es: CriticalCity Upload", prompt: "-- nessun progetto", as: :select, wrapper_html: {class: 'right_hint'}, collection: @projects %>
+    <%= f.input :project, hint: "Seleziona il progetto a cui appartiene l'evento", placeholder:  "es: CriticalCity Upload", prompt: "-- nessun progetto", as: :select, wrapper_html: {class: 'right_hint'}, collection: @projects %>
 
-      <%= f.input :date_begun, as: :ui_date_picker, wrapper_html: {class: 'quarter float'}, placeholder:  "15/3/2013"%>
-      <%= f.input :date_ended, as: :ui_date_picker, wrapper_html: {class: 'quarter float'}, placeholder:  "" %>
-      <%= f.input :time, placeholder:  "es: 15:00 - 22:00", wrapper_html: {class: 'quarter float'}    %>
-      <%= f.input :zone, as: :select, collection: @zone_collection, include_blank: false, wrapper_html: {class: 'quarter float'} %>
-      <%= f.input :address, placeholder:  "es: Piazza Duca d'Aosta 15, Milano", wrapper_html: {class: 'clearform'}    %>
+    <%= f.input :date_begun, as: :ui_date_picker, wrapper_html: {class: 'quarter float'}, placeholder: "es: #{1.week.from_now.strftime('%D')}" %>
+    <%= f.input :date_ended, as: :ui_date_picker, wrapper_html: {class: 'quarter float'}, placeholder:  "" %>
+    <%= f.input :time, placeholder:  "es: 15:00 - 22:00", wrapper_html: {class: 'quarter float'}    %>
+    <%= f.input :zone, as: :select, collection: @zone_collection, include_blank: false, wrapper_html: {class: 'quarter float'} %>
+    <%= f.input :address, placeholder:  "es: Piazza Duca d'Aosta 15, Milano", wrapper_html: {class: 'clearform'}    %>
 
-      <%= gmaps({
-          "map_options" => {"zoom" => 17, "auto_zoom" => false},
-          "markers" => { "data" => @json_event }
-          }) if @json_event %>
+    <%= gmaps({
+        "map_options" => {"zoom" => 17, "auto_zoom" => false},
+        "markers" => { "data" => @json_event }
+        }) if @json_event %>
 
-      <%= f.input :description, hint: "Gli obiettivi, la storia, ecc...", input_html: { class: 'autogrow', rows: 8  }  %>
-      <%= f.input :definition, hint: "Il tuo evento il 220 caratteri", input_html: { class: 'autogrow', rows: 2, counter: 220 },  wrapper_html: {class: 'countit'}  %>
+    <%= f.input :description, hint: "Gli obiettivi, la storia, ecc...", input_html: { class: 'autogrow', rows: 8  }  %>
+    <%= f.input :definition, hint: "Il tuo evento il 220 caratteri", input_html: { class: 'autogrow', rows: 2, counter: 220 },  wrapper_html: {class: 'countit'}  %>
 
-      <%= f.input :url, placeholder:  "es: http://www.alterminedellanotte.it", wrapper_html: {class: 'half float first'} %>
-      <%= f.input :email, placeholder:  "es: info@alterminedellanotte.it", wrapper_html: {class: 'half float'} %>
-      <%= f.input :tel_1, placeholder:  "es: 02 10236545", wrapper_html: {class: 'clearform half float first'} %>
-      <%= f.input :tel_2, placeholder:  "es: 349 54248534", wrapper_html: {class: 'half float'} %>
-      <%= f.input :facebook_event_url, placeholder:  "es: https://www.facebook.com/events/128101970703124/", wrapper_html: {class: "divider_below clearform right_hint"}, hint: "Inserisci l'intera stringa dell'indirizzo" %>
-      <%= f.input :image %>
-      <% unless @event.image.nil? %>
-         <%= image_tag @event.image(:medium), class: "event_image" %><br>
-      <% end %>
-
+    <%= f.input :url, placeholder:  "es: http://www.alterminedellanotte.it", wrapper_html: {class: 'half float first'} %>
+    <%= f.input :email, placeholder:  "es: info@alterminedellanotte.it", wrapper_html: {class: 'half float'} %>
+    <%= f.input :tel_1, placeholder:  "es: 02 10236545", wrapper_html: {class: 'clearform half float first'} %>
+    <%= f.input :tel_2, placeholder:  "es: 349 54248534", wrapper_html: {class: 'half float'} %>
+    <%= f.input :facebook_event_url, placeholder:  "es: https://www.facebook.com/events/128101970703124/", wrapper_html: {class: "divider_below clearform right_hint"}, hint: "Inserisci l'intera stringa dell'indirizzo" %>
+    <%= f.input :image %>
+    <% unless @event.image.nil? %>
+       <%= image_tag @event.image(:medium), class: "event_image" %><br>
     <% end %>
-    <%= f.action :submit %>
+
   <% end %>
-  <%= button_to "Cancella", admin_event_path(@event), class: "delete", method: :delete, confirm: "Sei sicuro di voler cancellare questo evento?" unless @event.new_record? %>
+  <%= f.action :submit %>
+<% end %>
+<%= button_to "Cancella", admin_event_path(@event), class: "delete", method: :delete, confirm: "Sei sicuro di voler cancellare questo evento?" unless @event.new_record? %>

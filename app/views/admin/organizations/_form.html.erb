@@ -1,56 +1,49 @@
-  <%= semantic_form_for ([:admin, @organization]), :html => {:autocomplete => "off"}   do |f| %>
-    <%= f.inputs do %>
-    
-      <% unless @organization.logo.nil? %>
-         <div class="square_logo">
-            <%= image_tag @organization.logo(:mini) %>
-         </div>
-      <% end %>
-      <%= f.input :logo, :label =>"Carica logo", :wrapper_html => {:class => "float half extra_hint"}, :hint => "immagine quadrata > 150x150 px" %>
-      <%= f.input :name,         :label =>"Nome dell'organizzazione", :wrapper_html => {:class => "float half"} %>
-   
-      <%= f.input :email,  :wrapper_html => {:class => "clearform"}, :input_html =>{:autocomplete => "off"} %>
-      <%= f.input :password,  :wrapper_html => {:class => "half float first"},  :input_html =>{:autocomplete => "off"} %>
-      <%= f.input :password_confirmation,  :wrapper_html => {:class => "half float"} %>
-      <%= f.input :keywords,  :wrapper_html => {:class => "clearform"}, :hint => "Separa le parole chiave da una virgola", :placeholder => "es: urban game, maternage, genitorialità" %>
-      <%= f.input :definition,   :as => "text", :label =>"Definizione",    :hint => "La tua organizzazione in 150 caratteri", :input_html => { :class => 'autogrow', :rows => 2, :counter => 150 },  :wrapper_html => {:class => 'countit clearform'}  %>
- 
-      <%= f.input :description,  :label =>"Descrizione",    :hint => "I vostri obiettivi, le vostre attività, la vostra storia, ecc...", :input_html => { :class => 'autogrow', :rows => 8  }  %>
-      <%= f.input :address,      :label =>"Indirizzo",      :placeholder => "es: Piazza Duca d'Aosta 15, Milano", :hint => "avete una sede? inserite qui l'indirizzo"   %>
-      <%# gmaps4rails(@json_event) %>
-      <%= gmaps({
-          "map_options" => {"zoom" => 17, "auto_zoom" => false},
-          "markers" => { "data" => @json_event }
-          }) if @json_event %>
-      <%= f.input :telephone,        :label =>"Telefono", :hint => "Ufficio o cellulare",     :placeholder => "es: 02 10236545", :wrapper_html => {:class => 'half float first'} %>
-      <%= f.input :url,              :label =>"Sito web",     :placeholder => "es: www.focuscoop.it", :wrapper_html => {:class => 'half float'} %>
-      <%= f.input :twitter_name,     :label =>"Nome Twitter", :placeholder => "es: @livellosette", :wrapper_html => {:class => 'clearform right_hint'}, :hint => "se avete un account Twitter inserite qui il vostro nome" %>
-      <%= f.input :facebook_url,     :label =>"Pagina Facebook", :placeholder => "es: https://www.facebook.com/criticalcity.upload", :wrapper_html => {:class => 'right_hint'}, :hint => "indirizzo della pagina Facebook della vostra organizzazione " %>
-      <%= f.input :linkedin_url,     :label =>"Pagina Linkedin", :placeholder => "es: http://www.linkedin.com/company/focus-soc-coop-sociale", :wrapper_html => {:class => 'right_hint'}, :hint => "indirizzo della pagina Linkedin della vostra organizzazione " %>
-      
+<%= semantic_form_for [:admin, @organization], html: { autocomplete: "off"} do |f| %>
+  <%= f.inputs do %>
 
-      
-      <% unless f.object.new_record? %>
-         <%= f.inputs "Images" do %>
-            <%= f.semantic_fields_for :images do |image| %>
-               <% unless image.object.new_record? %>
-                  <%= link_to (image_tag image.object.data(:mini)), admin_image_path(image.object.id), :class => "upload_image", method: :delete unless image.object.id.nil?  %>
-               <% else %>
-                  <%# link_to (image_tag image.object.data(:mini), :class => "upload_image"), admin_image_path(image.object.id), method: :delete unless image.object.id.nil?  %>
-                  <%= image.input :data, :label =>"Carica una nuova immagine", :wrapper_html => {:class => "image_field"}, :name => "Add Image" %>
-               <% end %>
-            <% end %>
-         <% end %>
-      <% end %>
-      
-      
-      
-      
-      
+    <% unless @organization.logo.nil? %>
+       <div class="square_logo">
+          <%= image_tag @organization.logo(:mini) %>
+       </div>
     <% end %>
-    <%= f.action :submit, :button_html => { :value => 'Salva' } %>
-  <% end %>
-  
-  <%= button_to "Elimina organizzazione", admin_organization_path(@organization), method: :delete, :confirm => "Sei sicuro di voler cancellare questa organizzazione?", :method => :delete unless @organization.new_record? if admin? && @organization != current_organization %>
+    <%= f.input :logo, :label =>"Carica logo", :wrapper_html => {:class => "float half extra_hint"}, :hint => "immagine quadrata > 150x150 px" %>
+    <%= f.input :name,         :label =>"Nome dell'organizzazione", :wrapper_html => {:class => "float half"} %>
 
-          
+    <%= f.input :email,  :wrapper_html => {:class => "clearform"}, :input_html =>{:autocomplete => "off"} %>
+    <%= f.input :password,  :wrapper_html => {:class => "half float first"},  :input_html =>{:autocomplete => "off"} %>
+    <%= f.input :password_confirmation,  :wrapper_html => {:class => "half float"} %>
+    <%= f.input :keywords,  :wrapper_html => {:class => "clearform"}, :hint => "Separa le parole chiave da una virgola", :placeholder => "es: urban game, maternage, genitorialità" %>
+    <%= f.input :definition,   :as => "text", :label =>"Definizione",    :hint => "La tua organizzazione in 150 caratteri", :input_html => { :class => 'autogrow', :rows => 2, :counter => 150 },  :wrapper_html => {:class => 'countit clearform'}  %>
+
+    <%= f.input :description,  :label =>"Descrizione",    :hint => "I vostri obiettivi, le vostre attività, la vostra storia, ecc...", :input_html => { :class => 'autogrow', :rows => 8  }  %>
+    <%= f.input :address,      :label =>"Indirizzo",      :placeholder => "es: Piazza Duca d'Aosta 15, Milano", :hint => "avete una sede? inserite qui l'indirizzo"   %>
+    <%# gmaps4rails(@json_event) %>
+    <%= gmaps({
+        "map_options" => {"zoom" => 17, "auto_zoom" => false},
+        "markers" => { "data" => @json_event }
+        }) if @json_event %>
+    <%= f.input :telephone,        :label =>"Telefono", :hint => "Ufficio o cellulare",     :placeholder => "es: 02 10236545", :wrapper_html => {:class => 'half float first'} %>
+    <%= f.input :url,              :label =>"Sito web",     :placeholder => "es: www.focuscoop.it", :wrapper_html => {:class => 'half float'} %>
+    <%= f.input :twitter_name,     :label =>"Nome Twitter", :placeholder => "es: @livellosette", :wrapper_html => {:class => 'clearform right_hint'}, :hint => "se avete un account Twitter inserite qui il vostro nome" %>
+    <%= f.input :facebook_url,     :label =>"Pagina Facebook", :placeholder => "es: https://www.facebook.com/criticalcity.upload", :wrapper_html => {:class => 'right_hint'}, :hint => "indirizzo della pagina Facebook della vostra organizzazione " %>
+    <%= f.input :linkedin_url,     :label =>"Pagina Linkedin", :placeholder => "es: http://www.linkedin.com/company/focus-soc-coop-sociale", :wrapper_html => {:class => 'right_hint'}, :hint => "indirizzo della pagina Linkedin della vostra organizzazione " %>
+
+    <% unless f.object.new_record? %>
+       <%= f.inputs "Images" do %>
+          <%= f.semantic_fields_for :images do |image| %>
+             <% unless image.object.new_record? %>
+                <%= link_to (image_tag image.object.data(:mini)), admin_image_path(image.object.id), :class => "upload_image", method: :delete unless image.object.id.nil?  %>
+             <% else %>
+                <%# link_to (image_tag image.object.data(:mini), :class => "upload_image"), admin_image_path(image.object.id), method: :delete unless image.object.id.nil?  %>
+                <%= image.input :data, :label =>"Carica una nuova immagine", :wrapper_html => {:class => "image_field"}, :name => "Add Image" %>
+             <% end %>
+          <% end %>
+       <% end %>
+    <% end %>
+
+
+  <% end %>
+  <%= f.action :submit, :button_html => { :value => 'Salva' } %>
+<% end %>
+
+<%= button_to "Elimina organizzazione", admin_organization_path(@organization), method: :delete, :confirm => "Sei sicuro di voler cancellare questa organizzazione?", :method => :delete unless @organization.new_record? if admin? && @organization != current_organization %>

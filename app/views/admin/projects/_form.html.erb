@@ -1,4 +1,4 @@
-  <%= semantic_form_for ([:admin, @project]) do |f| %>
+  <%= semantic_form_for([:admin, @project]) do |f| %>
     <%= f.inputs do %>
       <%= f.input :name, placeholder: 'nome del progetto' %>
       <%= f.input :date_begun, as:  :ui_date_picker, wrapper_html:  {class: 'quarter'} %>

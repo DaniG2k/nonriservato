@@ -1,17 +1,13 @@
-function sessions_news(){
-
-}
-
 function projects_new(){
    // partner_ids = {}
    $("#project_partner_ids").tokenInput("/admin/organizations/json_names", {
-     searchingText: 'cerco...',
-     noResultsText: 'nessun risultato',
+     searchingText: 'Ricerca in corso...',
+     noResultsText: 'Nessun risultato',
      hintText: 'Comincia a scrivere il nome del partner'
    });
    $("#project_external_partner_ids").tokenInput("/admin/external_organizations/json_names", {
-     searchingText: 'cerco...',
-     noResultsText: 'nessun risultato',
+     searchingText: 'Ricerca in corso...',
+     noResultsText: 'Nessun risultato',
      hintText: 'Comincia a scrivere il nome del partner istituzionale'
    });
 
@@ -23,8 +19,8 @@ function projects_new(){
 function workshops_new(){
 
   $("#workshop_workshop_partner_ids").tokenInput("/admin/organizations/json_names", {
-    searchingText: 'cerco...',
-    noResultsText: 'nessun risultato',
+    searchingText: 'Ricerca in corso...',
+    noResultsText: 'Nessun risultato',
     hintText: 'Comincia a scrivere il nome del partner'
   });
 
@@ -43,8 +39,8 @@ var projects_update = projects_new
 function organizations_edit_external_partners(){
   // $("#organization_password").val("")
    $("#organization_external_partner_ids").tokenInput("/admin/external_organizations/json_names", {
-     searchingText: 'cerco...',
-     noResultsText: 'nessun risultato',
+     searchingText: 'Ricerca in corso...',
+     noResultsText: 'Nessun risultato',
      hintText: 'Comincia a scrivere il nome del partner istituzionale'
    });
 }
@@ -53,8 +49,8 @@ function events_new(){
 
   // partner_ids = {}
   $("#event_event_partner_ids").tokenInput("/admin/organizations/json_names", {
-    searchingText: 'cerco...',
-    noResultsText: 'nessun risultato',
+    searchingText: 'Ricerca in corso...',
+    noResultsText: 'Nessun risultato',
     hintText: 'Comincia a scrivere il nome del partner'
   });
 

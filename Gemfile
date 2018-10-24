@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.2'
+ruby '2.3.8'
 
 gem 'rails', '~> 3.2'
 
@@ -40,10 +40,9 @@ end
 
 gem 'ransack'
 gem 'jquery-fileupload-rails', '~> 0.4.1'
-gem 'formtastic', '~> 2.1.1'
-gem 'ui_datepicker-rails3', '~> 1.1.1'
-gem 'rails3-jquery-autocomplete', '~> 1.0.11'
-gem 'jquery-rails', '~> 2.2.1'
+gem 'formtastic', '~> 3.0'
+gem 'ui_datepicker-rails3', '~> 1.2.0'
+gem 'jquery-rails', '~> 3.1.5'
 gem 'gmaps4rails'
 gem 'devise', '~> 2.2.3'
 gem 'devise_invitable', '~> 1.1.0'
