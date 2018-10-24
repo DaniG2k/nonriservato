@@ -78,13 +78,4 @@ class Admin::OrganizationsController < ApplicationController
       format.json { render :json => @organizations }
     end
   end
-
-  private
-
-  # def prevent_external_editing
-  #   if !admin? and params[:id] != current_organization.id
-  #     redirect_to :controller => 'projects'
-  #   end
-  # end
-
 end

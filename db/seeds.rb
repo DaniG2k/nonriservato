@@ -11,6 +11,6 @@ user = Organization.new(
   password: 'test1234',
   password_confirmation: 'test1234',
   definition: Faker::Lorem.sentence
-  admin: true
 )
+user.admin = true
 user.save
